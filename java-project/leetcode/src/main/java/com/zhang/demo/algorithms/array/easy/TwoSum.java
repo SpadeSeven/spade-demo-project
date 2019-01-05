@@ -23,13 +23,8 @@ public class TwoSum {
     for (int i = 0; i < nums.length; i++) {
       int expect = target - nums[i];
       if (map.containsKey(expect)) {
-        if (i < map.get(expect)) {
-          result[0] = i;
-          result[1] = map.get(expect);
-        } else {
           result[0] = map.get(expect);
           result[1] = i;
-        }
         return result;
       } else {
         map.put(nums[i], i);
