@@ -14,17 +14,19 @@ package com.zhang.demo.algorithms.array.medium;
 public class ContainerWithMostWater {
 
   public int maxArea(int[] height) {
-    int current_height = 0;
-    int area_size = 0;
-    int j = 0;
-    for (int i = 0; i < height.length - 1; i++) {
-      if (height[i] < height[j]) {
-        current_height = height[j];
+    int left = 0;
+    int right = height.length - 1;
+    int max_area = 0;
+    while (left < right) {
+      int current_area = (right - left) * Math.min(height[left], height[right]);
+      if (height[left] < height[right]) {
+        left++;
+      } else {
+        right--;
       }
-      current_height = height[i];
-      area_size = current_height * (j - i + 1);
+      max_area = Math.max(max_area, current_area);
     }
-    return area_size;
+    return max_area;
   }
 
 }
