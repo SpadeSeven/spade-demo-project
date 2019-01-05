@@ -1,1 +1,0 @@
-package algorithms.array.easy;
