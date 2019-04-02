@@ -11,7 +11,24 @@ public class RelaceBlank {
 
   public static void main(String[] args) {
     RelaceBlank rb = new RelaceBlank();
+    // 字符串在最前面
+    System.out.println(rb.relaceBlank(" wearehappy"));
+    // 字符串在中间
     System.out.println(rb.relaceBlank("we are happy"));
+    // 字符串在最后面
+    System.out.println(rb.relaceBlank("wearehappy "));
+    // 连续空格
+    System.out.println(rb.relaceBlank("we  are  happy"));
+    // 没有空格
+    System.out.println(rb.relaceBlank("wearehappy"));
+    // null
+    System.out.println(rb.relaceBlank(null));
+    // 空字符串
+    System.out.println(rb.relaceBlank(""));
+    // 只有一个空字符串
+    System.out.println(rb.relaceBlank(" "));
+    // 只有空的连续多个字符串
+    System.out.println(rb.relaceBlank("  "));
 
   }
 
@@ -38,17 +55,12 @@ public class RelaceBlank {
 
     while (i >= 0) {
       if (values[i] != ' ') {
-        target[j] = values[i];
-        i--;
-        j--;
+        target[j--] = values[i--];
       } else {
-        target[j] = '0';
-        j--;
-        target[j] = '2';
-        j--;
-        target[j] = '%';
+        target[j--] = '0';
+        target[j--] = '2';
+        target[j--] = '%';
         i--;
-        j--;
       }
     }
 
