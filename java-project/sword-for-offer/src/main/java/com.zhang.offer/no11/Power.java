@@ -51,11 +51,19 @@ public class Power {
    * @return 结果值
    */
   public double powerWithUnsignedExponent(double base, int exponent) {
-    double result = 1.0;
-    for (int i = 0; i < exponent; i++) {
+    if (exponent == 0) {
+      return 1.0;
+    } else if (exponent == 1) {
+      return base;
+    }
+    double result = powerWithUnsignedExponent(base, exponent >> 1);
+    result *= result;
+    if ((exponent & 1) == 1) {
       result *= base;
     }
+
     return result;
+
   }
 
   /**
