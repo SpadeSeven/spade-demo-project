@@ -1,0 +1,13 @@
+# Required metadata
+sonar.projectKey=trek-tools:app-package-query
+sonar.projectName=app-package-query
+sonar.projectVersion=@PROJECT_VERSION@
+
+# Comma-separated paths to directories with sources (required)
+sonar.sources=bin,test,lzy
+
+# Language
+sonar.language=py
+
+# Encoding of the source files
+sonar.sourceEncoding=UTF-8
