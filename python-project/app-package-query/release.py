@@ -16,7 +16,6 @@ py_strip_dirs = open(
 
 
 def _copytree(src, dst, ignore=None):
-
     names = os.listdir(src)
     if ignore is not None:
         ignored_names = ignore(src, names)
@@ -40,28 +39,29 @@ def _copytree(src, dst, ignore=None):
                 shutil.copy2(srcname, dstname)
         # catch the Error from the recursive copytree so that we can
         # continue with other files
-        except shutil.Error, err:  # noqa
+        except shutil.Error as err:  # noqa
             errors.extend(err.args[0])
-        except EnvironmentError, why:  # noqa
+        except EnvironmentError as why:  # noqa
             errors.append((srcname, dstname, str(why)))
     try:
         shutil.copystat(src, dst)
-    except OSError, why:  # noqa
+    except OSError as why:  # noqa
         if WindowsError is not None and isinstance(why, WindowsError):
             # Copying file access times may fail on Windows
             pass
         else:
             errors.extend((src, dst, str(why)))
     if errors:
-        raise shutil.Error, errors
+        raise shutil.Error(errors)
 
 
 def _zip_file(target_dir):
-    # root_dir = os.path.dirname(target_dir)
-    shutil.make_archive(target_dir, format="zip",
-                        root_dir=target_dir
+    root_dir = os.path.dirname(target_dir)
+    os.chdir(root_dir)
+    shutil.make_archive(target_dir, format="gztar",
+                        root_dir=root_dir, base_dir=os.path.basename(target_dir)
                         )
-    shutil.move(target_dir + ".zip", target_dir + ".egg")
+    # shutil.move(target_dir + ".zip", target_dir + ".egg")
 
 
 def _strip_py(py_dir):
@@ -78,17 +78,22 @@ def main():
     site_pacakge_dir = sys.argv[2]
     target_dir = sys.argv[3]
 
-    # top_dir = sys.argv[4]
+    top_dir = sys.argv[4]
 
     shutil.rmtree(target_dir, ignore_errors=True)
     os.makedirs(target_dir)
 
-    _copytree(site_pacakge_dir, target_dir)
+    for dir in ('bin', 'logs'):
+        _copytree(os.path.join(top_dir, dir), os.path.join(target_dir, dir))
+
+    target_lib_dir = os.path.join(target_dir, 'lib')
+    _copytree(site_pacakge_dir, target_lib_dir)
 
     for py_dir in py_strip_dirs:
         _strip_py(os.path.join(target_dir, py_dir))
 
     _zip_file(target_dir)
+
 
 if __name__ == '__main__':
     try:
