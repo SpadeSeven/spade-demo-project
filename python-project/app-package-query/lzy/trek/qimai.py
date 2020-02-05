@@ -106,7 +106,7 @@ def get_appid(package_name, proxy):
     real_url = base_url % (urllib.parse.quote(analysis), package_name)
     params['analysis'] = analysis
     params['search'] = package_name
-    res = requests.get(real_url, params=params, headers=headers, proxies=proxy)
+    res = requests.get(real_url, params=params, headers=headers, proxies=proxy, timeout=60)
 
     if 200 != res.status_code:
         raise Exception('url : %s cannot find, status_code: %s' % (real_url, res.status_code))
@@ -129,7 +129,7 @@ def get_appinfo(appid, proxy):
     real_url = base_url % (urllib.parse.quote(analysis), appid)
     params['analysis'] = analysis
     params['appid'] = appid
-    res = requests.get(real_url, params=params, headers=headers, proxies=proxy)
+    res = requests.get(real_url, params=params, headers=headers, proxies=proxy, timeout=60)
 
     if 200 != res.status_code:
         raise Exception('url : %s cannot find, status_code: %s' % (real_url, res.status_code))
