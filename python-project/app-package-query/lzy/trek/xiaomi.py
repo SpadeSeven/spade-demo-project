@@ -8,8 +8,7 @@ import sys
 
 
 # 小米
-workdir = os.getcwd()
-def main():
+def main(workdir):
     options = util._handle_cmd_line(sys.argv[1:])
 
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -17,9 +16,9 @@ def main():
     # http://www.appchina.com/app/com.jizhang.jzyq
     # http://app.mi.com/details?id=com.oppo.community
     base_url = 'http://app.mi.com/details?id='
-    with open(options.input_file, 'r') as input_file, \
-            open(options.out_file, 'w') as out_file, \
-            open(options.out_not_find_file, 'w') as out_not_find_file:
+    with open(options.input_file, 'r', encoding='utf-8') as input_file, \
+            open(options.out_file, 'w', encoding='utf-8') as out_file, \
+            open(options.out_not_find_file, 'w', encoding='utf-8') as out_not_find_file:
         count_all = 0
         count_find = 0
         count_not_find = 0
@@ -48,12 +47,12 @@ def process(url, options, package_name):
         raise Exception('url : %s cannot find, status_code: %s' % (url, res.status_code))
     # package_name
     # cetagory
-    category = etree.HTML(res.content).xpath('//*[@class="intro-titles"]/h3/text()')[0]
+    category = etree.HTML(res.content).xpath('//*[@class="special-font action"]/b')[0].tail
     # appname
     appname = etree.HTML(res.content).xpath('//*[@class="yellow-flower"]')[0].attrib['alt']
     # icon
     img_url = etree.HTML(res.content).xpath('//*[@class="yellow-flower"]')[0].attrib['src']
-    download_img(str(img_url), options.out_icon_path, package_name)
+    # download_img(str(img_url), options.out_icon_path, package_name)
 
     result = []
     result.append(package_name)

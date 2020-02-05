@@ -17,7 +17,7 @@ def _handle_cmd_line(args):
                         help='out icon path')
     parser.add_argument('--out-not-find-file', dest='out_not_find_file', action='store', type=str, default='',
                         help='out not find file')
-    parser.add_argument('--log-name', dest='log_name', action='store', type=str, default='',
+    parser.add_argument('--log-name', dest='log_name', action='store', type=str, default='test.log',
                         help='log name')
 
     options = parser.parse_args(args)
