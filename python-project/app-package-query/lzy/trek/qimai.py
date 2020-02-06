@@ -6,6 +6,8 @@ import sys
 import urllib.parse
 import execjs
 import json
+import random
+import telnetlib
 import time
 
 import argparse
@@ -14,7 +16,7 @@ from fake_useragent import UserAgent
 from lzy.trek.util import _handle_cmd_line
 
 # 代理
-proxies = {}
+proxy_pool = []
 
 
 def _handle_cmd_line(args):
@@ -61,7 +63,9 @@ def main(workdir):
         count_all = 0
         count_find = 0
         count_not_find = 0
-        proxy = proxies
+        if len(proxy_pool) < 1:
+            get_proxy()
+        proxy = proxy_pool[random.randint(0, len(proxy_pool) - 1)]
         for line in input_file:
             fields = line.strip().split(options.input_file_field_separator)
             package_name = fields[options.input_file_package_index]
@@ -74,7 +78,7 @@ def main(workdir):
                 out_not_find_file.write('\n')
                 count_not_find += 1
             count_all += 1
-            if count_all % 5 == 0:
+            if count_all % 10 == 0:
                 get_proxy()
             logging.info("procee line: %s, find package: %s, not find %s" % (count_all, count_find, count_not_find))
     logging.info('over ,exit')
@@ -106,7 +110,9 @@ def get_appid(package_name, proxy):
     real_url = base_url % (urllib.parse.quote(analysis), package_name)
     params['analysis'] = analysis
     params['search'] = package_name
-    res = requests.get(real_url, params=params, headers=headers, proxies=proxy, timeout=60)
+    proxies = {}
+    proxies['http'] = proxy
+    res = requests.get(real_url, params=params, headers=headers, proxies=proxies, timeout=60)
 
     if 200 != res.status_code:
         raise Exception('url : %s cannot find, status_code: %s' % (real_url, res.status_code))
@@ -129,7 +135,9 @@ def get_appinfo(appid, proxy):
     real_url = base_url % (urllib.parse.quote(analysis), appid)
     params['analysis'] = analysis
     params['appid'] = appid
-    res = requests.get(real_url, params=params, headers=headers, proxies=proxy, timeout=60)
+    proxies = {}
+    proxies['http'] = proxy
+    res = requests.get(real_url, params=params, headers=headers, proxies=proxies, timeout=60)
 
     if 200 != res.status_code:
         raise Exception('url : %s cannot find, status_code: %s' % (real_url, res.status_code))
@@ -137,14 +145,29 @@ def get_appinfo(appid, proxy):
 
 
 def get_proxy():
-    global proxies
-    PROXY_POOL_URL = 'http://localhost:5555/random'
+    logging.info('get proxt')
+    global proxy_pool
+    proxy_pool = []
+    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=557590085464460&num=10&format=json&protocol=http'
     try:
         response = requests.get(PROXY_POOL_URL)
         if response.status_code == 200:
-            proxies['http'] = response.text
+            req = response.text
+            proxies = json.loads(req)
+            for proxy in proxies:
+                if valid_proxy(proxy['host'], proxy['port']):
+                    proxy_url = 'http://%s:%s' % (proxy['host'], proxy['port'])
+                    proxy_pool.append(proxy_url)
     except ConnectionError:
         return None
+
+
+def valid_proxy(host, port):
+    try:
+        telnetlib.Telnet(host=host, port=int(port), timeout=10)
+    except Exception:
+        return False
+    return True
 
 
 def download_img(img_url, out_path, package_name):
