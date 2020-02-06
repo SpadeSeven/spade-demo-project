@@ -16,7 +16,7 @@ from lzy.trek.util import _handle_cmd_line
 from selenium import webdriver
 
 # 代理
-proxy_pool = []
+proxy_pool = set()
 
 
 def _handle_cmd_line(args):
@@ -52,7 +52,6 @@ def main(workdir):
 
     # compile js
     global jsdata
-    get_proxy()
     with open(os.path.join(workdir, 'js', 'qimai.js'), 'r', encoding='utf-8') as f:
         jsdata = f.read()
     jsdata = execjs.compile(jsdata)
@@ -64,8 +63,6 @@ def main(workdir):
         count_find = 0
         count_not_find = 0
         for line in input_file:
-            if len(proxy_pool) < 1:
-                get_proxy()
             fields = line.strip().split(options.input_file_field_separator)
             package_name = fields[options.input_file_package_index]
             try:
@@ -77,8 +74,6 @@ def main(workdir):
                 out_not_find_file.write('\n')
                 count_not_find += 1
             count_all += 1
-            if count_all % len(proxy_pool) == 0:
-                get_proxy()
             logging.info("procee line: %s, find package: %s, not find %s" % (count_all, count_find, count_not_find))
     logging.info('over ,exit')
 
@@ -94,7 +89,7 @@ def process(package_name):
     app_id_real_url = app_id_base_url % (urllib.parse.quote(analysis), package_name)
 
     # driver = webdriver.Firefox()
-    proxy = proxy_pool[random.randint(0, len(proxy_pool) - 1)]
+    proxy = get_one_proxy()
     chromeOptions = webdriver.ChromeOptions()
     # 静默模式
     chromeOptions.add_argument('headless')
@@ -104,6 +99,7 @@ def process(package_name):
     chromeOptions.add_argument('--proxy-server=%s' % proxy)
     driver = webdriver.Chrome(chrome_options=chromeOptions)
     try:
+        logging.info('get appid')
         driver.get(app_id_real_url)
         content = driver.find_element_by_xpath('//pre').text
         result = json.loads(content, encoding='utf-8')
@@ -119,34 +115,47 @@ def process(package_name):
     analysis = get_analysis(appid, '/andapp/appinfo')
     real_url = base_url % (urllib.parse.quote(analysis), appid)
     try:
+        logging.info('get appinfo')
         driver.get(real_url)
         content = driver.find_element_by_xpath('//pre').text
     except Exception:
         raise Exception(package_name)
     finally:
         driver.close()
-    return str(json.loads(content, encoding='utf-8'))
+    return content
 
 
 def get_proxy():
-    logging.info('get proxt')
+    logging.info('get proxy')
     global proxy_pool
-    proxy_pool = []
-    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=557590085464460&num=100&format=json&protocol=http'
+    proxy_pool = set()
+    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=555389857434076&num=100&format=json&protocol=http&longlife=20&category=2&delay=5'
     try:
         response = requests.get(PROXY_POOL_URL)
         if response.status_code == 200:
             req = response.text
             proxies = json.loads(req)
             for proxy in proxies:
-                if valid_proxy(proxy['host'], proxy['port']):
-                    proxy_url = 'http://%s:%s' % (proxy['host'], proxy['port'])
-                    proxy_pool.append(proxy_url)
+                proxy_pool.add((proxy['host'], proxy['port']))
     except ConnectionError:
         return None
 
 
+def get_one_proxy():
+    logging.info('get one proxy')
+    if len(proxy_pool) > 0:
+        proxy_tuple = proxy_pool.pop()
+        if valid_proxy(host=proxy_tuple[0], port=proxy_tuple[1]):
+            return 'http://%s:%s' % (proxy_tuple[0], proxy_tuple[1])
+        else:
+            return get_one_proxy()
+    else:
+        get_proxy()
+        return get_one_proxy()
+
+
 def valid_proxy(host, port):
+    logging.info('valid proxy')
     try:
         telnetlib.Telnet(host=host, port=int(port), timeout=2)
     except Exception:

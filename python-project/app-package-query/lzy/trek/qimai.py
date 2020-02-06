@@ -148,7 +148,7 @@ def get_proxy():
     logging.info('get proxt')
     global proxy_pool
     proxy_pool = []
-    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=557590085464460&num=10&format=json&protocol=http'
+    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=557590085464460&num=10&format=json&protocol=http&longlife=20&category=2'
     try:
         response = requests.get(PROXY_POOL_URL)
         if response.status_code == 200:
