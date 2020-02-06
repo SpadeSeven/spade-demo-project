@@ -83,7 +83,7 @@ def main():
     shutil.rmtree(target_dir, ignore_errors=True)
     os.makedirs(target_dir)
 
-    for dir in ('bin', 'logs'):
+    for dir in ('bin', 'logs', 'js'):
         _copytree(os.path.join(top_dir, dir), os.path.join(target_dir, dir))
 
     target_lib_dir = os.path.join(target_dir, 'lib')

@@ -125,7 +125,7 @@ def process(package_name):
         raise Exception(package_name)
     finally:
         driver.close()
-    return content
+    return str(json.loads(content, encoding='utf-8'))
 
 
 def get_proxy():
