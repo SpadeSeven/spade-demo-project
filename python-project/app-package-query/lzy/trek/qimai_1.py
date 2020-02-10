@@ -105,7 +105,7 @@ def process(package_name):
         result = json.loads(content, encoding='utf-8')
         appid = result['app_id']
     except Exception:
-        driver.close()
+        driver.quit()
         raise Exception(package_name)
 
     logging.info(package_name + ' -> ' + appid)
@@ -121,7 +121,7 @@ def process(package_name):
     except Exception:
         raise Exception(package_name)
     finally:
-        driver.close()
+        driver.quit()
     return content
 
 
