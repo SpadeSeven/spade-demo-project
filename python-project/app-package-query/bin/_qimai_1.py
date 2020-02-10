@@ -26,10 +26,6 @@ os.chdir(parent_dir)
 
 workdir = os.getcwd()
 if __name__ == '__main__':
-    try:
-        from lzy.trek import qimai_1
+    from lzy.trek import qimai_1
 
-        qimai_1.main(workdir)
-    except:
-        logging.error("main except")
-        os._exit(1)
+    qimai_1.main(workdir)
