@@ -14,6 +14,7 @@ import argparse
 
 from lzy.trek.util import _handle_cmd_line
 from selenium import webdriver
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 # 代理
 proxy_pool = set()
@@ -83,17 +84,24 @@ def get_analysis(params, url):
 
 def process(appid):
     proxy = get_one_proxy()
-    chromeOptions = webdriver.ChromeOptions()
+    profile = FirefoxProfile()
+    fireFoxOptions = webdriver.FirefoxOptions()
     # 静默模式
-    chromeOptions.add_argument('headless')
-    chromeOptions.add_argument('--no-sandbox')
-    chromeOptions.add_argument('--disable-gpu')
-    chromeOptions.add_argument('--disable-dev-shm-usage')
-    chromeOptions.add_argument('--proxy-server=%s' % proxy)
-    driver = webdriver.Chrome(chrome_options=chromeOptions)
+    fireFoxOptions.add_argument('--headless')
+    fireFoxOptions.add_argument('--no-sandbox')
+    fireFoxOptions.add_argument('--disable-gpu')
+    fireFoxOptions.add_argument('--disable-dev-shm-usage')
+    # 第二步：开启“手动设置代理”
+    profile.set_preference('network.proxy.type', 1)
+    # 第三步：设置代理IP
+    profile.set_preference('network.proxy.http', proxy[0])
+    # 第四步：设置代理端口，注意端口是int类型，不是字符串
+    profile.set_preference('network.proxy.http_port', int(proxy[1]))
+    # 第五步：设置htpps协议也使用该代理
+    driver = webdriver.Firefox(firefox_profile=profile, firefox_options=fireFoxOptions)
 
     # base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
-    base_url = 'https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
+    base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
     analysis = get_analysis(appid, '/andapp/appinfo')
     real_url = base_url % (urllib.parse.quote(analysis), appid)
     try:
@@ -129,7 +137,7 @@ def get_one_proxy():
     if len(proxy_pool) > 0:
         proxy_tuple = proxy_pool.pop()
         if valid_proxy(host=proxy_tuple[0], port=proxy_tuple[1]):
-            return 'http://%s:%s' % (proxy_tuple[0], proxy_tuple[1])
+            return (proxy_tuple[0], proxy_tuple[1])
         else:
             return get_one_proxy()
     else:

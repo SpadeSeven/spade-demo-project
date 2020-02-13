@@ -92,10 +92,10 @@ def process(package_name):
     proxy = get_one_proxy()
     chromeOptions = webdriver.ChromeOptions()
     # 静默模式
-    # chromeOptions.add_argument('headless')
-    # chromeOptions.add_argument('--no-sandbox')
-    # chromeOptions.add_argument('--disable-gpu')
-    # chromeOptions.add_argument('--disable-dev-shm-usage')
+    chromeOptions.add_argument('headless')
+    chromeOptions.add_argument('--no-sandbox')
+    chromeOptions.add_argument('--disable-gpu')
+    chromeOptions.add_argument('--disable-dev-shm-usage')
     chromeOptions.add_argument('--proxy-server=%s' % proxy)
     driver = webdriver.Chrome(chrome_options=chromeOptions)
     try:
