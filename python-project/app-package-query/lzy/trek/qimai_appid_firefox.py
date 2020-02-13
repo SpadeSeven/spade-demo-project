@@ -94,10 +94,16 @@ def process(appid):
     # 第二步：开启“手动设置代理”
     profile.set_preference('network.proxy.type', 1)
     # 第三步：设置代理IP
-    profile.set_preference('network.proxy.http', proxy[0])
+    # profile.set_preference('network.proxy.http', proxy[0])
+    profile.set_preference('network.proxy.http', 'http-dyn.abuyun.com')
     # 第四步：设置代理端口，注意端口是int类型，不是字符串
-    profile.set_preference('network.proxy.http_port', int(proxy[1]))
+    # profile.set_preference('network.proxy.http_port', int(proxy[1]))
+    profile.set_preference('network.proxy.http_port', 9020)
     # 第五步：设置htpps协议也使用该代理
+    profile.set_preference('network.proxy.ssl', proxy[0])
+    profile.set_preference('network.proxy.ssl_port', int(proxy[1]))
+    profile.set_preference("network.proxy.username", 'H1DI80S0PF90390D')
+    profile.set_preference("network.proxy.password", 'F0298CB7E5CD3207')
     driver = webdriver.Firefox(firefox_profile=profile, firefox_options=fireFoxOptions)
 
     # base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
@@ -126,7 +132,7 @@ def get_proxy():
     logging.info('get proxy')
     global proxy_pool
     proxy_pool = set()
-    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=555389857434076&num=100&format=json&protocol=http&longlife=20&category=2&delay=5'
+    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=555389857434076&num=100&format=json&protocol=https&longlife=20&category=2&delay=5'
     try:
         response = requests.get(PROXY_POOL_URL)
         if response.status_code == 200:
@@ -147,7 +153,7 @@ def get_one_proxy():
         else:
             return get_one_proxy()
     else:
-        get_proxy()
+        get_zhima_proxy()
         return get_one_proxy()
 
 
@@ -158,3 +164,19 @@ def valid_proxy(host, port):
     except Exception:
         return False
     return True
+
+
+def get_zhima_proxy():
+    logging.info('get proxy')
+    global proxy_pool
+    proxy_pool = set()
+    PROXY_POOL_URL = 'http://http.tiqu.alicdns.com/getip3?num=1&type=2&pro=&city=0&yys=0&port=1&pack=83085&ts=0&ys=0&cs=0&lb=1&sb=0&pb=45&mr=1&regions=&gm=4'
+    try:
+        response = requests.get(PROXY_POOL_URL)
+        if response.status_code == 200:
+            req = response.text
+            proxies = json.loads(req)
+            for proxy in proxies['data']:
+                proxy_pool.add((proxy['ip'], proxy['port']))
+    except ConnectionError:
+        return None

@@ -94,7 +94,7 @@ def process(appid):
     driver = webdriver.Chrome(chrome_options=chromeOptions)
 
     # base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
-    base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
+    base_url = 'https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
     analysis = get_analysis(appid, '/andapp/appinfo')
     real_url = base_url % (urllib.parse.quote(analysis), appid)
     try:
@@ -140,7 +140,7 @@ def get_one_proxy():
         else:
             return get_one_proxy()
     else:
-        get_proxy()
+        get_zhima_proxy()
         return get_one_proxy()
 
 
@@ -151,3 +151,19 @@ def valid_proxy(host, port):
     except Exception:
         return False
     return True
+
+
+def get_zhima_proxy():
+    logging.info('get proxy')
+    global proxy_pool
+    proxy_pool = set()
+    PROXY_POOL_URL = 'http://http.tiqu.alicdns.com/getip3?num=1&type=2&pro=&city=0&yys=0&port=1&pack=83085&ts=0&ys=0&cs=0&lb=1&sb=0&pb=45&mr=1&regions=&gm=4'
+    try:
+        response = requests.get(PROXY_POOL_URL)
+        if response.status_code == 200:
+            req = response.text
+            proxies = json.loads(req)
+            for proxy in proxies['data']:
+                proxy_pool.add((proxy['ip'], proxy['port']))
+    except ConnectionError:
+        return None
