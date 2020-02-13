@@ -26,6 +26,6 @@ os.chdir(parent_dir)
 
 workdir = os.getcwd()
 if __name__ == '__main__':
-    from lzy.trek import qimai_appid_1
+    from lzy.trek import qimai_appid_firefox
 
-    qimai_appid_1.main(workdir)
+    qimai_appid_firefox.main(workdir)

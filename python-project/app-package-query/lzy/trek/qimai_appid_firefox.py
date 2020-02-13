@@ -113,6 +113,12 @@ def process(appid):
         raise Exception(appid)
     finally:
         driver.quit()
+
+    result = json.loads(content, encoding='utf-8')
+    if result['code'] != 10000:
+        logging.error('req code is not 10000, result : %s' % content)
+        raise Exception(appid)
+
     return content
 
 
