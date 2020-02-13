@@ -1,17 +1,15 @@
 # -*- coding:utf-8 -*-
 import logging
-import requests
 import os
 import sys
 import urllib.parse
 import execjs
 import json
-import random
-import telnetlib
 import time
 
 import argparse
 
+from base64 import b64encode
 from lzy.trek.util import _handle_cmd_line
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
@@ -83,7 +81,6 @@ def get_analysis(params, url):
 
 
 def process(appid):
-    proxy = get_one_proxy()
     profile = FirefoxProfile()
     fireFoxOptions = webdriver.FirefoxOptions()
     # 静默模式
@@ -100,10 +97,18 @@ def process(appid):
     # profile.set_preference('network.proxy.http_port', int(proxy[1]))
     profile.set_preference('network.proxy.http_port', 9020)
     # 第五步：设置htpps协议也使用该代理
-    profile.set_preference('network.proxy.ssl', proxy[0])
-    profile.set_preference('network.proxy.ssl_port', int(proxy[1]))
-    profile.set_preference("network.proxy.username", 'H1DI80S0PF90390D')
-    profile.set_preference("network.proxy.password", 'F0298CB7E5CD3207')
+    profile.set_preference('network.proxy.ssl', 'http-dyn.abuyun.com')
+    profile.set_preference('network.proxy.ssl_port', 9020)
+
+    # Proxy auto login
+    credentials = '{}:{}'.format('H64W55P7KS0C4Q7D', 'D03F3742C01C78A1')
+    credentials = b64encode(bytes(credentials, encoding='utf-8'))
+    profile.add_extension('/opt/install/close_proxy_authentication-1.1.xpi')
+    # profile.set_preference('extensions.closeproxyauth.authtoken', credentials)
+    profile.set_preference('extensions.closeproxyauth.authtoken', str(credentials, encoding='utf-8'))
+    profile.set_preference('modifyheaders.config.active', True)
+    profile.set_preference('modifyheaders.headers.count', 1)
+
     driver = webdriver.Firefox(firefox_profile=profile, firefox_options=fireFoxOptions)
 
     # base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
@@ -126,57 +131,3 @@ def process(appid):
         raise Exception(appid)
 
     return content
-
-
-def get_proxy():
-    logging.info('get proxy')
-    global proxy_pool
-    proxy_pool = set()
-    PROXY_POOL_URL = 'http://api3.xiguadaili.com/ip/?tid=555389857434076&num=100&format=json&protocol=https&longlife=20&category=2&delay=5'
-    try:
-        response = requests.get(PROXY_POOL_URL)
-        if response.status_code == 200:
-            req = response.text
-            proxies = json.loads(req)
-            for proxy in proxies:
-                proxy_pool.add((proxy['host'], proxy['port']))
-    except ConnectionError:
-        return None
-
-
-def get_one_proxy():
-    logging.info('get one proxy')
-    if len(proxy_pool) > 0:
-        proxy_tuple = proxy_pool.pop()
-        if valid_proxy(host=proxy_tuple[0], port=proxy_tuple[1]):
-            return (proxy_tuple[0], proxy_tuple[1])
-        else:
-            return get_one_proxy()
-    else:
-        get_zhima_proxy()
-        return get_one_proxy()
-
-
-def valid_proxy(host, port):
-    logging.info('valid proxy')
-    try:
-        telnetlib.Telnet(host=host, port=int(port), timeout=2)
-    except Exception:
-        return False
-    return True
-
-
-def get_zhima_proxy():
-    logging.info('get proxy')
-    global proxy_pool
-    proxy_pool = set()
-    PROXY_POOL_URL = 'http://http.tiqu.alicdns.com/getip3?num=1&type=2&pro=&city=0&yys=0&port=1&pack=83085&ts=0&ys=0&cs=0&lb=1&sb=0&pb=45&mr=1&regions=&gm=4'
-    try:
-        response = requests.get(PROXY_POOL_URL)
-        if response.status_code == 200:
-            req = response.text
-            proxies = json.loads(req)
-            for proxy in proxies['data']:
-                proxy_pool.add((proxy['ip'], proxy['port']))
-    except ConnectionError:
-        return None
