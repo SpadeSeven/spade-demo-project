@@ -85,19 +85,26 @@ def get_analysis(params, url):
 
 
 def process(appid):
-    service_args = [
-        "--proxy-type=http",
-        "--proxy=%(host)s:%(port)s" % {
-            "host": 'http-dyn.abuyun.com',
-            "port": '9020',
-        },
-        "--proxy-auth=%(user)s:%(pass)s" % {
-            "user": 'H64W55P7KS0C4Q7D',
-            "pass": 'D03F3742C01C78A1',
-        },
-    ]
+    service_args = []
+    service_args.append('--proxy-type=http')
+    service_args.append("--proxy=%(host)s:%(port)s" % {
+        "host": 'http-dyn.abuyun.com',
+        "port": '9020'})
+    service_args.append("--proxy-auth=%(user)s:%(pass)s" % {
+        "user": 'H64W55P7KS0C4Q7D',
+        "pass": 'D03F3742C01C78A1',
+    })
+    service_args.append('--load-images=no')  ##关闭图片加载
+    service_args.append('--disk-cache=yes')  ##开启缓存
+    service_args.append('--ignore-ssl-errors=true')  ##忽略https错误
+    desiredCapabilities = webdriver.DesiredCapabilities.PHANTOMJS.copy()
+    desiredCapabilities["javascriptEnabled"] = False
+    desiredCapabilities["takesScreenshot"] = False
     driver = webdriver.PhantomJS(executable_path='/opt/phantomjs-2.1.1/bin/phantomjs',
-                                 service_args=service_args)
+                                 # driver = webdriver.PhantomJS(executable_path='C:/soft/phantomjs/phantomjs-2.1.1-windows/bin/phantomjs.exe',
+                                 service_args=service_args, desired_capabilities=desiredCapabilities)
+    driver.set_page_load_timeout(30)
+    driver.set_script_timeout(30)
 
     # base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
     base_url = 'https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
