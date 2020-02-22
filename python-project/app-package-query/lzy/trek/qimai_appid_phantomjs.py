@@ -44,13 +44,6 @@ def main(workdir):
 
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         filename=os.path.join(workdir, 'logs', options.log_name))
-
-    # 代理服务器
-    proxyHost = "http-dyn.abuyun.com"
-    proxyPort = "9020"
-    # 代理隧道验证信息
-    proxyUser = "H64W55P7KS0C4Q7D"
-    proxyPass = "D03F3742C01C78A1"
     # compile js
     global jsdata
     with open(os.path.join(workdir, 'js', 'qimai.js'), 'r', encoding='utf-8') as f:

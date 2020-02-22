@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import argparse
 import logging
 import os
 import sys
@@ -7,14 +8,8 @@ import execjs
 import json
 import time
 
-import argparse
-
 from lzy.trek.util import _handle_cmd_line
 from selenium import webdriver
-from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
-
-# 代理
-proxy_pool = set()
 
 
 def _handle_cmd_line(args):
@@ -27,8 +22,6 @@ def _handle_cmd_line(args):
                         default='',
                         help='package index, begin from 0')
     parser.add_argument('--out-file', dest='out_file', action='store', type=str, default='', help='out file')
-    parser.add_argument('--out-icon-path', dest='out_icon_path', action='store', type=str, default='',
-                        help='out icon path')
     parser.add_argument('--out-not-find-file', dest='out_not_find_file', action='store', type=str, default='',
                         help='out not find file')
     parser.add_argument('--log-name', dest='log_name', action='store', type=str, default='',
@@ -82,30 +75,29 @@ def get_analysis(params, url):
 
 
 def process(appid):
-    profile = FirefoxProfile()
-    fireFoxOptions = webdriver.FirefoxOptions()
-    # 静默模式
-    fireFoxOptions.add_argument('--headless')
-    fireFoxOptions.add_argument('--no-sandbox')
-    fireFoxOptions.add_argument('--disable-gpu')
-    fireFoxOptions.add_argument('--disable-dev-shm-usage')
-    # 第二步：开启“手动设置代理”
-    profile.set_preference('network.proxy.type', 1)
-    # 第三步：设置代理IP
-    # profile.set_preference('network.proxy.http', proxy[0])
-    profile.set_preference('network.proxy.http', 'http-dyn.abuyun.com')
-    # 第四步：设置代理端口，注意端口是int类型，不是字符串
-    # profile.set_preference('network.proxy.http_port', int(proxy[1]))
-    profile.set_preference('network.proxy.http_port', 9020)
-    # 第五步：设置htpps协议也使用该代理
-    profile.set_preference('network.proxy.ssl', 'http-dyn.abuyun.com')
-    profile.set_preference('network.proxy.ssl_port', 9020)
-    profile.set_preference("network.proxy.username", 'H64W55P7KS0C4Q7D')
-    profile.set_preference("network.proxy.password", 'D03F3742C01C78A1')
-    driver = webdriver.Firefox(firefox_profile=profile, firefox_options=fireFoxOptions)
+    service_args = []
+    service_args.append('--proxy-type=http')
+    service_args.append("--proxy=%(host)s:%(port)s" % {
+        "host": 'http-dyn.abuyun.com',
+        "port": '9020'})
+    service_args.append("--proxy-auth=%(user)s:%(pass)s" % {
+        "user": 'H64W55P7KS0C4Q7D',
+        "pass": 'D03F3742C01C78A1',
+    })
+    service_args.append('--load-images=no')  ##关闭图片加载
+    service_args.append('--disk-cache=yes')  ##开启缓存
+    service_args.append('--ignore-ssl-errors=true')  ##忽略https错误
+    desiredCapabilities = webdriver.DesiredCapabilities.PHANTOMJS.copy()
+    desiredCapabilities["javascriptEnabled"] = False
+    desiredCapabilities["takesScreenshot"] = False
+    driver = webdriver.PhantomJS(executable_path='/opt/phantomjs-2.1.1/bin/phantomjs',
+                                 # driver = webdriver.PhantomJS(executable_path='C:/soft/phantomjs/phantomjs-2.1.1-windows/bin/phantomjs.exe',
+                                 service_args=service_args, desired_capabilities=desiredCapabilities)
+    driver.set_page_load_timeout(30)
+    driver.set_script_timeout(30)
 
     # base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
-    base_url = 'view-source:https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
+    base_url = 'https://api.qimai.cn/andapp/appinfo?analysis=%s&appid=%s'
     analysis = get_analysis(appid, '/andapp/appinfo')
     real_url = base_url % (urllib.parse.quote(analysis), appid)
     try:
