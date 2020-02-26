@@ -28,6 +28,8 @@ public class CDPlayerTest {
   public void test_play() {
     player.play();
     Assertions.assertThat(rule.getLog())
-        .isEqualTo("Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n");
+        .isEqualTo(
+            "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles"
+                + System.lineSeparator());
   }
 }
