@@ -3,34 +3,11 @@ package com.zhang.offer.no4;
 /**
  * Created by Administrator on 2019-04-02.
  *
- * 请实现一个函数，吧字符串中的每个空格替换成"%20"。
+ * <p>请实现一个函数，吧字符串中的每个空格替换成"%20"。
  *
- * 例如：输入"we are happy"，则输出"we%20are%happy"
+ * <p>例如：输入"we are happy"，则输出"we%20are%happy"
  */
 public class RelaceBlank {
-
-  public static void main(String[] args) {
-    RelaceBlank rb = new RelaceBlank();
-    // 字符串在最前面
-    System.out.println(rb.relaceBlank(" wearehappy"));
-    // 字符串在中间
-    System.out.println(rb.relaceBlank("we are happy"));
-    // 字符串在最后面
-    System.out.println(rb.relaceBlank("wearehappy "));
-    // 连续空格
-    System.out.println(rb.relaceBlank("we  are  happy"));
-    // 没有空格
-    System.out.println(rb.relaceBlank("wearehappy"));
-    // null
-    System.out.println(rb.relaceBlank(null));
-    // 空字符串
-    System.out.println(rb.relaceBlank(""));
-    // 只有一个空字符串
-    System.out.println(rb.relaceBlank(" "));
-    // 只有空的连续多个字符串
-    System.out.println(rb.relaceBlank("  "));
-
-  }
 
   public String relaceBlank(String str) {
     if (str == null || "".equals(str)) {
@@ -66,5 +43,4 @@ public class RelaceBlank {
 
     return new String(target);
   }
-
 }
