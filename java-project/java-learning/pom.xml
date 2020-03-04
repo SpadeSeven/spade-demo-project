@@ -3,19 +3,10 @@
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <artifactId>java-learning</artifactId>
+  <groupId>com.zhang.test.io</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <version>1.0-SNAPSHOT</version>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>6</source>
-          <target>6</target>
-        </configuration>
-        <groupId>org.apache.maven.plugins</groupId>
-      </plugin>
-    </plugins>
-  </build>
   <dependencies>
     <dependency>
       <artifactId>joda-time</artifactId>
@@ -37,11 +28,43 @@
       <groupId>org.projectlombok</groupId>
       <version>1.14.4</version>
     </dependency>
+    <dependency>
+      <groupId>com.google.googlejavaformat</groupId>
+      <artifactId>google-java-format</artifactId>
+      <version>1.6</version>
+    </dependency>
   </dependencies>
-  <groupId>com.zhang.test.io</groupId>
-  <modelVersion>4.0.0</modelVersion>
 
-  <version>1.0-SNAPSHOT</version>
-
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+      </plugin>
+      <plugin>
+        <groupId>com.coveo</groupId>
+        <artifactId>fmt-maven-plugin</artifactId>
+        <version>2.6.0</version>
+        <configuration>
+          <skipSortingImports>false</skipSortingImports>
+          <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
+          <testSourceDirectory>${project.build.testSourceDirectory}</testSourceDirectory>
+          <verbose>true</verbose>
+          <filesNamePattern>.*\.java</filesNamePattern>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
