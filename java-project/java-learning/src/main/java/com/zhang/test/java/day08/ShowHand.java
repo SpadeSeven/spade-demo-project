@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by Administrator on 2018/6/3 0003.
- */
+/** Created by Administrator on 2018/6/3 0003. */
 public class ShowHand {
 
   private final int PLAY_NUM = 5;
@@ -21,10 +19,26 @@ public class ShowHand {
   // 所有玩家手上的扑克牌
   private List<String>[] playersCards = new List[PLAY_NUM];
 
-  /**
-   * 初始化扑克牌，放入52张
-   * 并且使用shuffle
-   */
+  public static void main(String[] args) {
+    ShowHand showHand = new ShowHand();
+    showHand.initPlayer("电脑玩家", "孙悟空");
+    showHand.initCards();
+    showHand.initPlayerCards();
+
+    // 测试所有的牌
+    showHand.showAllCards();
+    System.out.println("===========");
+
+    // 从孙悟空
+    showHand.deliverCard("孙悟空");
+    showHand.showPlayerCards();
+    System.out.println("----------");
+    // 再次从电脑玩家开始派牌
+    showHand.deliverCard("电脑玩家");
+    showHand.showPlayerCards();
+  }
+
+  /** 初始化扑克牌，放入52张 并且使用shuffle */
   public void initCards() {
     for (int i = 0; i < types.length; i++) {
       for (int j = 0; j < values.length; j++) {
@@ -34,9 +48,7 @@ public class ShowHand {
     Collections.shuffle(cards);
   }
 
-  /**
-   * 初始化玩家，为每个玩家分配用户名
-   */
+  /** 初始化玩家，为每个玩家分配用户名 */
   public void initPlayer(String... names) {
     if (names.length > PLAY_NUM || names.length < 2) {
       System.out.println("玩家数量不对");
@@ -48,9 +60,7 @@ public class ShowHand {
     }
   }
 
-  /**
-   * 初始化玩家手中的牌
-   */
+  /** 初始化玩家手中的牌 */
   public void initPlayerCards() {
     for (int i = 0; i < players.length; i++) {
       if (!Strings.isNullOrEmpty(players[i])) {
@@ -59,9 +69,7 @@ public class ShowHand {
     }
   }
 
-  /**
-   * 输出全部牌
-   */
+  /** 输出全部牌 */
   public void showAllCards() {
     for (String card : cards) {
       System.out.println(card);
@@ -101,24 +109,5 @@ public class ShowHand {
         }
       }
     }
-  }
-
-  public static void main(String[] args) {
-    ShowHand showHand = new ShowHand();
-    showHand.initPlayer("电脑玩家","孙悟空");
-    showHand.initCards();
-    showHand.initPlayerCards();
-
-    // 测试所有的牌
-    showHand.showAllCards();
-    System.out.println("===========");
-
-    // 从孙悟空
-    showHand.deliverCard("孙悟空");
-    showHand.showPlayerCards();
-    System.out.println("----------");
-    // 再次从电脑玩家开始派牌
-    showHand.deliverCard("电脑玩家");
-    showHand.showPlayerCards();
   }
 }

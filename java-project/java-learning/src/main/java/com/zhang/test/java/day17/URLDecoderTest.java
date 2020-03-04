@@ -4,9 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
-/**
- * Created by Administrator on 2018/6/4 0004.
- */
+/** Created by Administrator on 2018/6/4 0004. */
 public class URLDecoderTest {
 
   public static void main(String[] args) throws UnsupportedEncodingException {
@@ -15,5 +13,4 @@ public class URLDecoderTest {
 
     System.out.println(URLEncoder.encode("张伟", "utf-8"));
   }
-
 }

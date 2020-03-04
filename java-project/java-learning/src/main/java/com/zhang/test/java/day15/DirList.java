@@ -2,13 +2,8 @@ package com.zhang.test.java.day15;
 
 import java.io.File;
 
-/**
- * Created by Administrator on 2018/6/6 0006.
- */
-class DirFilter{
-
-}
-
+/** Created by Administrator on 2018/6/6 0006. */
+class DirFilter {}
 
 public class DirList {
 
@@ -17,10 +12,8 @@ public class DirList {
     String[] list;
     if (args.length == 0) {
       list = path.list();
-    }else {
-//      list = path.list(new (args[0]));
+    } else {
+      //      list = path.list(new (args[0]));
     }
   }
-
-
 }

@@ -7,10 +7,10 @@ public class StringDemo {
   public static void main(String[] args) {
 
     StringDemo demo = new StringDemo();
-    //demo.getbyte("hello");
+    // demo.getbyte("hello");
     //
     demo.getbyte("笑");
-//    System.out.println("笑".length());
+    //    System.out.println("笑".length());
     //
     System.out.println("😀".length());
     demo.getbyte("😀");
@@ -23,5 +23,4 @@ public class StringDemo {
       System.out.println(b);
     }
   }
-
 }

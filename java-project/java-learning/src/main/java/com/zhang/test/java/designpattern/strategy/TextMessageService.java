@@ -5,7 +5,6 @@ public class TextMessageService implements MessageService {
 
   @Override
   public void handleMessage(MessageInfo messageInfo) {
-    System.out.println(String
-        .format("处理文本消息: %s", messageInfo.getContent()));
+    System.out.println(String.format("处理文本消息: %s", messageInfo.getContent()));
   }
 }
