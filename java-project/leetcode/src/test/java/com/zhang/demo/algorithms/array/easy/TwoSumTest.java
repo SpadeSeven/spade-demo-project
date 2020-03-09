@@ -20,5 +20,4 @@ public class TwoSumTest {
     int[] expect = {0, 1};
     Assert.assertArrayEquals(expect, result);
   }
-
 }

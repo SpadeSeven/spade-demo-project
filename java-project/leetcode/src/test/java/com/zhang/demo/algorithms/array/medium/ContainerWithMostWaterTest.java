@@ -17,5 +17,4 @@ public class ContainerWithMostWaterTest {
 
     Assert.assertEquals(49, result);
   }
-
 }

@@ -1,8 +1,6 @@
 package com.zhang.demo.algorithms.bitwise;
 
-/**
- * Created by Administrator on 2019-03-27.
- */
+/** Created by Administrator on 2019-03-27. */
 public class Demo {
 
   public static void main(String[] args) {
@@ -30,13 +28,9 @@ public class Demo {
     demo.abs_1(11);
     demo.abs_1(0);
     demo.abs_1(-11);
-
   }
 
-  /**
-   * 判断奇偶
-   */
-
+  /** 判断奇偶 */
   public void isOdd() {
     for (int i = 0; i <= 100; i++) {
       if ((i & 1) == 1) {
@@ -45,9 +39,7 @@ public class Demo {
     }
   }
 
-  /**
-   * 交换两数
-   */
+  /** 交换两数 */
   public void swap(int a, int b) {
     if (a != b) {
       a ^= b;
@@ -57,9 +49,7 @@ public class Demo {
     System.out.println("a: " + a + " b : " + b);
   }
 
-  /**
-   * 交换两数，加法写法
-   */
+  /** 交换两数，加法写法 */
   public void swap_1(int a, int b) {
     if (a != b) {
       a = a - b;
@@ -73,9 +63,7 @@ public class Demo {
     System.out.println(~a + 1);
   }
 
-  /**
-   * 取绝对值
-   */
+  /** 取绝对值 */
   public void abs(int a) {
     System.out.println((a >> 31) == 0 ? a : (~a + 1));
   }

@@ -1,10 +1,6 @@
 package com.zhang.demo.algorithms.bitwise;
 
-import javax.sound.midi.Soundbank;
-
-/**
- * Created by Administrator on 2019-03-27.
- */
+/** Created by Administrator on 2019-03-27. */
 public class Example {
 
   public static void main(String[] args) {
@@ -12,9 +8,7 @@ public class Example {
     example.getPrime();
   }
 
-  /**
-   * 计算100以内的素数
-   */
+  /** 计算100以内的素数 */
   public void getPrime() {
     int[] arr = new int[100];
     System.out.println("");
@@ -28,10 +22,9 @@ public class Example {
       }
       if (flag) {
         flag = false;
-      }else {
+      } else {
         System.out.println(i);
       }
     }
   }
-
 }

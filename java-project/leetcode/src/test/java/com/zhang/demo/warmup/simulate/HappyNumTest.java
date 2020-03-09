@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class HappyNumTest {
 
-
   private HappyNum happyNum;
 
   @Before
@@ -26,5 +25,4 @@ public class HappyNumTest {
   public void test_calcHappyNum() {
     Assertions.assertThat(happyNum.calcHappyNum(1)).isEqualTo(1);
   }
-
 }

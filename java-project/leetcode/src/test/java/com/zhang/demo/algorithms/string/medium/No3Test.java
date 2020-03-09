@@ -1,11 +1,11 @@
 package com.zhang.demo.algorithms.string.medium;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.Ignore;
 
 public class No3Test {
 
-  @Test
+  @Ignore
   public void test() {
     No3 no3 = new No3();
     Assertions.assertThat(no3.lengthOfLongestSubstring("abcabcbb")).isEqualTo(3);
@@ -16,11 +16,11 @@ public class No3Test {
     Assertions.assertThat(no3.lengthOfLongestSubstring("au")).isEqualTo(2);
   }
 
-  @Test
-  public void test_1(){
+  @Ignore
+  public void test_1() {
     String s = "\uD83D\uDC7F";
     System.out.println(s);
     System.out.println(s.length());
-    System.out.println(s.charAt(0    ));
+    System.out.println(s.charAt(0));
   }
 }

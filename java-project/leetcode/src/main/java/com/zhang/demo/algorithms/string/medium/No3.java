@@ -18,8 +18,8 @@ public class No3 {
     for (int i = 0; i < s.length(); i++) {
       char current = s.charAt(i);
       for (int j = i + 1; j < s.length(); j++) {
-        if (current == s.charAt(j)){
-          longest = j -i;
+        if (current == s.charAt(j)) {
+          longest = j - i;
           break;
         }
       }

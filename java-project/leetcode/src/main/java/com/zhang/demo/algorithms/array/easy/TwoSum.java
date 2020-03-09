@@ -4,7 +4,6 @@ package com.zhang.demo.algorithms.array.easy;
  * @author spade
  * @time 2019-01-05
  */
-
 import com.google.common.collect.Maps;
 import java.util.Map;
 
@@ -23,8 +22,8 @@ public class TwoSum {
     for (int i = 0; i < nums.length; i++) {
       int expect = target - nums[i];
       if (map.containsKey(expect)) {
-          result[0] = map.get(expect);
-          result[1] = i;
+        result[0] = map.get(expect);
+        result[1] = i;
         return result;
       } else {
         map.put(nums[i], i);
@@ -33,5 +32,4 @@ public class TwoSum {
 
     return result;
   }
-
 }

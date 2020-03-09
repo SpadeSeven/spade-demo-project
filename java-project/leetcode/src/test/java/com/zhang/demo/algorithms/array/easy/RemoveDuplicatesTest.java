@@ -3,9 +3,7 @@ package com.zhang.demo.algorithms.array.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Created by Administrator on 2019-03-06.
- */
+/** Created by Administrator on 2019-03-06. */
 public class RemoveDuplicatesTest {
 
   @Test
@@ -21,5 +19,4 @@ public class RemoveDuplicatesTest {
     int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
     Assert.assertEquals(5, remove.removeDuplicates(nums));
   }
-
 }

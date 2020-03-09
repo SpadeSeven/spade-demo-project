@@ -3,7 +3,6 @@ package com.zhang.demo.warmup.before;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Ignore;
-import org.junit.Test;
 
 public class EggDropTest {
 
