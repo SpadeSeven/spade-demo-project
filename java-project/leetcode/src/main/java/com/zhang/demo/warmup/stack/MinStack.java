@@ -1,47 +1,56 @@
 package com.zhang.demo.warmup.stack;
 
-import java.util.Stack;
+import java.util.Arrays;
 
-/**
- * 设计一个支持 push，pop，top 操作，并能在常数时间内检索到最小元素的栈。 </b> push(x) -- 将元素 x 推入栈中。 </b> pop() -- 删除栈顶的元素。 </b>
- * top() -- 获取栈顶元素。 </b> getMin() -- 检索栈中的最小元素。
- */
+/** 最小栈，数组实现 */
 public class MinStack {
 
-  private Stack<Integer> data;
-  private Stack<Integer> helper;
+  private int[] stack;
+  private int[] minstack;
+  private int capacity;
+  private int size;
 
   /** initialize your data structure here. */
   public MinStack() {
-    data = new Stack<>();
-    helper = new Stack<>();
+    stack = new int[16];
+    minstack = new int[16];
+    capacity = 16;
+    size = 0;
   }
 
-  /** 将元素 x 推入栈中 */
   public void push(int x) {
-    data.push(x);
-    // 始终保持最小的元素在help的栈顶
-    if (helper.empty() || helper.peek() >= x) {
-      helper.push(x);
+    ensureEnough();
+    if (size == 0) {
+      stack[size] = x;
+      minstack[size] = x;
     } else {
-      // 新元素比较大，就让最小的元素占位
-      helper.push(helper.peek());
+      stack[size] = x;
+      if (minstack[size - 1] >= x) {
+        minstack[size] = x;
+      } else {
+        minstack[size] = minstack[size - 1];
+      }
     }
+    size++;
   }
 
-  /** 删除栈顶的元素 */
   public void pop() {
-    data.pop();
-    helper.pop();
+    size--;
   }
 
-  /** 获取栈顶元素 */
   public int top() {
-    return data.peek();
+    return stack[size - 1];
   }
 
-  /** 常数时间检索到 */
   public int getMin() {
-    return helper.peek();
+    return minstack[size - 1];
+  }
+
+  public void ensureEnough() {
+    if (size >= capacity - 1) {
+      capacity *= 2;
+      stack = Arrays.copyOf(stack, capacity);
+      minstack = Arrays.copyOf(minstack, capacity);
+    }
   }
 }
