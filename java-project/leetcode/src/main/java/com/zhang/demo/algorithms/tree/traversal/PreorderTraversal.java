@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/** 二叉树的前序遍历 */
 public class PreorderTraversal {
 
   private List<Integer> list = new ArrayList<>();
