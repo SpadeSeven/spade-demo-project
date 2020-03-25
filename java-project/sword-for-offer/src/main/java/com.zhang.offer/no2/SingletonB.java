@@ -3,14 +3,13 @@ package com.zhang.offer.no2;
 /**
  * Created by Administrator on 2019-04-01.
  *
- * 懒汉模式，线程不安全
+ * <p>懒汉模式，线程不安全
  */
 public class SingletonB {
 
   private static SingletonB instance;
 
-  private SingletonB() {
-  }
+  private SingletonB() {}
 
   public static SingletonB getInstance() {
     if (instance == null) {
@@ -18,5 +17,4 @@ public class SingletonB {
     }
     return instance;
   }
-
 }

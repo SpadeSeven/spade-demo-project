@@ -1,8 +1,6 @@
 package com.zhang.offer.no2;
 
-/**
- * Created by Administrator on 2019-04-01.
- */
+/** Created by Administrator on 2019-04-01. */
 public class SingletonTest {
 
   public static void main(String[] args) {
@@ -21,5 +19,4 @@ public class SingletonTest {
     // 双重校验锁
     System.out.println(SingletonG.getInstance() == SingletonG.getInstance());
   }
-
 }

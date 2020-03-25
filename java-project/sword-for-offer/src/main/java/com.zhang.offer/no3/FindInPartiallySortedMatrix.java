@@ -1,8 +1,6 @@
 package com.zhang.offer.no3;
 
-/**
- * Created by Administrator on 2019-04-01.
- */
+/** Created by Administrator on 2019-04-01. */
 public class FindInPartiallySortedMatrix {
 
   private int num = 0;
@@ -13,10 +11,10 @@ public class FindInPartiallySortedMatrix {
 
     FindInPartiallySortedMatrix find = new FindInPartiallySortedMatrix();
     int[][] matrix = {
-        {1, 2, 8, 9},
-        {2, 4, 9, 12},
-        {4, 7, 10, 13},
-        {6, 8, 11, 15}
+      {1, 2, 8, 9},
+      {2, 4, 9, 12},
+      {4, 7, 10, 13},
+      {6, 8, 11, 15}
     };
 
     System.out.println(find.find(matrix, 0));
@@ -37,7 +35,6 @@ public class FindInPartiallySortedMatrix {
 
     System.out.println(find.num);
     System.out.println(find.num_1);
-
   }
 
   public boolean find(int[][] matrix, int b) {
@@ -87,5 +84,4 @@ public class FindInPartiallySortedMatrix {
 
     return false;
   }
-
 }

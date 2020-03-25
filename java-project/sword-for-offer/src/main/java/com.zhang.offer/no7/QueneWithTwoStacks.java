@@ -5,9 +5,7 @@ import java.util.Stack;
 /**
  * Created by Administrator on 2019-04-09.
  *
- * 用两个栈实现一个队列。队列的声明如下，
- * 请实现他的两个函数appendTail和deleteHead,
- * 分别完成在队列尾部插入节点和队列头部删除节点的功能
+ * <p>用两个栈实现一个队列。队列的声明如下， 请实现他的两个函数appendTail和deleteHead, 分别完成在队列尾部插入节点和队列头部删除节点的功能
  */
 public class QueneWithTwoStacks {
 
@@ -24,7 +22,6 @@ public class QueneWithTwoStacks {
     quene.deleteHead();
     quene.deleteHead();
     quene.printAllElement();
-
   }
 
   public void appendTail(int element) {
@@ -51,7 +48,5 @@ public class QueneWithTwoStacks {
       stack_2.push(stack_1.pop());
     }
     System.out.println(stack_2.pop());
-
   }
-
 }

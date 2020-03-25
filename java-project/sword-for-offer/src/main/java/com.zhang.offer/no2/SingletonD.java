@@ -3,7 +3,7 @@ package com.zhang.offer.no2;
 /**
  * Created by Administrator on 2019-04-01.
  *
- * 懒汉模式，变种，线程安全，使用静态代码块
+ * <p>懒汉模式，变种，线程安全，使用静态代码块
  */
 public class SingletonD {
 
@@ -14,11 +14,9 @@ public class SingletonD {
     instance = new SingletonD();
   }
 
-  private SingletonD() {
-  }
+  private SingletonD() {}
 
   public static SingletonD getInstance() {
     return instance;
   }
-
 }

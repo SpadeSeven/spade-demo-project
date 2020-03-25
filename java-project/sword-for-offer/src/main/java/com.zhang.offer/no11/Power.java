@@ -3,15 +3,15 @@ package com.zhang.offer.no11;
 /**
  * Created by Administrator on 2019-05-30.
  *
- * 实现函数double Power(double base,int exponent)
+ * <p>实现函数double Power(double base,int exponent)
  *
- * 求base的exponent次方，不得使用库函数，同时不需要考虑大数问题
+ * <p>求base的exponent次方，不得使用库函数，同时不需要考虑大数问题
  */
 public class Power {
 
   public static void main(String[] args) {
     Power power = new Power();
-    //System.out.println(power.power(0.0, 0));
+    // System.out.println(power.power(0.0, 0));
     System.out.println(power.power(2, 2));
     System.out.println(power.power(2, -2));
   }
@@ -63,17 +63,13 @@ public class Power {
     }
 
     return result;
-
   }
 
-  /**
-   * 判断两个double类型的值是否相等
-   */
+  /** 判断两个double类型的值是否相等 */
   public boolean equal(double num1, double num2) {
     if (num1 - num2 < 0.000001 && num1 - num2 > -0.000001) {
       return true;
     }
     return false;
   }
-
 }

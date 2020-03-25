@@ -3,14 +3,13 @@ package com.zhang.offer.no2;
 /**
  * Created by Administrator on 2019-04-01.
  *
- * 双重校验锁
+ * <p>双重校验锁
  */
 public class SingletonG {
 
-  private volatile static SingletonG instance;
+  private static volatile SingletonG instance;
 
-  private SingletonG() {
-  }
+  private SingletonG() {}
 
   public static SingletonG getInstance() {
     if (instance == null) {

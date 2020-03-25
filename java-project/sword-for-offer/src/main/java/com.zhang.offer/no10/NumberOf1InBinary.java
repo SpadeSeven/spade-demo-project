@@ -3,8 +3,7 @@ package com.zhang.offer.no10;
 /**
  * Created by Administrator on 2019-04-16.
  *
- * 请实现一个函数，输入一个整数，输出该整数二进制中1的个数。
- * 例如：输入9(二进制：1001)，输出为2
+ * <p>请实现一个函数，输入一个整数，输出该整数二进制中1的个数。 例如：输入9(二进制：1001)，输出为2
  */
 public class NumberOf1InBinary {
 
@@ -45,5 +44,4 @@ public class NumberOf1InBinary {
 
     return count;
   }
-
 }
