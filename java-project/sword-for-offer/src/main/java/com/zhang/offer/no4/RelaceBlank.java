@@ -9,12 +9,12 @@ package com.zhang.offer.no4;
  */
 public class RelaceBlank {
 
-  public String relaceBlank(String str) {
-    if (str == null || "".equals(str)) {
-      return str;
+  public String relaceBlank(String s) {
+    if (s == null || "".equals(s)) {
+      return s;
     }
 
-    char[] values = str.toCharArray();
+    char[] values = s.toCharArray();
 
     int blank_nums = 0;
     for (char ch : values) {

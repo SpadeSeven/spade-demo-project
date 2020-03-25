@@ -37,7 +37,7 @@ public class FindInPartiallySortedMatrix {
     System.out.println(find.num_1);
   }
 
-  public boolean find(int[][] matrix, int b) {
+  public boolean find(int[][] matrix, int target) {
     if (matrix == null || matrix.length < 1 || matrix[0].length < 1) {
       return false;
     }
@@ -45,9 +45,9 @@ public class FindInPartiallySortedMatrix {
     for (int i = 0; i < matrix.length; i++) {
       for (int j = 0; j < matrix[i].length; j++) {
         num++;
-        if (matrix[i][j] < b) {
+        if (matrix[i][j] < target) {
           continue;
-        } else if (matrix[i][j] > b) {
+        } else if (matrix[i][j] > target) {
           break;
         } else {
           return true;
