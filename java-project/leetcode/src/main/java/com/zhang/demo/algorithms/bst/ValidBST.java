@@ -13,6 +13,7 @@ package com.zhang.demo.algorithms.bst;
  */
 public class ValidBST {
 
+  // 中序遍历有序即可
   public boolean isValidBST(TreeNode root) {
 
     if (root == null) {

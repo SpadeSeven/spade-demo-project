@@ -1,28 +1,14 @@
 package com.zhang.demo.algorithms.tree.traversal;
 
+/** 给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。 */
 public class HasPathSum {
 
   public boolean hasPathSum(TreeNode root, int sum) {
 
-    if (root == null) return sum == 0;
+    if (root == null) return false;
 
-    return minTotal(root, root.val) == sum;
-  }
-
-  public int minTotal(TreeNode root, int sum) {
-
-    if (root.left != null && root.right != null) {
-      if (root.left.val > root.right.val) {
-        sum = minTotal(root.left, sum + root.left.val);
-      } else {
-        sum = minTotal(root.right, sum + root.right.val);
-      }
-    } else if (root.left != null) {
-      sum = minTotal(root.left, sum + root.left.val);
-    } else if (root.right != null) {
-      sum = minTotal(root.right, sum + root.right.val);
-    }
-
-    return sum;
+    sum -= root.val;
+    if ((root.left == null) && (root.right == null)) return (sum == 0);
+    return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
   }
 }
