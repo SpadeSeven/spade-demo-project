@@ -25,6 +25,8 @@ public class SimpleProducer {
     SimpleProducer produce = new SimpleProducer();
     //produce.syncSend(producer, record);
     produce.asyncSend(producer, record);
+
+    producer.close();
   }
 
 
