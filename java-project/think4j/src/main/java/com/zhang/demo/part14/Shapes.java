@@ -5,6 +5,8 @@ import java.util.List;
 
 abstract class Shape {
 
+  boolean flag = false;
+
   void draw() {
     System.out.println(this + ".draw()");
   }
@@ -15,28 +17,28 @@ abstract class Shape {
 class Circle extends Shape {
 
   public String toString() {
-    return "Circle";
+    return (flag ? "H" : "Unh") + "ighlighted " + "Circle";
   }
 }
 
 class Square extends Shape {
 
   public String toString() {
-    return "Square";
+    return (flag ? "H" : "Unh") + "ighlighted " + "Square";
   }
 }
 
 class Triangle extends Shape {
 
   public String toString() {
-    return "Triangle";
+    return (flag ? "H" : "Unh") + "ighlighted " + "Triangle";
   }
 }
 
 class Rhomboid extends Shape {
 
   public String toString() {
-    return "Rhomboid";
+    return (flag ? "H" : "Unh") + "ighlighted " + "Rhomboid";
   }
 }
 
@@ -45,22 +47,22 @@ public class Shapes {
   public static void main(String[] args) {
     List<Shape> shapes = Arrays.asList(new Circle(), new Square(), new Triangle());
     for (Shape shape : shapes) {
+      setFlag(shape);
       shape.draw();
-      rotate(shape);
     }
 
-    Rhomboid rhomboid = new Rhomboid();
-    Shape shape = rhomboid;
-    if (shape instanceof Circle) {
-      ((Circle) shape).draw();
-    } else {
-      System.out.println("shape can't convert to circle");
-    }
+
   }
 
   public static void rotate(Shape s) {
     if (!(s instanceof Circle)) {
       System.out.println(s + " rotate");
+    }
+  }
+
+  public static void setFlag(Shape s) {
+    if (s instanceof Triangle) {
+      ((Triangle) s).flag = true;
     }
   }
 }
