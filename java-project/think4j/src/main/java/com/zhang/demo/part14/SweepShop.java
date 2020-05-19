@@ -23,17 +23,11 @@ class Cookie {
 
 public class SweepShop {
 
-  public static void main(String[] args) {
-    System.out.println("inside main");
-    new Candy();
-    System.out.println("after createing candy");
-    try {
-      Class.forName("com.zhang.demo.part14.Gum");
-    } catch (ClassNotFoundException e) {
-      System.out.println("could't finf Gum");
+  public static void main(String[] args) throws ClassNotFoundException {
+    SweepShop sweepShop = new SweepShop();
+    String packageName =sweepShop.getClass().getPackage().getName();
+    for (String arg :args){
+      Class.forName(packageName + "." + arg);
     }
-    System.out.println("After Class.forname(\"com.zhang.demo.part14.Gum\")");
-    new Cookie();
-    System.out.println("after createing Cookie");
   }
 }
