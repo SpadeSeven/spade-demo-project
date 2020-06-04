@@ -7,7 +7,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.CharBuffer;
-import java.nio.channels.FileChannel;
 
 public class SplitFileHeaderAndData {
 

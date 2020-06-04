@@ -14,6 +14,7 @@ public class CsvDemo {
     FileWriter fileWriter;
     CSVPrinter csvPrinter = null;
     CSVFormat csvFormat = CSVFormat.EXCEL;
+    CSVFormat.DEFAULT.withQuote(' ').withEscape(' ');
     try {
       fileWriter = new FileWriter("C:\\Users\\93908\\Desktop\\jd\\产品维度_1.csv");
       csvPrinter = new CSVPrinter(fileWriter, csvFormat);
