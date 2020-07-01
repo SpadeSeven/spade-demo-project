@@ -21,7 +21,7 @@
     <dependency>
       <artifactId>mysql-connector-java</artifactId>
       <groupId>mysql</groupId>
-      <version>5.1.9</version>
+      <version>8.0.16</version>
     </dependency>
     <dependency>
       <artifactId>lombok</artifactId>
