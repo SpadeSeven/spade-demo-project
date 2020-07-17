@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    member:
+      url: jdbc:mysql://localhost:3306/memberdb
+      username: memberdb
+      password: 123456
+      driver: com.mysql.jdbc.Driver
+    cardholder:
+      url: jdbc:mysql://localhost:3306/memberdb
+      username: memberdb
+      password: 123456
+      driver: com.mysql.jdbc.Driver
+    card:
+      url: jdbc:mysql://localhost:3306/memberdb
+      username: memberdb
+      password: 123456
+      driver: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+      show-sql: true
+      database: mysql
