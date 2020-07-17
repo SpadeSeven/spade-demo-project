@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.spade.zhang</groupId>
-  <artifactId>elastixsearch-demo</artifactId>
+  <artifactId>elasticsearch-demo</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <dependencies>
