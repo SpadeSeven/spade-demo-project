@@ -1,0 +1,6 @@
+spring:
+  elasticsearch:
+    rest:
+      uris: http://es-cn-m7r1qxlb0000i08b1.public.elasticsearch.aliyuncs.com:9200
+      username: elastic
+      password: Lzy@123456
