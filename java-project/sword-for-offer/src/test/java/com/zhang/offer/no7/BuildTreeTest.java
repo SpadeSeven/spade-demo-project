@@ -18,20 +18,41 @@ public class BuildTreeTest {
     int[] preorder = {3, 9, 20, 15, 7};
     int[] inorder = {9, 3, 15, 20, 7};
 
-    TreeNode root = new TreeNode(3);
-    root.left = new TreeNode(9);
-    root.right = new TreeNode(20);
-    root.right.left = new TreeNode(15);
-    root.right.right = new TreeNode(7);
-
-    Assertions.assertThat(builder.buildTree(preorder, inorder)).isEqualTo(root);
+    TreeNode actual = builder.buildTree(preorder, inorder);
+    Assertions.assertThat(actual.val).isEqualTo(3);
+    Assertions.assertThat(actual.left.val).isEqualTo(9);
+    Assertions.assertThat(actual.right.val).isEqualTo(20);
+    Assertions.assertThat(actual.right.left.val).isEqualTo(15);
+    Assertions.assertThat(actual.right.right.val).isEqualTo(7);
   }
 
   @Test
   public void test_buildTree_2() {
-    int[] preorder = {};
-    int[] inorder = {};
+    int[] preorder = {1, 2};
+    int[] inorder = {2, 1};
 
-    Assertions.assertThat(builder.buildTree(preorder, inorder)).isEqualTo(null);
+    TreeNode actual = builder.buildTree(preorder, inorder);
+    Assertions.assertThat(actual.val).isEqualTo(1);
+    Assertions.assertThat(actual.left.val).isEqualTo(2);
+  }
+
+  @Test
+  public void test_buildTree_3() {
+    int[] preorder = {1};
+    int[] inorder = {1};
+
+    TreeNode actual = builder.buildTree(preorder, inorder);
+    Assertions.assertThat(actual.val).isEqualTo(1);
+  }
+
+  @Test
+  public void test_buildTree_4() {
+    int[] preorder = {1, 2};
+    int[] inorder = {1, 2};
+
+    TreeNode actual = builder.buildTree(preorder, inorder);
+    Assertions.assertThat(actual.val).isEqualTo(1);
+    Assertions.assertThat(actual.right.val).isEqualTo(2);
+    Assertions.assertThat(actual.left).isEqualTo(null);
   }
 }
