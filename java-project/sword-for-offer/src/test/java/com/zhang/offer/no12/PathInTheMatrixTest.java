@@ -33,4 +33,15 @@ public class PathInTheMatrixTest {
 
     Assertions.assertThat(path.exist(board, "abcd")).isFalse();
   }
+
+  @Test
+  public void test_exist_2() {
+    char[][] board = {
+        {'A', 'B', 'C', 'E'},
+        {'S', 'Q', 'C', 'S'},
+        {'A', 'D', 'E', 'E'}
+    };
+
+    Assertions.assertThat(path.exist(board, "ABCCQD")).isTrue();
+  }
 }
