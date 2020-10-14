@@ -54,4 +54,13 @@ public class DeleteNodeTest {
     Assertions.assertThat(res.next.next.val).isEqualTo(9);
     Assertions.assertThat(res.next.next.next).isEqualTo(null);
   }
+
+  @Test
+  public void test_deleteNode_4() {
+    ListNode head = new ListNode(4);
+
+    ListNode res = deleter.deleteNode(head, 1);
+    Assertions.assertThat(res.val).isEqualTo(4);
+    Assertions.assertThat(res.next).isEqualTo(null);
+  }
 }
