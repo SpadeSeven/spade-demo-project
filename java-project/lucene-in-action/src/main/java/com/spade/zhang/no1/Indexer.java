@@ -11,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
-import java.nio.file.StandardOpenOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Date;
 import org.apache.lucene.analysis.Analyzer;
@@ -59,7 +58,7 @@ public class Indexer {
       System.exit(1);
     }
 
-    final Path docDir = Paths.get(indexPath);
+    final Path docDir = Paths.get(docsPath);
     if (!Files.isReadable(docDir)) {
       System.out.println("Document directory '" + docDir.toAbsolutePath()
           + "' does not exist or is not readable, please check the path");
@@ -70,7 +69,7 @@ public class Indexer {
     try {
       System.out.println("Indexing to directory '" + indexPath + "'...");
 
-      Directory dir = FSDirectory.open(docDir);
+      Directory dir = FSDirectory.open(Paths.get(indexPath));
       Analyzer analyzer = new StandardAnalyzer();
       IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 
