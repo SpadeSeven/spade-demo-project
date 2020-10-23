@@ -8,6 +8,10 @@
   <artifactId>lucene-in-action</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+  <properties>
+    <lucene.version>8.4.1</lucene.version>
+  </properties>
+
   <dependencies>
     <!-- 单元测试 -->
     <dependency>
@@ -28,17 +32,25 @@
       <version>27.0.1-jre</version>
     </dependency>
 
-   <!-- 日志 -->
-   <dependency>
-       <groupId>ch.qos.logback</groupId>
-       <artifactId>logback-classic</artifactId>
-       <version>1.2.3</version>
-   </dependency>
-   <dependency>
-       <groupId>org.slf4j</groupId>
-       <artifactId>slf4j-api</artifactId>
-       <version>1.7.21</version>
-   </dependency>
+    <!-- 日志 -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.21</version>
+    </dependency>
+
+    <!-- lucene -->
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-core</artifactId>
+      <version>${lucene.version}</version>
+    </dependency>
+
 
   </dependencies>
 
