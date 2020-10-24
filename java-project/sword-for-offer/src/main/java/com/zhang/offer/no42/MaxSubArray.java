@@ -1,26 +1,18 @@
 package com.zhang.offer.no42;
 
-import java.util.Arrays;
-
 public class MaxSubArray {
 
   public int maxSubArray(int[] nums) {
 
-    int max = Integer.MIN_VALUE;
-
-    for (int i = 1; i <= nums.length; i++) {
-      for (int j = 0; j <= nums.length - i; j++) {
-        max = Math.max(max, sumOfArray(Arrays.copyOfRange(nums, j, j + i)));
+    int max = nums[0];
+    for (int index = 1; index < nums.length; index++) {
+      if (nums[index - 1] >= 0) {
+        nums[index] = nums[index - 1] + nums[index];
       }
-    }
-    return max;
-  }
 
-  int sumOfArray(int[] nums) {
-    int sum = 0;
-    for (int num : nums) {
-      sum += num;
+      max = Math.max(max, nums[index]);
     }
-    return sum;
+
+    return max;
   }
 }
