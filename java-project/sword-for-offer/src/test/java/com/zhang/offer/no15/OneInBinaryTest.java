@@ -18,5 +18,7 @@ public class OneInBinaryTest {
     Assertions.assertThat(oneInBinary.hammingWeight(11)).isEqualTo(3);
     Assertions.assertThat(oneInBinary.hammingWeight(128)).isEqualTo(1);
     Assertions.assertThat(oneInBinary.hammingWeight(-3)).isEqualTo(31);
+    Assertions.assertThat(oneInBinary.hammingWeight(0b11111111111111111111111111111101))
+        .isEqualTo(31);
   }
 }
