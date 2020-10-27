@@ -1,9 +1,9 @@
-package com.spade.spring.no1.no1_1.config;
+package com.spade.spring.no1.no1_1.di.config;
 
-import com.spade.spring.no1.no1_1.BraveKnight;
-import com.spade.spring.no1.no1_1.Knight;
-import com.spade.spring.no1.no1_1.Quest;
-import com.spade.spring.no1.no1_1.SlayDragonQuest;
+import com.spade.spring.no1.no1_1.di.BraveKnight;
+import com.spade.spring.no1.no1_1.di.Knight;
+import com.spade.spring.no1.no1_1.di.Quest;
+import com.spade.spring.no1.no1_1.di.SlayDragonQuest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

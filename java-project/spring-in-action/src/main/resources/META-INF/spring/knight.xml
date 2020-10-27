@@ -3,10 +3,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="knight" class="com.spade.spring.no1.no1_1.BraveKnight">
+  <bean id="knight" class="com.spade.spring.no1.no1_1.di.BraveKnight">
     <constructor-arg ref="quest"/>
   </bean>
-  <bean id="quest" class="com.spade.spring.no1.no1_1.SlayDragonQuest">
+  <bean id="quest" class="com.spade.spring.no1.no1_1.di.SlayDragonQuest">
     <constructor-arg value="#{T(System).out}"/>
   </bean>
 

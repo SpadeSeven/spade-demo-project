@@ -1,5 +1,7 @@
 package com.spade.spring.no1.no1_1;
 
+import com.spade.spring.no1.no1_1.di.BraveKnight;
+import com.spade.spring.no1.no1_1.di.Quest;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;

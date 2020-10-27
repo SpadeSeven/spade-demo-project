@@ -1,4 +1,4 @@
-package com.spade.spring.no1.no1_1;
+package com.spade.spring.no1.no1_1.di;
 
 public class DemselRescuingKnight implements Knight {
 
