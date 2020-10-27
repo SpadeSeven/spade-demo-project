@@ -4,30 +4,38 @@ public class No5LongestPalindrome {
 
   public String longestPalindrome(String s) {
 
+    char[] chars = s.toCharArray();
+
+    boolean[][] dp = new boolean[chars.length][chars.length];
+
     String longest = "";
-    for (int i = 0; i < s.length(); i++) {
-      for (int j = s.length() - 1; (j + 1 - i) > longest.length(); j--) {
-        if (isPalindrome(s.substring(i, j + 1))) {
-          longest = s.substring(i, j + 1);
+
+    // 步长
+    for (int step = 0; step < chars.length; ++step) {
+      // 子串的起始坐标
+      for (int start = 0; start + step < chars.length; ++start) {
+        // 子串的结束坐标
+        int end = start + step;
+
+        // 步长为0：子串只有字符本身，恒为true
+        // 步长为1：字串有两个字符，比较两个字符是否相等即可
+        // 步长> 1：查看去掉首尾字符的子串是否是回文数，并且判断首尾字符是否相等
+        if (step == 0) {
+          dp[start][end] = true;
+        } else if (step == 1) {
+          dp[start][end] = (chars[start] == chars[end]);
+        } else {
+          dp[start][end] = (dp[start + 1][end - 1] && chars[start] == chars[end]);
+        }
+
+        // 当前子串是回文串
+        // 子串长度(步长+1) 大于之前的最大长度
+        if (dp[start][end] && step + 1 > longest.length()) {
+          longest = s.substring(start, end + 1);
         }
       }
     }
 
     return longest;
-  }
-
-  boolean isPalindrome(String s) {
-    char[] ch = s.toCharArray();
-    int start = 0;
-    int end = ch.length - 1;
-    while (start <= end) {
-      if (ch[start] != ch[end]) {
-        return false;
-      }
-      start++;
-      end--;
-    }
-
-    return true;
   }
 }
