@@ -4,6 +4,44 @@ public class No5LongestPalindrome {
 
   public String longestPalindrome(String s) {
 
+    String longest = "";
+    // 奇数回文
+    for (int center = 0; center < s.length(); center++) {
+      String res = expandAroundCenter(s, center, center);
+      if (res.length() > longest.length()) {
+        longest = res;
+      }
+    }
+
+    // 偶数回文
+    for (int center = 0; center < s.length() - 1; center++) {
+      String res = expandAroundCenter(s, center, center + 1);
+      if (res.length() > longest.length()) {
+        longest = res;
+      }
+    }
+
+    return longest;
+  }
+
+  public String expandAroundCenter(String s, int start, int end) {
+
+    while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
+      start--;
+      end++;
+    }
+
+    return s.substring(start + 1, end);
+  }
+
+  /**
+   * 动态规划
+   *
+   * @param s 输入字符串
+   * @return 最长回文子串
+   */
+  public String dp(String s) {
+
     char[] chars = s.toCharArray();
 
     boolean[][] dp = new boolean[chars.length][chars.length];
