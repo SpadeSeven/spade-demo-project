@@ -1,6 +1,6 @@
 requests==2.22.0
 urllib3==1.25.7
 PyExecJS==1.5.1
-lxml==4.4.2
+lxml==4.6.3
 fake-useragent==0.1.11
 selenium==2.48.0
