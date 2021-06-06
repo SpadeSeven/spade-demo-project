@@ -1,4 +1,4 @@
-foo: foo version 4
+foo: foo version 5
 spring:
   rabbitmq:
     host: 172.168.10.22
@@ -11,6 +11,8 @@ spring:
       enabled: true
       trace:
         enabled: true
+    client:
+      ipAddress: 172.168.10.27
 management:
   endpoints:
     web:
@@ -19,3 +21,10 @@ management:
 logging:
   level:
     com.rabbitmq: DEBUG
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ipAddress}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://172.168.10.27:8761/eureka/
