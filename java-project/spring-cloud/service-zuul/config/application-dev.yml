@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    client:
+      ipAddress: 192.168.0.106
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ipAddress}
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}

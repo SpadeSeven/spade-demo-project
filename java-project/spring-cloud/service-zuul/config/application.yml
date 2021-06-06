@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.168.10.27:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: service-zuul
+  profiles:
+    active: dev
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-client
