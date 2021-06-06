@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    client:
+      ipAddress: 172.168.10.27
+eureka:
+  instance:
+    hostname: 192.168.0.106
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://172.168.10.27:8761/eureka/
