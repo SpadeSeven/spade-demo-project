@@ -1,0 +1,12 @@
+eureka:
+  instance:
+    hostname: 172.168.10.27
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: eurka-server
