@@ -5,6 +5,7 @@ spring:
     port: 5672
     username: admin
     password: admin
+    virtual-host: my_vhost
   cloud:
     bus:
       enabled: true
