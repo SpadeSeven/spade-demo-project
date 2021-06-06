@@ -9,3 +9,6 @@ spring:
     name: service-client
   profiles:
     active: dev
+logging:
+  level:
+    com.netflix: DEBUG
