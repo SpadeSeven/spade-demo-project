@@ -11,8 +11,6 @@ spring:
       enabled: true
       trace:
         enabled: true
-    client:
-      ipAddress: 172.168.10.27
 management:
   endpoints:
     web:
