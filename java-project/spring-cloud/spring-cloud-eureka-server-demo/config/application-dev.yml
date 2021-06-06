@@ -1,6 +1,8 @@
 eureka:
   instance:
     hostname: localhost
+    easeRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 10
   client:
     registerWithEureka: false
     fetchRegistry: false

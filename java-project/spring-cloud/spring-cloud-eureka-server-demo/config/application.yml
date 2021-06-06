@@ -3,3 +3,6 @@ server:
 spring:
   profiles:
     active: prod
+logging:
+  level:
+    com.netflix: DEBUG
