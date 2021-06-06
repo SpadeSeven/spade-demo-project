@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/SpadeSeven/spade-demo-project
-          searchPaths: respo
-          username:
-          password:
+          searchPaths: java-project/spring-cloud/config-server/config
+          username: SpadeSeven
+          password: Zhang131023
       label: master
