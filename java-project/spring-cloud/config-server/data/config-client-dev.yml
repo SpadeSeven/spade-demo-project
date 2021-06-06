@@ -1,4 +1,4 @@
-foo: foo version 8
+foo: foo version 9
 spring:
   rabbitmq:
     host: 172.168.10.22
