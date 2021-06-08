@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    client:
+      ipAddress: 172.168.10.27
+eureka:
+  instance:
+    hostname: 172.168.10.27
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+feign:
+  hystrix:
+    enabled: true
