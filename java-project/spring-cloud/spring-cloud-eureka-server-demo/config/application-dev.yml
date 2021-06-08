@@ -1,15 +1,19 @@
 eureka:
   instance:
-    hostname: localhost
-    easeRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInSeconds: 10
+    hostname: 172.168.10.27
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    leaseRenewalIntervalInSeconds: 15
+    leaseExpirationDurationInSeconds: 30
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${spring.cloud.client.ipAddress}:${server.port}/eureka/,http://172.168.10.22:${server.port}/eureka/
   server:
-    enableSelfPreservation: false
+    enableSelfPreservation: true
 spring:
   application:
     name: eurka-server
+  cloud:
+    client:
+      ipAddress: 172.168.10.27
