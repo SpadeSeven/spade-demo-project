@@ -56,7 +56,6 @@ public class No36ValidSudoku {
     int row = 0;
     int col = 0;
 
-
     return true;
   }
 }
