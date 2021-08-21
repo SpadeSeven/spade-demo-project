@@ -76,4 +76,68 @@ public class No48RotateImageTest {
 
     Assertions.assertThat(matrix).isEqualTo(expected);
   }
+
+  @Test
+  public void test_Rotate_5() {
+    int[][] matrix = {
+      {1, 2, 3},
+      {4, 5, 6},
+      {7, 8, 9}
+    };
+
+    rotater.rotate1(matrix);
+    int[][] expected = {
+      {7, 4, 1},
+      {8, 5, 2},
+      {9, 6, 3}
+    };
+
+    Assertions.assertThat(matrix).isEqualTo(expected);
+  }
+
+  @Test
+  public void test_Rotate_6() {
+    int[][] matrix = {
+      {5, 1, 9, 11},
+      {2, 4, 8, 10},
+      {13, 3, 6, 7},
+      {15, 14, 12, 16}
+    };
+
+    rotater.rotate1(matrix);
+    int[][] expected = {
+      {15, 13, 2, 5},
+      {14, 3, 4, 1},
+      {12, 6, 8, 9},
+      {16, 7, 10, 11}
+    };
+
+    Assertions.assertThat(matrix).isEqualTo(expected);
+  }
+
+  @Test
+  public void test_Rotate_7() {
+    int[][] matrix = {{1}};
+
+    rotater.rotate1(matrix);
+    int[][] expected = {{1}};
+
+    Assertions.assertThat(matrix).isEqualTo(expected);
+  }
+
+  @Test
+  public void test_Rotate_8() {
+    int[][] matrix = {
+      {1, 2},
+      {3, 4}
+    };
+
+    rotater.rotate1(matrix);
+    int[][] expected = {
+      {3, 1},
+      {4, 2}
+    };
+
+    Assertions.assertThat(matrix).isEqualTo(expected);
+  }
 }

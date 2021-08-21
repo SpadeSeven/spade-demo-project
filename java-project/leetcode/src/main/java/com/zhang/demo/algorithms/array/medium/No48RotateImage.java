@@ -24,4 +24,22 @@ public class No48RotateImage {
       }
     }
   }
+
+  /**
+   * 原地翻转
+   *
+   * @param matrix 二位数组
+   */
+  public void rotate1(int[][] matrix) {
+    int n = matrix.length;
+    for (int row = 0; row < matrix.length / 2; row++) {
+      for (int column = 0; column < (matrix[row].length + 1) / 2; column++) {
+        int temp = matrix[row][column];
+        matrix[row][column] = matrix[n - 1 - column][row];
+        matrix[n - 1 - column][row] = matrix[n - 1 - row][n - 1 - column];
+        matrix[n - 1 - row][n - 1 - column] = matrix[column][n - 1 - row];
+        matrix[column][n - 1 - row] = temp;
+      }
+    }
+  }
 }
