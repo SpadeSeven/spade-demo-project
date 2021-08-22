@@ -1,0 +1,8 @@
+spring:
+  port: 8080
+  kafka:
+    bootstrap-servers: 172.168.10.10:6667
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 3
