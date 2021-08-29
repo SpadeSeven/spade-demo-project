@@ -1,42 +1,14 @@
 package com.zhang.demo.algorithms.string.medium;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class No151ReverseWords {
 
   public String reverseWords(String s) {
-
-    String result = "";
-    StringBuffer temp = new StringBuffer();
-    boolean start = false;
-    boolean first = true;
-    for (int index = 0; index < s.length(); index++) {
-
-      if (start) {
-        if (s.charAt(index) != ' ') {
-          temp.append(s.charAt(index));
-        } else {
-
-          start = false;
-
-          if (!first) {
-            first = false;
-            temp.append(' ');
-          }
-
-          temp.append(result);
-          result = temp.toString();
-          temp = new StringBuffer();
-        }
-      } else {
-        if (s.charAt(index) != ' ') {
-          start = true;
-          temp.append(s.charAt(index));
-        }
-      }
-    }
-    temp.append(' ');
-    temp.append(result);
-    result = temp.toString();
-
-    return result;
+    List<String> words = Arrays.asList(s.trim().split("\\s+"));
+    Collections.reverse(words);
+    return String.join(" ", words);
   }
 }
