@@ -19,6 +19,11 @@ public class SayHi {
 
   @RequestMapping("/hi")
   public String home(@RequestParam(value = "name", defaultValue = "wzhang.spade") String name) {
+    try {
+      Thread.sleep(1000 * 2);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
     return "hi,i am " + name + ", from: " + ip;
   }
 

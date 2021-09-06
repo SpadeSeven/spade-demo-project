@@ -15,10 +15,12 @@ public class HelloService {
 
   @Autowired
   private RestTemplate restTemplate;
+  @Autowired
+  private RestTemplate restTemplateLoadBalanced;
 
   @HystrixCommand(fallbackMethod = "hiError")
   public String hiService(String name) {
-    return restTemplate.getForObject("http://SERVICE-HI/hi?name=" + name, String.class);
+    return restTemplateLoadBalanced.getForObject("http://SERVICE-HI/hi?name=" + name, String.class);
   }
 
 
