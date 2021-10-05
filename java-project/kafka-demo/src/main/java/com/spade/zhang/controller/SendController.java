@@ -3,7 +3,6 @@ package com.spade.zhang.controller;
 import com.spade.zhang.model.SendParam;
 import com.spade.zhang.producer.KafkaSend;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +22,7 @@ public class SendController {
 
   @RequestMapping(value = "/send1")
   public String send1(@RequestBody SendParam param) {
-    boolean success = true;
-    return "true";
+    boolean success = kafkaSend.sendOnBack(param.getTopic(), param.getKey(), param.getValue());
+    return String.valueOf(success);
   }
 }

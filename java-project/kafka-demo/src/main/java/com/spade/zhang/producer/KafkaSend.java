@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.util.concurrent.FailureCallback;
+import org.springframework.util.concurrent.SuccessCallback;
 
 @Component
 public class KafkaSend {
@@ -36,8 +38,24 @@ public class KafkaSend {
     }
 
     return success;
+  }
 
+  public boolean sendOnBack(String topic, String key, String value) {
+    final boolean[] success = {true};
+    kafkaTemplate.send(topic, key, value).addCallback(new SuccessCallback() {
+      @Override
+      public void onSuccess(Object o) {
+        logger.info("成功");
+      }
+    }, new FailureCallback() {
+      @Override
+      public void onFailure(Throwable throwable) {
+        logger.error("发送失败", throwable);
+        success[0] = false;
+      }
+    });
 
+    return success[0];
   }
 
 }
