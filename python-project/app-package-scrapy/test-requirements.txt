@@ -4,4 +4,4 @@ coverage==3.7.1
 minimock==1.2.8
 nosexcover==1.0.10
 nosehtmloutput==0.0.5
-scrapy==1.8.0
+scrapy==1.8.1
