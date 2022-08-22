@@ -1,5 +1,6 @@
 package com.zhang.demo.algorithms.lists.hard;
 
+import com.zhang.demo.algorithms.lists.ListNode;
 import java.util.Stack;
 
 public class No25ReverseKGroup {
@@ -44,18 +45,4 @@ public class No25ReverseKGroup {
   }
 }
 
-class ListNode {
-  int val;
-  ListNode next;
 
-  ListNode() {}
-
-  ListNode(int val) {
-    this.val = val;
-  }
-
-  ListNode(int val, ListNode next) {
-    this.val = val;
-    this.next = next;
-  }
-}
