@@ -16,7 +16,7 @@
     <dependency>
       <artifactId>guava</artifactId>
       <groupId>com.google.guava</groupId>
-      <version>25.1-jre</version>
+      <version>29.0-jre</version>
     </dependency>
     <dependency>
       <artifactId>mysql-connector-java</artifactId>
