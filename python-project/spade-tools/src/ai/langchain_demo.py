@@ -1,6 +1,10 @@
 import os
 import sys
 
+# 将项目根目录添加到 Python 路径
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.append(project_root)
+
 import yaml
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
