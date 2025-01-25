@@ -1,0 +1,1693 @@
+{
+    "data": {
+        "page": 1,
+        "rows": 10,
+        "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+        "total": 33933,
+        "relateSubChannels": "true",
+        "results": [
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-24 15:40:30",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00001306",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕137号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "",
+                "contentHtml": "<p style=\"list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\">肯特催化材料股份有限公司：<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 中国证券监督管理委员会收到上海证券交易所报送的关于你公司首次公开发行股票并在主板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定，经审阅上海证券交易所审核意见及你公司注册申请文件，现批复如下：<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 一、同意你公司首次公开发行股票的注册申请。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 二、你公司本次发行股票应严格按照报送上海证券交易所招股说明书和发行承销方案实施。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 三、本批复自同意注册之日起12个月内有效。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 四、自同意注册之日起至本次股票发行结束前，你公司如发生重大事项，应及时报告上海证券交易所并按有关规定处理。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</p>\r\n<p style=\"list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p>\r\n</p>\r\n<p style=\"list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); vertical-align: baseline; border: 0px; text-align: center; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\">中国证监会<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n2025年1月21日</p>",
+                "title": "关于同意肯特催化材料股份有限公司首次公开发行股票注册的批复",
+                "content": "肯特催化材料股份有限公司：&ensp;&ensp;&ensp;中国证券监督管理委员会收到上海证券交易所报送的关于你公司首次公开发行股票并在主板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定，经审阅上海证券交易所审核意见及你公司注册申请文件，现批复如下：&ensp;&ensp;&ensp;一、同意你公司首次公开发行股票的注册申请。&ensp;&ensp;&ensp;二、你公司本次发行股票应严格按照报送上海证券交易所招股说明书和发行承销方案实施。&ensp;&ensp;&ensp;三、本批复自同意注册之日起12个月内有效。&ensp;&ensp;&ensp;四、自同意注册之日起至本次股票发行结束前，你公司如发生重大事项，应及时报告上海证券交易所并按有关规定处理。中国证监会2025年1月21日",
+                "url": "http://www.csrc.gov.cn/csrc/c106385/c7535585/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意肯特催化材料股份有限公司首次公开发行股票注册的批复",
+                "manuscriptId": "7535585",
+                "publishedTime": 1737675630000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-24 15:40:30"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-23 16:51:02",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00001256",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕138号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "",
+                "contentHtml": "<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); font-family: 宋体, Arial, Helvetica, sans-serif; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box; font-family: microsoft yahei, 宋体, Arial; color: rgb(51, 51, 51);\">矽电半导体设备（深圳）股份有限公司</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box; font-family: microsoft yahei, 宋体, Arial; color: rgb(51, 51, 51);\">：</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">中国证券监督管理委员会收到</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">深圳</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">证券交易所报送的关于你公司首次公开发行股票并在</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">创业</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》<font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">(</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">国办发</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">[2020]5</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">号</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">)</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">和《首次公开发行股票注册管理办法》</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">(</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">证监会令第</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">205</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">号</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">)</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">等有关规定,经审阅</font></span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">深圳</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">证券交易所审核意见及你公司注册申请文件,现批复如下:</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">一、同意你公司首次公开发行股票的注册申请。</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">二、你公司本次发行股票应严格按照报送深圳证券交易所的招股说明书和发行承销方案实施。</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">三、本批复自同意注册之日起<font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">12</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">个月内有效。</font></span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">四、自同意注册之日起至本次股票发行结束前</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">,</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">你公司如发生重大事项</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">,</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">应及时报告深圳证券交易所并按有关规定处理。</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"right\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">中国证监会</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); font-family: 宋体, Arial, Helvetica, sans-serif; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); font-family: 宋体, Arial, Helvetica, sans-serif; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); font-family: 宋体, Arial, Helvetica, sans-serif; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); font-family: 宋体, Arial, Helvetica, sans-serif; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important;\"></p>\r\n<p align=\"right\" style=\"margin-top: 15px; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); text-indent: 2em; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important;\"><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">2025</font></span><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">年</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box; font-family: Calibri;\">1</span></span></span></span></span></span></span></span></span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\"><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; vertical-align: baseline; border: 0px;\">月</span><span style=\"margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; font-family: Calibri;\">21</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; vertical-align: baseline; border: 0px; list-style: none; box-sizing: border-box;\">日</span></p>",
+                "title": "关于同意矽电半导体设备（深圳）股份有限公司首次公开发行股票注册的批复",
+                "content": "矽电半导体设备（深圳）股份有限公司：中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在创业板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发[2020]5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定,经审阅深圳证券交易所审核意见及你公司注册申请文件,现批复如下:一、同意你公司首次公开发行股票的注册申请。二、你公司本次发行股票应严格按照报送深圳证券交易所的招股说明书和发行承销方案实施。三、本批复自同意注册之日起12个月内有效。四、自同意注册之日起至本次股票发行结束前,你公司如发生重大事项,应及时报告深圳证券交易所并按有关规定处理。中国证监会2025年1月21日",
+                "url": "http://www.csrc.gov.cn/csrc/c105917/c7535398/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意矽电半导体设备（深圳）股份有限公司首次公开发行股票注册的批复",
+                "manuscriptId": "7535398",
+                "publishedTime": 1737593462000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-23 16:51:02"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-17 19:57:20",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00001034",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕96号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "证监会",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "上市司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "关于同意国泰君安证券股份有限公司吸收合并海通证券股份有限公司并募集配套资金注册、核准国泰君安证券股份有限公司吸收合并海通证券股份有限公司、海富通基金管理有限公司变更主要股东及实际控制人、富国基金管理有限公司变更主要股东、海通期货股份有限公司变更主要股东及实际控制人的批复。",
+                "contentHtml": "<p><span style=\"font-family: Times New Roman; text-align: justify; font-size: 15pt;\"><font face=\"方正仿宋简体\">国泰君安证券股份有限公司、海通证券股份有限公司、海富通基金管理有限公司、富国基金管理有限公司、海通期货股份有限公司</font></span><span style=\"font-family: Times New Roman; text-align: justify; font-size: 15pt;\"><font face=\"方正仿宋简体\">：</font></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">中国证券监督管理委员会收到上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所报送的</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">关于</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">国泰君安证券股份有限公司</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">（以下简称国泰君安）</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">换股</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">吸收合并海通证券股份有限公司</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">（</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">以下简称海通证券</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">）</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">并募集配套资金</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">的</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">审核意见及你们报送的</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">相关文件</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">。</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">根据《中华人民共和国证券法》《中华人民共和国公司法》</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">《中华人民共和国证券投资基金法》《</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">中华人民共和国期货和衍生品法》</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">《证券公司监督管理条例》</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">《期货交易管理条例》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》（国办发〔</font>2020<font face=\"方正仿宋简体\">〕</font><font face=\"Times New Roman\">5</font><font face=\"方正仿宋简体\">号）、</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">《上市公司重大资产重组管理办法》（证监会令第</font>214<font face=\"方正仿宋简体\">号）</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、《证券公司股权管理规定》（证监会令第</font>183<font face=\"方正仿宋简体\">号）、《公开募集证券投资基金管理人监督管理办法》（证监会令第</font><font face=\"Times New Roman\">198</font><font face=\"方正仿宋简体\">号）、</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">《期货公司监督管理办法》（证监会令第</font>155<font face=\"方正仿宋简体\">号）</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">等有关规定</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">，现批复如下：</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">一、同意</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">国泰君安以新增</font></span><span style=\"font-size: 15pt;\">5,985,871,332<font face=\"方正仿宋简体\">股股份</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">吸收合并</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">海通证券</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">的注册申请。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">二、同意</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">国泰君安</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">发行股份募集配套资金不超过</font></span><span style=\"font-size: 15pt;\">100<font face=\"方正仿宋简体\">亿</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">元</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">的注册申请。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">三、</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">核准国泰君安吸收合并海通证券。吸收合并完成后，海通证券依法解散，原海通证券分支机构变更为国泰君安分支机构。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">四、核准国泰君安成为海富通基金管理有限公司（以下简称海富通基金）主要股东；核准上海国际集团有限公司（以下简称上海国际集团）成为海富通基金实际控制人；对国泰君安依法承接海富通基金</font>15,300<font face=\"方正仿宋简体\">万元出资（占注册资本比例</font><font face=\"Times New Roman\">51%</font><font face=\"方正仿宋简体\">）无异议。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">五、核准国泰君安成为富国基金管理有限公司（以下简称富国基金）主要股东；对国泰君安依法承接富国基金</font>14,443<font face=\"方正仿宋简体\">万元出资（占注册资本比例</font><font face=\"Times New Roman\">27.775%</font><font face=\"方正仿宋简体\">）无异议。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">六、核准国泰君安成为海通期货股份有限公司（以下简称海通期货）主要股东；核准上海国际集团成为海通期货实际控制人；对国泰君安依法承接海通期货</font>1,083,101,687<font face=\"方正仿宋简体\">股股份（占注册股本比例</font></span><span style=\"font-size: 15pt;\">83.22%<font face=\"方正仿宋简体\">）无异议</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">七、国泰君安</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">本次</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">发行股份吸收合并海通证券并募集配套资金</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">应当严格按照报送</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所的有关申请文件进行</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">，</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">按照有关规定办理本次发行股份的相关手续</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">并</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">及时履行信息披露义务。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">八、国泰君安与海通证券应当有序推进吸收合并工作，落实相关业务、客户及员工衔接安置方案，确保客户合法权益不受损害，妥善安置员工，维护社会稳定。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">九、国泰君安应当按照报送我会的初步整合方案确定的方向，在</font></span><span style=\"font-size: 15pt;\">1</span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">年内制定并上报具体整合方案，明确时间表，妥善有序推进整合工作。在整合工作完成前，国泰君安应当切实做好与海通证券及其子公司的风险隔离，严格规范关联交易，严防利益冲突和输送风险。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">十、国泰君安应当根据本批复修改公司章程，并将变更后的公司章程报公司住所地证监局备案。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">十一、海通期货应当督促国泰君安、上海国际集团按照向我会报送的方案，在承诺时限内稳妥有序完成海通期货、国泰君安期货有限公司的整合工作。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">十二、国泰君安</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">本次</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">发行股份吸收合并海通证券并募集配套资金</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">注册批复自下发之日起</font>12<font face=\"方正仿宋简体\">个月内有效。</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">海通证券应当自本批复下发之日起</font></span><span style=\"font-size: 15pt;\">12<font face=\"方正仿宋简体\">个月</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">内完成工商注销登记工作，原海通证券分支机构、国泰君安应当自本批复下发之日起</font></span><span style=\"font-size: 15pt;\">12<font face=\"方正仿宋简体\">个月</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">内完成工商变更登记工作。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">十三、海通证券解散后，应当向我会上交《经营证券期货业务许可证》；国泰君安、原海通证券分支机构应当自换领营业执照之日起</font>15<font face=\"方正仿宋简体\">日内，向我会申请换发《经营证券期货业务许可证》。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">十四、本次交易完成后，国泰君安应当督促相关境外子公司遵守所在国家和地区法律法规和监管要求，合规审慎经营，接受当地监管机构监管。</font></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 26pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">十五、</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">你</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">们</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">在实施过程中，如发生法律、法规要求披露的重大事项或遇重大问题，应当及时报告</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">我会、相关</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证监局</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">和上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所并按有关规定处理。</font></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt;\"><br>\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt;\"><br>\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" align=\"right\" style=\"margin: 0pt 0pt 0.0001pt; text-align: right; font-family: Times New Roman; font-size: 10.5pt; word-break: break-all; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><br>\r\n</span></p>\r\n<p class=\"MsoNormal\" align=\"right\" style=\"margin: 0pt 0pt 0.0001pt; text-align: right; font-family: Times New Roman; font-size: 10.5pt; word-break: break-all; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;&ensp;中国证监会</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;&ensp;&ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;&ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp; &ensp; &ensp;&ensp;</span></p>\r\n<p class=\"MsoNormal\" align=\"right\" style=\"margin: 0pt 0pt 0.0001pt; text-align: right; font-family: Times New Roman; font-size: 10.5pt; word-break: break-all; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><font face=\"Times New Roman\">2025</font><font face=\"方正仿宋简体\">年</font><font face=\"Times New Roman\">1</font><font face=\"方正仿宋简体\">月</font><font face=\"Times New Roman\">17</font><font face=\"方正仿宋简体\">日</font></span><span style=\"font-size: 15pt;\">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 3pt;\"><span style=\"font-size: 15pt;\">&ensp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 3pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;</span></p>",
+                "title": "关于同意国泰君安证券股份有限公司吸收合并海通证券股份有限公司并募集配套资金注册、核准国泰君安证券股份有限公司吸收合并海通证券股份有限公司、海富通基金管理有限公司变更主要股东及实际控制人、富国基金管理有限公司变更主要股东、海通期货股份有限公司变更主要股东及实际控制人的批复",
+                "content": "国泰君安证券股份有限公司、海通证券股份有限公司、海富通基金管理有限公司、富国基金管理有限公司、海通期货股份有限公司：中国证券监督管理委员会收到上海证券交易所报送的关于国泰君安证券股份有限公司（以下简称国泰君安）换股吸收合并海通证券股份有限公司（以下简称海通证券）并募集配套资金的审核意见及你们报送的相关文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《中华人民共和国证券投资基金法》《中华人民共和国期货和衍生品法》《证券公司监督管理条例》《期货交易管理条例》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》（国办发〔2020〕5号）、《上市公司重大资产重组管理办法》（证监会令第214号）、《证券公司股权管理规定》（证监会令第183号）、《公开募集证券投资基金管理人监督管理办法》（证监会令第198号）、《期货公司监督管理办法》（证监会令第155号）等有关规定，现批复如下：一、同意国泰君安以新增5,985,871,332股股份吸收合并海通证券的注册申请。二、同意国泰君安发行股份募集配套资金不超过100亿元的注册申请。三、核准国泰君安吸收合并海通证券。吸收合并完成后，海通证券依法解散，原海通证券分支机构变更为国泰君安分支机构。四、核准国泰君安成为海富通基金管理有限公司（以下简称海富通基金）主要股东；核准上海国际集团有限公司（以下简称上海国际集团）成为海富通基金实际控制人；对国泰君安依法承接海富通基金15,300万元出资（占注册资本比例51%）无异议。五、核准国泰君安成为富国基金管理有限公司（以下简称富国基金）主要股东；对国泰君安依法承接富国基金14,443万元出资（占注册资本比例27.775%）无异议。六、核准国泰君安成为海通期货股份有限公司（以下简称海通期货）主要股东；核准上海国际集团成为海通期货实际控制人；对国泰君安依法承接海通期货1,083,101,687股股份（占注册股本比例83.22%）无异议。七、国泰君安本次发行股份吸收合并海通证券并募集配套资金应当严格按照报送上海证券交易所的有关申请文件进行，按照有关规定办理本次发行股份的相关手续并及时履行信息披露义务。八、国泰君安与海通证券应当有序推进吸收合并工作，落实相关业务、客户及员工衔接安置方案，确保客户合法权益不受损害，妥善安置员工，维护社会稳定。九、国泰君安应当按照报送我会的初步整合方案确定的方向，在1年内制定并上报具体整合方案，明确时间表，妥善有序推进整合工作。在整合工作完成前，国泰君安应当切实做好与海通证券及其子公司的风险隔离，严格规范关联交易，严防利益冲突和输送风险。十、国泰君安应当根据本批复修改公司章程，并将变更后的公司章程报公司住所地证监局备案。十一、海通期货应当督促国泰君安、上海国际集团按照向我会报送的方案，在承诺时限内稳妥有序完成海通期货、国泰君安期货有限公司的整合工作。十二、国泰君安本次发行股份吸收合并海通证券并募集配套资金注册批复自下发之日起12个月内有效。海通证券应当自本批复下发之日起12个月内完成工商注销登记工作，原海通证券分支机构、国泰君安应当自本批复下发之日起12个月内完成工商变更登记工作。十三、海通证券解散后，应当向我会上交《经营证券期货业务许可证》；国泰君安、原海通证券分支机构应当自换领营业执照之日起15日内，向我会申请换发《经营证券期货业务许可证》。十四、本次交易完成后，国泰君安应当督促相关境外子公司遵守所在国家和地区法律法规和监管要求，合规审慎经营，接受当地监管机构监管。十五、你们在实施过程中，如发生法律、法规要求披露的重大事项或遇重大问题，应当及时报告我会、相关证监局和上海证券交易所并按有关规定处理。&ensp;&ensp;中国证监会&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2025年1月17日&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;",
+                "url": "http://www.csrc.gov.cn/csrc/c106395/c7534421/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意国泰君安证券股份有限公司吸收合并海通证券股份有限公司并募集配套资金注册、核准国泰君安证券股份有限公司吸收合并海通证券股份有限公司、海富通基金管理有限公司变更主要股东及实际控制人、富国基金管理有限公司变更主要股东、海通期货股份有限公司变更主要股东及实际控制人的批复",
+                "manuscriptId": "7534421",
+                "publishedTime": 1737086241000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-17 19:57:21"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-17 19:29:00",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00001396",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕109号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "证监会",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "上市司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "关于同意上海三友医疗器械股份有限公司发行股份购买资产并募集配套资金注册的批复。",
+                "contentHtml": "<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">上海三友医疗器械股份有限公司</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">：</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">中国证券监督管理委员会收到</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所报送的关于你公司发行股份购买资产</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">并募集配套资金</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">方案的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》（国办发〔</font></span><span style=\"font-size: 15pt;\">2020</span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">〕</font>5<font face=\"方正仿宋简体\">号）</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">《上市公司重大资产重组管理办法》（证监会令第</font>214<font face=\"方正仿宋简体\">号）等有关规定，经审阅</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所审核意见及你公司注册申请文件，现批复如下：</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">一、</span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">同意你公司</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">向曹群发行</font></span><span style=\"font-size: 15pt;\">5,904,304<font face=\"方正仿宋简体\">股股份</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">，</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">向</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">徐农</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">发行</font></span><span style=\"font-size: 15pt;\">4,233,896<font face=\"方正仿宋简体\">股股份</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">，向战松涛发行</font></span><span style=\"font-size: 15pt;\">1,743,445</span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">股股份，向李春媛发行</font></span><span style=\"font-size: 15pt;\">1,286,957<font face=\"方正仿宋简体\">股股份</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">，向胡效纲发行</font></span><span style=\"font-size: 15pt;\">808,786<font face=\"方正仿宋简体\">股股份，向王晓玲发行</font><font face=\"Times New Roman\">723,419</font><font face=\"方正仿宋简体\">股股份，向冯振发行</font><font face=\"Times New Roman\">723,419</font><font face=\"方正仿宋简体\">股股份，向戴志凌发行</font><font face=\"Times New Roman\">584,124</font><font face=\"方正仿宋简体\">股股份，向刘庆明发行</font><font face=\"Times New Roman\">217,027</font><font face=\"方正仿宋简体\">股股份，向岳志永发行</font><font face=\"Times New Roman\">72,341</font><font face=\"方正仿宋简体\">股股份，向邵化江发行</font><font face=\"Times New Roman\">72,341</font><font face=\"方正仿宋简体\">股股份，向吕秦瑛发行</font><font face=\"Times New Roman\">28,935</font><font face=\"方正仿宋简体\">股股份</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">购买相关资产的注册申请。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">二、</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">同意你公司发行股</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">份募集配套资金不超过</font></span><span style=\"font-size: 15pt;\">21,400<font face=\"方正仿宋简体\">万</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">元的注册申请。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">三</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、你公司本次发行股份购买资产</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">并募集配套资金</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">应当严格按照报送</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所的有关申请文件进行。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">四</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、你公司应当按照有关规定及时履行信息披露义务。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">五</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、你公司应当按照有关规定办理本次发行股份的相关手续。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">六</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、本批复自下发之日起</font>12<font face=\"方正仿宋简体\">个月内有效。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; text-indent: 30.8pt; line-height: 27pt;\"><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">七</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">、你公司在实施过程中，如发生法律、法规要求披露的重大事项或遇重大问题，应当及时报告</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">上海</font></span><span style=\"font-size: 15pt;\"><font face=\"方正仿宋简体\">证券交易所并按有关规定处理。</font></span><span style=\"font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 28pt;\"><span style=\"font-size: 15pt;\">&ensp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 28pt;\"><span style=\"font-size: 15pt;\">&ensp;</span></p>\r\n<p class=\"MsoNormal\" style=\"margin: 0pt 0pt 0.0001pt; text-align: justify; font-family: Times New Roman; font-size: 10.5pt; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;</span></p>\r\n<p class=\"MsoNormal\" align=\"right\" style=\"margin: 0pt 0pt 0.0001pt; text-align: right; font-family: Times New Roman; font-size: 10.5pt; word-break: break-all; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">中国证监会</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;&ensp;&ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\">&ensp; &ensp; &ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\" align=\"right\" style=\"margin: 0pt 0pt 0.0001pt; text-align: right; font-family: Times New Roman; font-size: 10.5pt; word-break: break-all; line-height: 28pt;\"><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><font face=\"Times New Roman\">2025</font><font face=\"方正仿宋简体\">年</font><font face=\"Times New Roman\">1</font><font face=\"方正仿宋简体\">月</font><font face=\"Times New Roman\">17</font><font face=\"方正仿宋简体\">日</font></span><span style=\"font-size: 15pt;\">&ensp; &ensp; &ensp; &ensp;&ensp;</span><span style=\"font-family: 方正仿宋简体; font-size: 15pt;\"><o:p></o:p></span></p>",
+                "title": "关于同意上海三友医疗器械股份有限公司发行股份购买资产并募集配套资金注册的批复",
+                "content": "上海三友医疗器械股份有限公司：中国证券监督管理委员会收到上海证券交易所报送的关于你公司发行股份购买资产并募集配套资金方案的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》（国办发〔2020〕5号）、《上市公司重大资产重组管理办法》（证监会令第214号）等有关规定，经审阅上海证券交易所审核意见及你公司注册申请文件，现批复如下：一、同意你公司向曹群发行5,904,304股股份，向徐农发行4,233,896股股份，向战松涛发行1,743,445股股份，向李春媛发行1,286,957股股份，向胡效纲发行808,786股股份，向王晓玲发行723,419股股份，向冯振发行723,419股股份，向戴志凌发行584,124股股份，向刘庆明发行217,027股股份，向岳志永发行72,341股股份，向邵化江发行72,341股股份，向吕秦瑛发行28,935股股份购买相关资产的注册申请。二、同意你公司发行股份募集配套资金不超过21,400万元的注册申请。三、你公司本次发行股份购买资产并募集配套资金应当严格按照报送上海证券交易所的有关申请文件进行。四、你公司应当按照有关规定及时履行信息披露义务。五、你公司应当按照有关规定办理本次发行股份的相关手续。六、本批复自下发之日起12个月内有效。七、你公司在实施过程中，如发生法律、法规要求披露的重大事项或遇重大问题，应当及时报告上海证券交易所并按有关规定处理。&ensp;&ensp;&ensp;中国证监会&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2025年1月17日&ensp;&ensp;&ensp;&ensp;&ensp;",
+                "url": "http://www.csrc.gov.cn/csrc/c106192/c7535850/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意上海三友医疗器械股份有限公司发行股份购买资产并募集配套资金注册的批复",
+                "manuscriptId": "7535850",
+                "publishedTime": 1737084540000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-17 19:29:00"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-17 16:16:05",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00000969",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕86号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "",
+                "contentHtml": "<p style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\">浙江信凯科技集团股份有限公司：<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在主板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定，经审阅深圳证券交易所审核意见及你公司注册申请文件，现批复如下：<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 一、同意你公司首次公开发行股票的注册申请。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 二、你公司本次发行股票应严格按照报送深圳证券交易所招股说明书和发行承销方案实施。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 三、本批复自同意注册之日起12个月内有效。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 四、自同意注册之日起至本次股票发行结束前，你公司如发生重大事项，应及时报告深圳证券交易所并按有关规定处理。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-align: center; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\">中国证监会<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n2025年1月15日</p>",
+                "title": "关于同意浙江信凯科技集团股份有限公司首次公开发行股票注册的批复",
+                "content": "浙江信凯科技集团股份有限公司：&ensp;&ensp;&ensp;中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在主板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定，经审阅深圳证券交易所审核意见及你公司注册申请文件，现批复如下：&ensp;&ensp;&ensp;一、同意你公司首次公开发行股票的注册申请。&ensp;&ensp;&ensp;二、你公司本次发行股票应严格按照报送深圳证券交易所招股说明书和发行承销方案实施。&ensp;&ensp;&ensp;三、本批复自同意注册之日起12个月内有效。&ensp;&ensp;&ensp;四、自同意注册之日起至本次股票发行结束前，你公司如发生重大事项，应及时报告深圳证券交易所并按有关规定处理。中国证监会2025年1月15日",
+                "url": "http://www.csrc.gov.cn/csrc/c106385/c7534194/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意浙江信凯科技集团股份有限公司首次公开发行股票注册的批复",
+                "manuscriptId": "7534194",
+                "publishedTime": 1737072965000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-17 16:16:05"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-16 16:20:44",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00000882",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕90号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "",
+                "contentHtml": "<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; font-family: microsoft yahei, 宋体, Arial; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51);\">浙江华业塑料机械股份有限公司</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; font-family: microsoft yahei, 宋体, Arial; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51);\">：</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">中国证券监督管理委员会收到</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">深圳</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">证券交易所报送的关于你公司首次公开发行股票并在</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">创业</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》<font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">(</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">国办发</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">[2020]5</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">号</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">)</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">和《首次公开发行股票注册管理办法》</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">(</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">证监会令第</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">205</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">号</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">)</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">等有关规定,经审阅</font></span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">深圳</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">证券交易所审核意见及你公司注册申请文件,现批复如下:</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">一、同意你公司首次公开发行股票的注册申请。</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">二、你公司本次发行股票应严格按照报送深圳证券交易所的招股说明书和发行承销方案实施。</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">三、本批复自同意注册之日起<font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">12</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">个月内有效。</font></span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">四、自同意注册之日起至本次股票发行结束前</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">,</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">你公司如发生重大事项</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">,</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">应及时报告深圳证券交易所并按有关规定处理。</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"right\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">中国证监会</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p align=\"right\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important;\"><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">2025</font></span><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">年</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; font-family: Calibri; vertical-align: baseline; border: 0px;\">1</span></span></span></span></span></span></span></span></span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box;\"><span style=\"font-family: 微软雅黑 !important;\">月</span><span style=\"font-family: Calibri;\">16</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">日</span></p>",
+                "title": "关于同意浙江华业塑料机械股份有限公司首次公开发行股票注册的批复",
+                "content": "浙江华业塑料机械股份有限公司：中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在创业板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发[2020]5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定,经审阅深圳证券交易所审核意见及你公司注册申请文件,现批复如下:一、同意你公司首次公开发行股票的注册申请。二、你公司本次发行股票应严格按照报送深圳证券交易所的招股说明书和发行承销方案实施。三、本批复自同意注册之日起12个月内有效。四、自同意注册之日起至本次股票发行结束前,你公司如发生重大事项,应及时报告深圳证券交易所并按有关规定处理。中国证监会2025年1月16日",
+                "url": "http://www.csrc.gov.cn/csrc/c105917/c7533865/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意浙江华业塑料机械股份有限公司首次公开发行股票注册的批复",
+                "manuscriptId": "7533865",
+                "publishedTime": 1736986844000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-16 16:20:44"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-10 14:27:10",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00000618",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕35号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "",
+                "contentHtml": "<p style=\"vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\">广东新亚光电缆股份有限公司：<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在主板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定，经审阅深圳证券交易所审核意见及你公司注册申请文件，现批复如下：<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 一、同意你公司首次公开发行股票的注册申请。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 二、你公司本次发行股票应严格按照报送深圳证券交易所招股说明书和发行承销方案实施。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 三、本批复自同意注册之日起12个月内有效。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n&ensp;&ensp;&ensp; 四、自同意注册之日起至本次股票发行结束前，你公司如发生重大事项，应及时报告深圳证券交易所并按有关规定处理。<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</p>\r\n<p style=\"vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"vertical-align: baseline; border: 0px; color: rgb(51, 51, 51); list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; text-align: center; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\">中国证监会<br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n2025年1月9日</p>",
+                "title": "关于同意广东新亚光电缆股份有限公司首次公开发行股票注册的批复",
+                "content": "广东新亚光电缆股份有限公司：&ensp;&ensp;&ensp;中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在主板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定，经审阅深圳证券交易所审核意见及你公司注册申请文件，现批复如下：&ensp;&ensp;&ensp;一、同意你公司首次公开发行股票的注册申请。&ensp;&ensp;&ensp;二、你公司本次发行股票应严格按照报送深圳证券交易所招股说明书和发行承销方案实施。&ensp;&ensp;&ensp;三、本批复自同意注册之日起12个月内有效。&ensp;&ensp;&ensp;四、自同意注册之日起至本次股票发行结束前，你公司如发生重大事项，应及时报告深圳证券交易所并按有关规定处理。中国证监会2025年1月9日",
+                "url": "http://www.csrc.gov.cn/csrc/c106385/c7532591/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意广东新亚光电缆股份有限公司首次公开发行股票注册的批复",
+                "manuscriptId": "7532591",
+                "publishedTime": 1736461630000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-10 14:27:10"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-09 16:48:06",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00000558",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕32号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "",
+                "contentHtml": "<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; font-family: microsoft yahei, 宋体, Arial; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51);\">南通泰禾化工股份有限公司</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; font-family: microsoft yahei, 宋体, Arial; vertical-align: baseline; border: 0px; color: rgb(51, 51, 51);\">：</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">中国证券监督管理委员会收到</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">深圳</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">证券交易所报送的关于你公司首次公开发行股票并在</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">创业</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》<font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">(</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">国办发</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">[2020]5</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">号</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">)</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">和《首次公开发行股票注册管理办法》</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">(</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">证监会令第</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">205</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">号</font><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">)</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">等有关规定,经审阅</font></span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">深圳</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">证券交易所审核意见及你公司注册申请文件,现批复如下:</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">一、同意你公司首次公开发行股票的注册申请。</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">二、你公司本次发行股票应严格按照报送深圳证券交易所的招股说明书和发行承销方案实施。</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">三、本批复自同意注册之日起<font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">12</font><font face=\"宋体\" style=\"margin: 0px; padding: 0px; list-style: none;\">个月内有效。</font></span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">四、自同意注册之日起至本次股票发行结束前</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">,</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">你公司如发生重大事项</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">,</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">应及时报告深圳证券交易所并按有关规定处理。</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><br style=\"margin: 0px; padding: 0px; list-style: none;\">\r\n</span></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"right\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">中国证监会</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><o:p style=\"margin: 0px; padding: 0px; list-style: none;\"></o:p></span></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p align=\"justify\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; margin-bottom: 20px !important; font-family: 微软雅黑 !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; font-family: 宋体, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; color: rgb(80, 80, 80); margin-bottom: 20px !important;\"></p>\r\n<p align=\"right\" style=\"margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; list-style: none; box-sizing: border-box; line-height: 32px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); vertical-align: baseline; border: 0px; text-indent: 2em; margin-bottom: 20px !important;\"><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><font face=\"Calibri\" style=\"margin: 0px; padding: 0px; list-style: none;\">2025</font></span><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">年</span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; font-family: Calibri; vertical-align: baseline; border: 0px;\">1</span></span></span></span></span></span></span></span></span><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\"><span style=\"font-family: 微软雅黑 !important;\">月</span><span style=\"font-family: Calibri;\">8</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style=\"font-family: 微软雅黑 !important; margin: 0px; padding: 0px; list-style: none; box-sizing: border-box; vertical-align: baseline; border: 0px;\">日</span></p>",
+                "title": "关于同意南通泰禾化工股份有限公司首次公开发行股票注册的批复",
+                "content": "南通泰禾化工股份有限公司：中国证券监督管理委员会收到深圳证券交易所报送的关于你公司首次公开发行股票并在创业板上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发[2020]5号)和《首次公开发行股票注册管理办法》(证监会令第205号)等有关规定,经审阅深圳证券交易所审核意见及你公司注册申请文件,现批复如下:一、同意你公司首次公开发行股票的注册申请。二、你公司本次发行股票应严格按照报送深圳证券交易所的招股说明书和发行承销方案实施。三、本批复自同意注册之日起12个月内有效。四、自同意注册之日起至本次股票发行结束前,你公司如发生重大事项,应及时报告深圳证券交易所并按有关规定处理。中国证监会2025年1月8日",
+                "url": "http://www.csrc.gov.cn/csrc/c105917/c7532321/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意南通泰禾化工股份有限公司首次公开发行股票注册的批复",
+                "manuscriptId": "7532321",
+                "publishedTime": 1736383686000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-09 16:48:06"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00000923",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕30号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "发行司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": null,
+                "contentHtml": "<p class=\"p\" style=\"margin: 22.5pt 0pt 15pt; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: Microsoft YaHei; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"Microsoft YaHei\">浙江唐德影视股份有限公司</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">：</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" style=\"margin: 22.5pt 0pt 15pt; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　中国证券监督管理委员会收到</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">深圳</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">证券交易所报送的关于你公司向特定对象发行股票的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》（国办发〔</font><font face=\"微软雅黑\">2020〕5号）和《上市公司证券发行注册管理办法》（证监会令第</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">206</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">号）等有关规定，经审阅</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">深圳</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">证券交易所审核意见及你公司注册申请文件，现批复如下：</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" style=\"margin: 22.5pt 0pt 15pt; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　一、同意你公司向特定对象发行股票的注册申请。</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" style=\"margin: 22.5pt 0pt 15pt; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　二、你公司本次发行应严格按照报送</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">深圳</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">证券交易所的申报文件和发行方案实施。</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" style=\"margin: 22.5pt 0pt 15pt; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　三、本批复自同意注册之日起</font><font face=\"微软雅黑\">12个月内有效。</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" style=\"margin: 22.5pt 0pt 15pt; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　四、自同意注册之日起至本次发行结束前，你公司如发生重大事项，应及时报告</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">深圳</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">证券交易所并按有关规定处理。</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" align=\"center\" style=\"margin: 22.5pt 0pt 15pt; text-align: center; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　　　　　　　　中国证监会</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>\r\n<p class=\"p\" align=\"center\" style=\"margin: 22.5pt 0pt 15pt; text-align: center; font-family: Calibri; font-size: 12pt; padding: 0pt; line-height: 24pt;\"><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">　　　　　　　　　</font><font face=\"微软雅黑\">&ensp;202</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">5</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">年</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">1</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">月</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">7</font></span><span style=\"font-family: 微软雅黑; color: rgb(51, 51, 51); letter-spacing: 0pt; font-size: 12pt; background: rgb(255, 255, 255);\"><font face=\"微软雅黑\">日</font></span><span style=\"font-family: 微软雅黑; font-size: 12pt;\"><o:p></o:p></span></p>",
+                "title": "关于同意浙江唐德影视股份有限公司向特定对象发行股票注册的批复",
+                "content": "浙江唐德影视股份有限公司： 中国证券监督管理委员会收到深圳证券交易所报送的关于你公司向特定对象发行股票的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》（国办发〔2020〕5号）和《上市公司证券发行注册管理办法》（证监会令第206号）等有关规定，经审阅深圳证券交易所审核意见及你公司注册申请文件，现批复如下： 一、同意你公司向特定对象发行股票的注册申请。 二、你公司本次发行应严格按照报送深圳证券交易所的申报文件和发行方案实施。 三、本批复自同意注册之日起12个月内有效。 四、自同意注册之日起至本次发行结束前，你公司如发生重大事项，应及时报告深圳证券交易所并按有关规定处理。 中国证监会 &ensp;2025年1月7日",
+                "url": "http://www.csrc.gov.cn/csrc/c105922/c7534051/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意浙江唐德影视股份有限公司向特定对象发行股票注册的批复",
+                "manuscriptId": "7534051",
+                "publishedTime": 1736275860000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-08 10:51:00"
+            },
+            {
+                "resList": [],
+                "domainMetaList": [
+                    {
+                        "domainMetadataCode": "publicInfo",
+                        "domainMetadataTable": "C",
+                        "domainMetadataName": "信息公开元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "发文日期",
+                                "value": "2025-01-07 18:53:00",
+                                "key": "fwrq",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开方式",
+                                "value": "",
+                                "key": "gkfs",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "索引号",
+                                "value": "bm56000001/2025-00000680",
+                                "key": "syh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开范围",
+                                "value": "",
+                                "key": "gkfw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类",
+                                "value": "",
+                                "key": "fl",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主题词",
+                                "value": "",
+                                "key": "ztc",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "分类2",
+                                "value": "",
+                                "key": "cesysj",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文件编号",
+                                "value": "",
+                                "key": "wjbh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站发布机构",
+                                "value": "",
+                                "key": "zzfbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "文号",
+                                "value": "证监许可〔2025〕31号",
+                                "key": "wh",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发文单位",
+                                "value": "",
+                                "key": "fwdw",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "发布机构",
+                                "value": "",
+                                "key": "fbjg",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "公开时限",
+                                "value": "",
+                                "key": "gksx",
+                                "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                            }
+                        ],
+                        "domainMetadataId": "70348d141cd14ac28dc9e87b9d3dac60"
+                    },
+                    {
+                        "domainMetadataCode": "basic",
+                        "domainMetadataTable": "PA",
+                        "domainMetadataName": "基本元数据集",
+                        "resultList": [
+                            {
+                                "codeId": "",
+                                "name": "部门",
+                                "value": "公众司",
+                                "key": "section",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "来源",
+                                "value": "",
+                                "key": "infosource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "派出机构名称",
+                                "value": "",
+                                "key": "pcjgs",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "主站来源",
+                                "value": "证监会",
+                                "key": "homesource",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "职位",
+                                "value": "",
+                                "key": "zw",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            },
+                            {
+                                "codeId": "",
+                                "name": "作者",
+                                "value": "",
+                                "key": "authors",
+                                "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                            }
+                        ],
+                        "domainMetadataId": "10c3dd67e67e4fa4ad09cd4a09f78a01"
+                    }
+                ],
+                "memo": "关于同意武汉宏海科技股份有限公司向不特定合格投资者公开发行股票注册的批复",
+                "contentHtml": "<pre style=\"font-size: medium;\">武汉宏海科技股份有限公司:<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;中国证券监督管理委员会收到北京证券交易所报送的关于你公司向不特定合格投资者公开发行股票并在北京证券交易所上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《北京证券交易所向不特定合格投资者公开发行股票注册管理办法》(证监会令第210号)等有关规定,经审阅北京证券交易所审核意见及你公司注册申请文件,现批复如下:<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;一、同意你公司向不特定合格投资者公开发行股票的注册申请。<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;二、你公司本次发行股票应严格按照报送北京证券交易所的招股说明书和发行承销方案实施。<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;三、本批复自同意注册之日起12个月内有效。<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;四、自同意注册之日起至本次股票发行结束前,你公司如发生重大事项,应及时报告北京证券交易所并按有关规定处理。<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;中国证监会<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2025年1月7日<br></pre>",
+                "title": "关于同意武汉宏海科技股份有限公司向不特定合格投资者公开发行股票注册的批复",
+                "content": "武汉宏海科技股份有限公司:&ensp;&ensp;&ensp;&ensp;&ensp;中国证券监督管理委员会收到北京证券交易所报送的关于你公司向不特定合格投资者公开发行股票并在北京证券交易所上市的审核意见及你公司注册申请文件。根据《中华人民共和国证券法》《中华人民共和国公司法》《国务院办公厅关于贯彻实施修订后的证券法有关工作的通知》(国办发〔2020〕5号)和《北京证券交易所向不特定合格投资者公开发行股票注册管理办法》(证监会令第210号)等有关规定,经审阅北京证券交易所审核意见及你公司注册申请文件,现批复如下:&ensp;&ensp;&ensp;&ensp;&ensp;一、同意你公司向不特定合格投资者公开发行股票的注册申请。&ensp;&ensp;&ensp;&ensp;&ensp;二、你公司本次发行股票应严格按照报送北京证券交易所的招股说明书和发行承销方案实施。&ensp;&ensp;&ensp;&ensp;&ensp;三、本批复自同意注册之日起12个月内有效。&ensp;&ensp;&ensp;&ensp;&ensp;四、自同意注册之日起至本次股票发行结束前,你公司如发生重大事项,应及时报告北京证券交易所并按有关规定处理。&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;中国证监会&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2025年1月7日",
+                "url": "http://www.csrc.gov.cn/csrc/c101830/c7532843/content.shtml",
+                "channelLevels": "/d60512bc2c824021b21a088e3b2e3195/d608e07e61f14fe18d97379f3c71c1a4/fca2a03c975f456ebab5c7ebaacac345/8bf8f81659be4d00920fbb3db02d0102/768f924c237f41b5921f6d0e4db0e8b5",
+                "websiteId": "53d782df101242a1aa65584b8ddbaa7f",
+                "subTitle": "关于同意武汉宏海科技股份有限公司向不特定合格投资者公开发行股票注册的批复",
+                "manuscriptId": "7532843",
+                "publishedTime": 1736218380000,
+                "channelName": "结果公示",
+                "channelCodeName": "c101967",
+                "channelId": "d5483bfd719e4e8d95ffbe975b2f73ff",
+                "publishedTimeStr": "2025-01-07 18:53:00"
+            }
+        ]
+    },
+    "locationUrl": "/common/searchList/d5483bfd719e4e8d95ffbe975b2f73ff?_isAgg=true&_isJson=true&_pageSize=10&_template=index&_rangeTimeGte=&_channelName=&page=",
+    "channelName": "结果公示"
+}

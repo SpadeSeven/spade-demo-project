@@ -1,0 +1,15 @@
+fetch("http://www.csrc.gov.cn/searchList/d5483bfd719e4e8d95ffbe975b2f73ff?_isAgg=true&_isJson=true&_pageSize=10&_template=index&_rangeTimeGte=&_channelName=&page=1", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "if-none-match": "W/\"24c09-T53xaKVd8iagdOXyXNo/+4WHlRI\"",
+    "proxy-connection": "keep-alive",
+    "x-requested-with": "XMLHttpRequest"
+  },
+  "referrer": "http://www.csrc.gov.cn/csrc/c101955/zfxxgk_zdgk.shtml",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
