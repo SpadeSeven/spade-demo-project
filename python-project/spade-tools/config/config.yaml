@@ -14,4 +14,12 @@ logging:
   format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"  # 日志格式
   max_bytes: 1048576  # 单个日志文件最大大小（1MB）
   backup_count: 5  # 备份文件数量
-  console_output: true  # 是否输出到控制台 
+  console_output: true  # 是否输出到控制台
+
+miit:
+  base_url: "https://www.miit.gov.cn/search/zcwjk.html"
+  params:
+    websiteid: "110000000000000"
+    category: "183"
+    tpl: "14"
+  keywords: "绿色制造" 

@@ -1,0 +1,171 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<link href="../script/list.css" type=text/css rel=stylesheet>
+<script src="../script/option.js"></script>
+<style>
+    <!--
+    /*分页样式*/
+    DIV.digg {
+        PADDING-RIGHT: 3px;
+        PADDING-LEFT: 3px;
+        PADDING-BOTTOM: 3px;
+        MARGIN: 3px;
+        PADDING-TOP: 3px;
+        TEXT-ALIGN: center
+    }
+
+    DIV.digg A {
+        BORDER-RIGHT: #aaaadd 1px solid;
+        PADDING-RIGHT: 5px;
+        BORDER-TOP: #aaaadd 1px solid;
+        PADDING-LEFT: 5px;
+        PADDING-BOTTOM: 2px;
+        MARGIN: 2px;
+        BORDER-LEFT: #aaaadd 1px solid;
+        COLOR: #000099;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #aaaadd 1px solid;
+        TEXT-DECORATION: none
+    }
+
+    DIV.digg A:hover {
+        BORDER-RIGHT: #000099 1px solid;
+        BORDER-TOP: #000099 1px solid;
+        BORDER-LEFT: #000099 1px solid;
+        COLOR: #000;
+        BORDER-BOTTOM: #000099 1px solid
+    }
+
+    DIV.digg A:active {
+        BORDER-RIGHT: #000099 1px solid;
+        BORDER-TOP: #000099 1px solid;
+        BORDER-LEFT: #000099 1px solid;
+        COLOR: #000;
+        BORDER-BOTTOM: #000099 1px solid
+    }
+
+    DIV.digg SPAN.current {
+        BORDER-RIGHT: #CC0000 1px solid;
+        PADDING-RIGHT: 5px;
+        BORDER-TOP: #CC0000 1px solid;
+        PADDING-LEFT: 5px;
+        FONT-WEIGHT: bold;
+        PADDING-BOTTOM: 2px;
+        MARGIN: 2px;
+        BORDER-LEFT: #CC0000 1px solid;
+        COLOR: #fff;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #CC0000 1px solid;
+        BACKGROUND-COLOR: #CC0000
+    }
+
+    DIV.digg SPAN.disabled {
+        BORDER-RIGHT: #eee 1px solid;
+        PADDING-RIGHT: 5px;
+        BORDER-TOP: #eee 1px solid;
+        PADDING-LEFT: 5px;
+        PADDING-BOTTOM: 2px;
+        MARGIN: 2px;
+        BORDER-LEFT: #eee 1px solid;
+        COLOR: #ddd;
+        PADDING-TOP: 2px;
+        BORDER-BOTTOM: #eee 1px solid
+    }
+
+    -->
+</style>
+
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 15px;" ><tr><td class="tb-head" width="426">项目名称</td><td width="10"></td><td class="tb-head" width="188">行政许可决定书文号</td><td width="10"></td><td class="tb-head" width="168">行政相对人名称</td><td width="10"></td><td class="tb-head" width="118">决定日期</td><td width="10"></td><td class="tb-head" width="218">许可机关</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/23/art_75859_1588.html" target="_blank" class="xmm" title="连云港兴鑫钢铁有限公司节能审查">连云港兴鑫钢铁有限公司节能审查</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/23/art_75859_1588.html" target="_blank">苏工信节能〔2025〕14号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/23/art_75859_1588.html" target="_blank" class="xdrmc" title="连云港兴鑫钢铁有限公司">连云港兴鑫钢铁有限公司</a></td><td width="10"></td><td width="118" align="center">2025-01-16</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/21/art_75859_1587.html" target="_blank" class="xmm" title="宜兴市盐业有限公司法定代表人变更">宜兴市盐业有限公司法定代表人变更</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/21/art_75859_1587.html" target="_blank">苏工信许可﹝2025﹞7号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/21/art_75859_1587.html" target="_blank" class="xdrmc" title="宜兴市盐业有限公司 ">宜兴市盐业有限公司 </a></td><td width="10"></td><td width="118" align="center">2025-1-16</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/16/art_75859_1585.html" target="_blank" class="xmm" title="丹阳市盐业有限公司法定代表人变更">丹阳市盐业有限公司法定代表人变更</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/16/art_75859_1585.html" target="_blank">苏工信许可﹝2025﹞5号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/16/art_75859_1585.html" target="_blank" class="xdrmc" title="丹阳市盐业有限公司">丹阳市盐业有限公司</a></td><td width="10"></td><td width="118" align="center">2025-1-15</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/16/art_75859_1584.html" target="_blank" class="xmm" title="句容市盐业有限公司法定代表人变更">句容市盐业有限公司法定代表人变更</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/16/art_75859_1584.html" target="_blank">苏工信许可﹝2025﹞6号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/16/art_75859_1584.html" target="_blank" class="xdrmc" title="句容市盐业有限公司">句容市盐业有限公司</a></td><td width="10"></td><td width="118" align="center">2025-1-15</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/14/art_75859_1583.html" target="_blank" class="xmm" title="兴化市盐业有限公司法定代表人变更">兴化市盐业有限公司法定代表人变更</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/14/art_75859_1583.html" target="_blank">苏工信许可﹝2025﹞3号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/14/art_75859_1583.html" target="_blank" class="xdrmc" title="兴化市盐业有限公司 ">兴化市盐业有限公司 </a></td><td width="10"></td><td width="118" align="center">2025-1-10</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/10/art_75859_1582.html" target="_blank" class="xmm" title="苏南硕放国际机场有限公司">苏南硕放国际机场有限公司</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/10/art_75859_1582.html" target="_blank">苏工信许可〔2025〕4号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/10/art_75859_1582.html" target="_blank" class="xdrmc" title="苏南硕放国际机场有限公司">苏南硕放国际机场有限公司</a></td><td width="10"></td><td width="118" align="center">2025-01-10</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/8/art_75859_1581.html" target="_blank" class="xmm" title="如皋市盐业有限公司法定代表人变更">如皋市盐业有限公司法定代表人变更</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/8/art_75859_1581.html" target="_blank">苏工信许可﹝2025﹞2号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/8/art_75859_1581.html" target="_blank" class="xdrmc" title="如皋市盐业有限公司">如皋市盐业有限公司</a></td><td width="10"></td><td width="118" align="center">2025-1-6</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/3/art_75859_1580.html" target="_blank" class="xmm" title="江苏省广播电视总台无线电频率使用许可">江苏省广播电视总台无线电频率使用许可</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/3/art_75859_1580.html" target="_blank">苏工信许可〔2025〕1号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/3/art_75859_1580.html" target="_blank" class="xdrmc" title="江苏省广播电视总台">江苏省广播电视总台</a></td><td width="10"></td><td width="118" align="center">2025-01-03</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr><tr class="bgc"><td width="426" height="60px" align="left" style="padding-left: 20px;"><a href="../../art/2025/1/2/art_75859_1579.html" target="_blank" class="xmm" title="吴江绸缎炼染一厂有限公司节能审查">吴江绸缎炼染一厂有限公司节能审查</a></td><td width="10"></td><td width="188" align="center"><a href="../../art/2025/1/2/art_75859_1579.html" target="_blank">苏工信节能〔2024〕442号</a></td><td width="10"></td><td width="168" align="center"><a href="../../art/2025/1/2/art_75859_1579.html" target="_blank" class="xdrmc" title="吴江绸缎炼染一厂有限公司">吴江绸缎炼染一厂有限公司</a></td><td width="10"></td><td width="118" align="center">2024-12-27</td><td width="10"></td><td width="218" align="center" style="padding: 0 15px;line-height: 20px;">江苏省工业和信息化厅</td></tr></table>
+<style>
+    *,*:before,*:after {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre,form, fieldset, legend, button, input, textarea,th,td,img{border:medium none;margin:0;padding:0;}
+    em{font-style:normal;}
+    ul, ol{list-style: none;}
+    table{border-collapse: collapse;border-spacing: 0; }
+    a,ins{text-decoration:none;}
+    *:focus{outline:none;}
+    a{color:#333;}
+    a:hover{color:#427fda;}
+    .tb-head{height: 45px;background-color: #ececec;color: #333;font-weight: bold;text-align: center;line-height: 45px;}
+    body{font-family:"微软雅黑";font-size: 15px;}
+    .current{display:inline-block;border: none!important;background-color: #1d91da!important;width: 20px;height: 26px;padding: 0!important;line-height: 26px;text-align: center;margin: 0 2px!important;}
+    .digg{padding: 0!important;margin: 0!important;height: 30px;overflow: hidden;}
+    .digg a{width: 20px;height: 26px;padding: 0!important;line-height: 26px;text-align: center;display: inline-block;margin: 1px 2px 0 2px!important;box-sizing: border-box!important;border:1px solid #aaaadd!important;}
+    .digg span input[type=text]{height: 20px!important;border: 1px solid #999;vertical-align:middle!important;margin-top: -5px;}
+    .digg span input[type=submit]{margin-top: 4px;background-color: #1d91da;width: 35px;color: #fff;float: right;height: 20px;line-height: 20px;}
+</style>
+<script src="/module/jslib/jquery/jquery.js"></script>
+<script>
+    $(function(){
+        parent.document.getElementById("lmIframe").style.height="655px";
+        parent.document.getElementById("lmIframe").style.height=document.body.scrollHeight + 20+"px";
+    });
+    function setIframeHeightt() {
+        parent.document.getElementById("lmIframe").style.height="655px";
+        parent.document.getElementById("lmIframe").style.height=document.body.scrollHeight +20+ "px";
+    }
+    $(function () {
+        $(".digg a,digg span").on("click",function () {
+            setTimeout(setIframeHeightt,320);
+        });
+        $(".bgc").each(function (n) {
+            if(n%2===1){
+                $(".bgc").eq(n).css("background-color","#f6f6f6")
+            }
+        });
+        $(".xmm").each(function (n) {
+            if($(".xmm").eq(n).html().length>25){
+                $(".xmm").eq(n).html($(".xmm").eq(n).html().substring(0,25)+"...")
+            }
+        });
+        $(".xdrmc").each(function (n) {
+            if($(".xdrmc").eq(n).html().length>10){
+                $(".xdrmc").eq(n).html($(".xdrmc").eq(n).html().substring(0,10)+"...")
+            }
+        });
+        var obj=$(".digg span input[type=submit]");
+        obj.parent().css({"height":"30px","line-height":"30px","display":"inline-block"});
+    })
+</script><br><form method='post' action='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name='><div style='border:0;width:100%;text-align:center'><div class='digg'><span class='current'>1</span><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=2'>2</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=3'>3</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=4'>4</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=5'>5</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=6'>6</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=7'>7</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=8'>8</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=9'>9</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=10'>10</a><a href='./index.jsp?field=vc_name:1&i_columnid=style_291&vc_name=&currpage=11'> >> </a><span style='padding-left:8px;'>共&nbsp;81&nbsp;页&nbsp;到第<input size='1' style='height: 13px;vertical-align: bottom;' type='text' name='currpage'>页<input type='submit' style='height: 20px;' value='确定'></span></div></div></form>
+
+
