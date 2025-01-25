@@ -1,0 +1,17 @@
+# LLM配置
+llm:
+  deepseek:
+    api_key: sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq
+    api_base: https://api.siliconflow.cn/v1
+    model_name: deepseek-ai/DeepSeek-V2.5
+    temperature: 0.7
+    max_tokens: 2048
+
+# 日志配置
+logging:
+  level: INFO  # 日志级别：DEBUG, INFO, WARNING, ERROR, CRITICAL
+  filename: langchain_demo.log  # 日志文件名
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"  # 日志格式
+  max_bytes: 1048576  # 单个日志文件最大大小（1MB）
+  backup_count: 5  # 备份文件数量
+  console_output: true  # 是否输出到控制台 
