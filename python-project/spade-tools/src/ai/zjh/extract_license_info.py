@@ -31,6 +31,37 @@ sys.path.append(project_root)
 
 from src.common import load_config
 
+# 全局变量存储 LLM 实例
+_llm = None
+
+def init_llm():
+    """
+    初始化 LLM 模型
+    
+    Returns:
+        ChatOpenAI: 初始化好的 LLM 模型实例
+    """
+    global _llm
+    if _llm is None:
+        try:
+            # 加载配置
+            config = load_config.load_config()
+            # 从配置文件获取 DeepSeek 配置
+            deepseek_config = config['llm']['deepseek']
+
+            # 初始化 DeepSeek LLM
+            _llm = ChatOpenAI(
+                openai_api_key=deepseek_config['api_key'],
+                openai_api_base=deepseek_config['api_base'],
+                model_name=deepseek_config['model_name'],
+                temperature=deepseek_config['temperature'],
+                max_tokens=deepseek_config.get('max_tokens', 2048)
+            )
+            logger.info(f"成功初始化 LLM 模型: {deepseek_config['model_name']}")
+        except Exception as e:
+            logger.error(f"初始化 LLM 模型失败: {str(e)}")
+            raise
+    return _llm
 
 def extract_company_name(title):
     """
@@ -43,21 +74,8 @@ def extract_company_name(title):
         str: 提取出的公司名称，如果没有找到则返回空字符串
     """
     try:
-        # 加载配置
-        config = load_config()
-
-        # 从配置文件获取 DeepSeek 配置
-        deepseek_config = config['llm']['deepseek']
-
-        # 初始化 DeepSeek LLM
-        llm = ChatOpenAI(
-            openai_api_key=deepseek_config['api_key'],
-            openai_api_base=deepseek_config['api_base'],
-            model_name=deepseek_config['model_name'],
-            temperature=deepseek_config['temperature'],
-            max_tokens=deepseek_config.get('max_tokens', 2048)
-        )
-        logger.info(f"成功初始化 LLM 模型: {deepseek_config['model_name']}")
+        # 获取 LLM 实例
+        llm = init_llm()
         
         # 创建提示模板
         prompt_template = PromptTemplate(
