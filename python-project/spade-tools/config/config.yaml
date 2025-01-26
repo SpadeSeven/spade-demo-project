@@ -4,7 +4,7 @@ llm:
     api_key: sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq
     api_base: https://api.siliconflow.cn/v1
     model_name: deepseek-ai/DeepSeek-V2.5
-    temperature: 0.7
+    temperature: 1
     max_tokens: 2048
 
 # 日志配置

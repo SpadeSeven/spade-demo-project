@@ -1,10 +1,83 @@
 import json
 import csv
 import os
+import sys
 import re
+import logging
 from html import unescape
 from bs4 import BeautifulSoup
 import glob
+from langchain.chains import LLMChain
+from langchain.prompts import PromptTemplate
+from langchain_community.chat_models import ChatOpenAI
+from src.utils.logger import LoggerManager
+
+
+# 配置日志
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('logs/license_extract.log', encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
+# 将项目根目录添加到 Python 路径
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+logger.info(f"项目根目录: {project_root}")
+sys.path.append(project_root)
+
+from src.common import load_config
+
+
+def extract_company_name(title):
+    """
+    使用 LangChain 从标题中提取行政许可对象（公司名称）
+    
+    Args:
+        title: 标题文本
+        
+    Returns:
+        str: 提取出的公司名称，如果没有找到则返回空字符串
+    """
+    try:
+        # 加载配置
+        config = load_config()
+
+        # 从配置文件获取 DeepSeek 配置
+        deepseek_config = config['llm']['deepseek']
+
+        # 初始化 DeepSeek LLM
+        llm = ChatOpenAI(
+            openai_api_key=deepseek_config['api_key'],
+            openai_api_base=deepseek_config['api_base'],
+            model_name=deepseek_config['model_name'],
+            temperature=deepseek_config['temperature'],
+            max_tokens=deepseek_config.get('max_tokens', 2048)
+        )
+        logger.info(f"成功初始化 LLM 模型: {deepseek_config['model_name']}")
+        
+        # 创建提示模板
+        prompt_template = PromptTemplate(
+            input_variables=["title"],
+            template="""
+            从以下行政许可标题中提取公司名称：
+            {title}
+            
+            只需返回完整的公司名称，如果没有找到则返回空字符串。不要包含其他解释。
+            """
+        )
+        
+        # 生成提示
+        prompt = prompt_template.format(title=title)
+        # 获取结果
+        company_name = llm.predict(prompt).strip()
+        return company_name
+    except Exception as e:
+        logger.error(f"提取公司名称时出错: {str(e)}")
+        return ''
 
 def clean_html_text(html_content):
     """清理HTML内容，返回纯文本"""
@@ -41,7 +114,7 @@ def extract_license_info(input_dir, output_file):
     # 获取目录下所有JSON文件
     json_files = glob.glob(os.path.join(input_dir, '*.json'))
     if not json_files:
-        print(f"在 {input_dir} 目录下未找到JSON文件")
+        logger.warning(f"在 {input_dir} 目录下未找到JSON文件")
         return
         
     # 准备CSV表头 - publicInfo字段
@@ -57,9 +130,9 @@ def extract_license_info(input_dir, output_file):
         '职位', '作者'
     ]
     
-    # 其他字段
+    # 其他字段 - 添加行政许可对象字段
     other_fields = [
-        '发布时间', '标题', '副标题', '内容', '原文链接',
+        '发布时间', '标题', '行政许可对象', '副标题', '内容', '原文链接',
         'channelName', 'channelId', 'manuscriptId'
     ]
     
@@ -77,7 +150,7 @@ def extract_license_info(input_dir, output_file):
         # 处理每个JSON文件
         for json_file in sorted(json_files):
             try:
-                print(f"正在处理文件: {json_file}")
+                logger.info(f"正在处理文件: {json_file}")
                 with open(json_file, 'r', encoding='utf-8') as jf:
                     data = json.load(jf)
                 
@@ -125,7 +198,10 @@ def extract_license_info(input_dir, output_file):
                     
                     # 提取其他字段
                     row_data['发布时间'] = item.get('publishedTimeStr', '')
-                    row_data['标题'] = clean_html_text(item['title'])
+                    title = clean_html_text(item['title'])
+                    row_data['标题'] = title
+                    # 提取行政许可对象
+                    row_data['行政许可对象'] = extract_company_name(title)
                     row_data['副标题'] = clean_html_text(item.get('subTitle', ''))
                     row_data['内容'] = clean_html_text(item['content'])
                     row_data['原文链接'] = item.get('url', '')
@@ -136,11 +212,15 @@ def extract_license_info(input_dir, output_file):
                     # 按headers顺序写入数据
                     writer.writerow([row_data[field] for field in headers])
             except Exception as e:
-                print(f"处理文件 {json_file} 时出错: {str(e)}")
+                logger.error(f"处理文件 {json_file} 时出错: {str(e)}", exc_info=True)
                 continue
 
 if __name__ == '__main__':
+    # 初始化日志系统
+    config_path = os.path.join(os.path.dirname(__file__), '..', '..','..', 'config', 'config.yaml')
+    LoggerManager().init_logger(config_path)
+    logger = LoggerManager.get_logger()
     input_dir = 'output/zjh'  # 证监会数据目录
     output_file = 'output/zjh_license_info.csv'
     extract_license_info(input_dir, output_file)
-    print(f'已将证监会行政许可信息保存至: {output_file}') 
+    logger.info(f'已将证监会行政许可信息保存至: {output_file}') 
