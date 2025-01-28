@@ -1,16 +1,20 @@
-import pandas as pd
 import json
-import time
-from openai import OpenAI
 import os
+import time
+
+import pandas as pd
+from openai import OpenAI
+
 
 class UnicornCompany:
     def __init__(self, csv_file):
         """初始化类，读取CSV文件"""
         self.df = pd.read_csv(csv_file)
         # 初始化OpenAI客户端
-        self.client = OpenAI(api_key="sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq", base_url="https://api.siliconflow.cn/v1")
-        
+        self.client = OpenAI(
+            api_key="sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq",
+            base_url="https://api.siliconflow.cn/v1")
+
     def extract_company_info(self):
         """提取公司相关信息"""
         # 提取所需字段
@@ -18,13 +22,13 @@ class UnicornCompany:
         for _, row in self.df.iterrows():
             company = {
                 "company_name": row["公司名称(中文)"],  # 公司中文名
-                "headquarters": row["总部(中文)"],   # 总部所在地
-                "industry": row["行业(中文)"],          # 行业
-                "founder": row["创始人(中文)"]             # 创始人
+                "headquarters": row["总部(中文)"],  # 总部所在地
+                "industry": row["行业(中文)"],  # 行业
+                "founder": row["创始人(中文)"]  # 创始人
             }
             companies.append(company)
         return companies
-    
+
     def generate_prompt(self, company_info):
         """生成查询工商信息的prompt"""
         prompt = f"""请根据以下公司信息，查询其工商注册信息：
@@ -48,20 +52,20 @@ class UnicornCompany:
             response = self.client.chat.completions.create(
                 model="deepseek-ai/DeepSeek-V2.5",
                 messages=[
-                    {"role": "system", "content": "你是一个专业的企业信息查询助手，请帮助查询企业工商信息。只返回JSON格式数据，不要包含其他文本。"},
+                    {"role": "system",
+                     "content": "你是一个专业的企业信息查询助手，请帮助查询企业工商信息。只返回JSON格式数据，不要包含其他文本。"},
                     {"role": "user", "content": prompt}
                 ],
-                temperature=1
+                temperature=1,
+                response_format={
+                    'type': 'json_object'
+                }
             )
             content = response.choices[0].message.content
-            
+
             # 清理返回的内容
             content = content.strip()
-            if content.startswith('```json'):
-                content = content[7:]  # 移除开头的 ```json
-            if content.endswith('```'):
-                content = content[:-3]  # 移除结尾的 ```
-            
+
             return content.strip()
         except Exception as e:
             print(f"OpenAI API调用出错: {str(e)}")
@@ -71,13 +75,13 @@ class UnicornCompany:
         """处理所有公司信息并保存结果"""
         companies = self.extract_company_info()
         results = []
-        
+
         for i, company in enumerate(companies):
-            print(f"处理第 {i+1}/{len(companies)} 个公司: {company['company_name']}")
-            
+            print(f"处理第 {i + 1}/{len(companies)} 个公司: {company['company_name']}")
+
             prompt = self.generate_prompt(company)
             response = self.query_openai(prompt)
-            
+
             if response:
                 try:
                     # 尝试解析清理后的JSON响应
@@ -92,19 +96,19 @@ class UnicornCompany:
                         "registered_address": license_info.get('registered_address', '')
                     }
                     results.append(result)
-                    
+
                     # 每处理10个公司保存一次结果
                     if (i + 1) % 10 == 0:
                         self.save_results_csv(results, output_file)
                         break
-                    
+
                 except json.JSONDecodeError as e:
                     print(f"JSON解析失败: {response}")
                     print(f"错误信息: {str(e)}")
-                
+
             # 添加延时避免频繁调用
             time.sleep(1)
-        
+
         # 最后保存一次结果
         self.save_results_csv(results, output_file)
         return results
@@ -131,20 +135,22 @@ class UnicornCompany:
         df.to_csv(output_file, index=False, encoding='utf-8-sig')
         print(f"结果已保存到: {output_file}")
 
+
 def main():
     # 实例化类并处理数据
     unicorn = UnicornCompany("output/rank/hurun/unicorn/hurun_unicorn_2024.csv")
     output_file = "output/rank/hurun/unicorn/company_license_info.csv"
-    
+
     # 确保输出目录存在
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    
+
     # 处理公司信息并保存结果
     results = unicorn.process_companies(output_file)
-    
+
     # 输出处理统计
     print(f"\n处理完成:")
     print(f"总共处理公司数: {len(results)}")
+
 
 if __name__ == "__main__":
     main()
