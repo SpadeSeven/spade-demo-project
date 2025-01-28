@@ -1,0 +1,17 @@
+repos:
+  # 第一个仓库：ruff 相关的 hooks
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.3  # 使用的版本
+    hooks:
+      - id: ruff  # 运行 Ruff 静态代码检查
+      - id: ruff-format  # 运行 Ruff 代码格式化
+
+  # 第二个仓库：pre-commit 官方 hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0  # 使用的版本
+    hooks:
+      - id: check-merge-conflict  # 检查是否有未解决的合并冲突标记（如 <<<<<）
+      - id: debug-statements  # 检查是否包含调试语句（如 print 或 pdb）
+      - id: fix-byte-order-marker  # 修复文件开头的字节顺序标记（BOM）
+      - id: trailing-whitespace  # 清理行尾的多余空格
+      - id: end-of-file-fixer  # 确保文件末尾有且仅有一个空行
