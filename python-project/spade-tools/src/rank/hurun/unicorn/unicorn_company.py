@@ -13,7 +13,8 @@ class UnicornCompany:
         # 初始化OpenAI客户端
         self.client = OpenAI(
             api_key="sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq",
-            base_url="https://api.siliconflow.cn/v1")
+            base_url="https://api.siliconflow.cn/v1",
+        )
 
     def extract_company_info(self):
         """提取公司相关信息"""
@@ -24,7 +25,7 @@ class UnicornCompany:
                 "company_name": row["公司名称(中文)"],  # 公司中文名
                 "headquarters": row["总部(中文)"],  # 总部所在地
                 "industry": row["行业(中文)"],  # 行业
-                "founder": row["创始人(中文)"]  # 创始人
+                "founder": row["创始人(中文)"],  # 创始人
             }
             companies.append(company)
         return companies
@@ -52,14 +53,14 @@ class UnicornCompany:
             response = self.client.chat.completions.create(
                 model="deepseek-ai/DeepSeek-V2.5",
                 messages=[
-                    {"role": "system",
-                     "content": "你是一个专业的企业信息查询助手，请帮助查询企业工商信息。只返回JSON格式数据，不要包含其他文本。"},
-                    {"role": "user", "content": prompt}
+                    {
+                        "role": "system",
+                        "content": "你是一个专业的企业信息查询助手，请帮助查询企业工商信息。只返回JSON格式数据，不要包含其他文本。",
+                    },
+                    {"role": "user", "content": prompt},
                 ],
                 temperature=1,
-                response_format={
-                    'type': 'json_object'
-                }
+                response_format={"type": "json_object"},
             )
             content = response.choices[0].message.content
 
@@ -87,13 +88,15 @@ class UnicornCompany:
                     # 尝试解析清理后的JSON响应
                     license_info = json.loads(response)
                     result = {
-                        "company_name": company['company_name'],
-                        "headquarters": company['headquarters'],
-                        "industry": company['industry'],
-                        "founder": company['founder'],
-                        "registered_name": license_info.get('registered_name', ''),
-                        "established_date": license_info.get('established_date', ''),
-                        "registered_address": license_info.get('registered_address', '')
+                        "company_name": company["company_name"],
+                        "headquarters": company["headquarters"],
+                        "industry": company["industry"],
+                        "founder": company["founder"],
+                        "registered_name": license_info.get("registered_name", ""),
+                        "established_date": license_info.get("established_date", ""),
+                        "registered_address": license_info.get(
+                            "registered_address", ""
+                        ),
                     }
                     results.append(result)
 
@@ -118,8 +121,13 @@ class UnicornCompany:
         df = pd.DataFrame(results)
         # 设置列的顺序
         columns = [
-            "company_name", "headquarters", "industry", "founder",
-            "registered_name", "established_date", "registered_address"
+            "company_name",
+            "headquarters",
+            "industry",
+            "founder",
+            "registered_name",
+            "established_date",
+            "registered_address",
         ]
         # 重命名列
         column_names = {
@@ -129,10 +137,10 @@ class UnicornCompany:
             "founder": "创始人",
             "registered_name": "工商注册名称",
             "established_date": "成立时间",
-            "registered_address": "注册地址"
+            "registered_address": "注册地址",
         }
         df = df[columns].rename(columns=column_names)
-        df.to_csv(output_file, index=False, encoding='utf-8-sig')
+        df.to_csv(output_file, index=False, encoding="utf-8-sig")
         print(f"结果已保存到: {output_file}")
 
 
@@ -148,7 +156,7 @@ def main():
     results = unicorn.process_companies(output_file)
 
     # 输出处理统计
-    print(f"\n处理完成:")
+    print("\n处理完成:")
     print(f"总共处理公司数: {len(results)}")
 
 

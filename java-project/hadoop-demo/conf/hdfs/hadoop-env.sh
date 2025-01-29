@@ -15,7 +15,7 @@
 
       # Hadoop Configuration Directory
 
-      
+
       # Path to jsvc required by secure HDP 2.0 datanode
       export JSVC_HOME=/usr/lib/bigtop-utils
 
@@ -35,7 +35,7 @@
 
       HADOOP_TASKTRACKER_OPTS="-server -Xmx1024m -Dhadoop.security.logger=ERROR,console -Dmapred.audit.logger=ERROR,console ${HADOOP_TASKTRACKER_OPTS}"
 
-      
+
       SHARED_HDFS_NAMENODE_OPTS="-server -XX:ParallelGCThreads=8 -XX:+UseConcMarkSweepGC -XX:ErrorFile=/var/log/hadoop/$USER/hs_err_pid%p.log -XX:NewSize=128m -XX:MaxNewSize=128m -Xloggc:/var/log/hadoop/$USER/gc.log-`date +'%Y%m%d%H%M'` -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -XX:CMSInitiatingOccupancyFraction=70 -XX:+UseCMSInitiatingOccupancyOnly -Xms1024m -Xmx1024m -Dhadoop.security.logger=INFO,DRFAS -Dhdfs.audit.logger=INFO,DRFAAUDIT"
       export HDFS_NAMENODE_OPTS="${SHARED_HDFS_NAMENODE_OPTS} -XX:OnOutOfMemoryError=\"/usr/hdp/current/hadoop-hdfs-namenode/bin/kill-name-node\" -Dorg.mortbay.jetty.Request.maxFormContentSize=-1 ${HDFS_NAMENODE_OPTS}"
       export HDFS_DATANODE_OPTS="-server -XX:ParallelGCThreads=4 -XX:+UseConcMarkSweepGC -XX:OnOutOfMemoryError=\"/usr/hdp/current/hadoop-hdfs-datanode/bin/kill-data-node\" -XX:ErrorFile=/var/log/hadoop/$USER/hs_err_pid%p.log -XX:NewSize=200m -XX:MaxNewSize=200m -Xloggc:/var/log/hadoop/$USER/gc.log-`date +'%Y%m%d%H%M'` -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -Xms1024m -Xmx1024m -Dhadoop.security.logger=INFO,DRFAS -Dhdfs.audit.logger=INFO,DRFAAUDIT ${HDFS_DATANODE_OPTS} -XX:CMSInitiatingOccupancyFraction=70 -XX:+UseCMSInitiatingOccupancyOnly"
@@ -44,9 +44,9 @@
 
       # The following applies to multiple commands (fs, dfs, fsck, distcp etc)
       export HADOOP_CLIENT_OPTS="-Xmx${HADOOP_HEAPSIZE}m $HADOOP_CLIENT_OPTS"
-      
 
-      
+
+
 
       HDFS_NFS3_OPTS="-Xmx1024m -Dhadoop.security.logger=ERROR,DRFAS ${HDFS_NFS3_OPTS}"
       HADOOP_BALANCER_OPTS="-server -Xmx1024m ${HADOOP_BALANCER_OPTS}"
@@ -106,7 +106,7 @@
       # Mostly required for hadoop 2.0
       export JAVA_LIBRARY_PATH=${JAVA_LIBRARY_PATH}:/usr/hdp/3.1.0.0-78/hadoop/lib/native/Linux-amd64-64
 
-      
+
 
       export HADOOP_OPTS="-Dhdp.version=$HDP_VERSION $HADOOP_OPTS"
 
@@ -114,8 +114,7 @@
       # Fix temporary bug, when ulimit from conf files is not picked up, without full relogin.
       # Makes sense to fix only when runing DN as root
       if [ "$command" == "datanode" ] && [ "$EUID" -eq 0 ] && [ -n "$HDFS_DATANODE_SECURE_USER" ]; then
-      
+
       ulimit -n 128000
       fi
       # Enable ACLs on zookeper znodes if required
-      

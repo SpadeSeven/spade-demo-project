@@ -9,9 +9,11 @@ def load_config():
     logger = LoggerManager.get_logger()
     try:
         # 获取配置文件的绝对路径
-        config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'config.yaml')
+        config_path = os.path.join(
+            os.path.dirname(__file__), "..", "..", "config", "config.yaml"
+        )
 
-        with open(config_path, 'r', encoding='utf-8') as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             config = yaml.safe_load(f)
         logger.info("配置文件加载成功")
         return config

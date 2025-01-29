@@ -1,6 +1,6 @@
 import pandas as pd
-import re
 from docx import Document
+
 
 def extract_table_from_docx(doc_path):
     doc = Document(doc_path)
@@ -14,6 +14,7 @@ def extract_table_from_docx(doc_path):
             data.append(row_data)
         tables.append(pd.DataFrame(data[1:], columns=data[0]))
     return tables
+
 
 doc_path = "/Users/spade/data/code/my_code/spade-demo-project/python-project/spade-tools/src/ai/pbc/2025012314302295524.doc"
 tables = extract_table_from_docx(doc_path)

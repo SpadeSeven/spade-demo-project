@@ -1,4 +1,4 @@
-include README.txt 
+include README.txt
 include requirements.txt test-requirements.txt tox.ini
 recursive-include test *.*
 recursive-include src *.txt *.py

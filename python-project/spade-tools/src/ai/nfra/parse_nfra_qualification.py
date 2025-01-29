@@ -11,10 +11,10 @@ from src.utils import str_utils
 def parse_qualification_approval(doc_data):
     """
     解析金融机构任职资格批复文件
-    
+
     Args:
         doc_data: 原始文档数据
-    
+
     Returns:
         dict: 解析后的结构化数据，如果解析失败返回None
     """
@@ -40,7 +40,7 @@ def parse_qualification_approval(doc_data):
         "更新日期": doc_data.get("docEditdate"),
         "文档ID": doc_data.get("docId"),
         "状态码": doc_data.get("rptCode"),
-        "状态信息": doc_data.get("msg")
+        "状态信息": doc_data.get("msg"),
     }
 
     # 处理文档URL
@@ -55,31 +55,35 @@ def parse_qualification_approval(doc_data):
 
     try:
         # 使用BeautifulSoup解析HTML内容
-        soup = BeautifulSoup(doc_content, 'html.parser')
-        text = soup.get_text(separator='\n').strip()
+        soup = BeautifulSoup(doc_content, "html.parser")
+        text = soup.get_text(separator="\n").strip()
 
         # 提取申请文号
-        application_no = re.search(r'[^（]*?银发〔(\d{4})\](\d+)号', text)
+        application_no = re.search(r"[^（]*?银发〔(\d{4})\](\d+)号", text)
         if application_no:
-            result["申请文号"] = f"浙商银发〔{application_no.group(1)}〕{application_no.group(2)}号"
+            result["申请文号"] = (
+                f"浙商银发〔{application_no.group(1)}〕{application_no.group(2)}号"
+            )
 
         # 提取申请人和申请职位
-        position_match = re.search(r'核准(\w+)(.*?独立董事)的?任职资格', text)
+        position_match = re.search(r"核准(\w+)(.*?独立董事)的?任职资格", text)
         if position_match:
             result["申请人"] = position_match.group(1)
             result["申请职位"] = position_match.group(2).strip()
             result["批复结果"] = "核准"
 
         # 提取到任要求
-        arrival_match = re.search(r'自本行政许可决定作出之日起(\d+)个月内到任', text)
+        arrival_match = re.search(r"自本行政许可决定作出之日起(\d+)个月内到任", text)
         if arrival_match:
-            result["到任要求"] = f"自本行政许可决定作出之日起{arrival_match.group(1)}个月内到任"
+            result["到任要求"] = (
+                f"自本行政许可决定作出之日起{arrival_match.group(1)}个月内到任"
+            )
 
         # 提取主要内容
-        paragraphs = [p.strip() for p in text.split('\n') if p.strip()]
+        paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
         main_points = []
         for p in paragraphs:
-            if re.match(r'^[一二三]、', p):
+            if re.match(r"^[一二三]、", p):
                 main_points.append(p)
         result["主要内容"] = main_points
 
@@ -92,10 +96,10 @@ def parse_qualification_approval(doc_data):
 def parse_nfra_detail_json(json_data):
     """
     解析完整的NFRA详情JSON文件
-    
+
     Args:
         json_data: 原始JSON数据
-        
+
     Returns:
         dict: 解析后的结构化数据，解析失败返回None
     """
@@ -118,8 +122,8 @@ def parse_nfra_detail_json(json_data):
             "rptCode": json_data.get("rptCode"),
             "msg": json_data.get("msg"),
             "docId": doc_data.get("docId"),
-            "docTitle": doc_data.get("docTitle").replace('\n', ' ').strip(),
-            "docSubtitle": doc_data.get("docSubtitle").replace('\n', ' ').strip(),
+            "docTitle": doc_data.get("docTitle").replace("\n", " ").strip(),
+            "docSubtitle": doc_data.get("docSubtitle").replace("\n", " ").strip(),
             "publishDate": doc_data.get("publishDate"),
             "docSummary": doc_data.get("docSummary"),
             "indexNo": doc_data.get("indexNo"),
@@ -144,13 +148,15 @@ def parse_nfra_detail_json(json_data):
             "attachmentInfoVOList": doc_data.get("attachmentInfoVOList", []),
             "docImageInfoVOList": doc_data.get("docImageInfoVOList", []),
             "datafrom": doc_data.get("datafrom"),
-            "ifShowShare": doc_data.get("ifShowShare")
+            "ifShowShare": doc_data.get("ifShowShare"),
         }
 
         # 提取listTwoItem中的ItemName
         list_two_items = doc_data.get("listTwoItem", [])
         if list_two_items:
-            result["listTwoItem"] = [item.get("ItemName") for item in list_two_items if item.get("ItemName")]
+            result["listTwoItem"] = [
+                item.get("ItemName") for item in list_two_items if item.get("ItemName")
+            ]
 
         # 清洗docClob文本
         doc_clob = doc_data.get("docClob")
@@ -167,7 +173,7 @@ def parse_nfra_detail_json(json_data):
 def save_to_csv(data, output_file, is_first=False):
     """
     将解析结果保存为CSV文件
-    
+
     Args:
         data: 解析后的数据字典
         output_file: 输出文件路径
@@ -186,7 +192,7 @@ def save_to_csv(data, output_file, is_first=False):
         row[list_two_idx] = "|".join(row[list_two_idx]) if row[list_two_idx] else ""
 
         # 写入CSV文件
-        with open(output_file, 'a', newline='', encoding='utf-8') as f:
+        with open(output_file, "a", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             if is_first:
                 writer.writerow(headers)
@@ -199,7 +205,7 @@ def save_to_csv(data, output_file, is_first=False):
 def save_to_txt(data, output_file):
     """
     将解析结果保存为TXT文件
-    
+
     Args:
         data: 解析后的数据字典
         output_file: 输出文件路径
@@ -216,7 +222,7 @@ def save_to_txt(data, output_file):
             content.append(f"{key}: {value}")
 
         # 写入TXT文件
-        with open(output_file, 'w', encoding='utf-8') as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             f.write("\n".join(content))
 
     except Exception as e:
@@ -227,9 +233,9 @@ def main():
     """主函数"""
     try:
         # 定义输入和输出路径
-        input_dir = 'output/nfra/detail'
-        output_csv = 'output/nfra/nfra_details_summary.csv'
-        
+        input_dir = "output/nfra/detail"
+        output_csv = "output/nfra/nfra_details_summary.csv"
+
         # 确保输入目录存在
         if not os.path.exists(input_dir):
             print(f"输入目录不存在: {input_dir}")
@@ -242,11 +248,11 @@ def main():
         # 处理所有JSON文件
         is_first = True
         for filename in os.listdir(input_dir):
-            if filename.endswith('.json'):
+            if filename.endswith(".json"):
                 json_path = os.path.join(input_dir, filename)
                 try:
                     # 读取JSON文件
-                    with open(json_path, 'r', encoding='utf-8') as f:
+                    with open(json_path, "r", encoding="utf-8") as f:
                         json_data = json.load(f)
 
                     # 解析文件

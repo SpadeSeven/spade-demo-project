@@ -1,10 +1,6 @@
 import os
 import sys
 
-# 将项目根目录添加到 Python 路径
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-sys.path.append(project_root)
-
 import yaml
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
@@ -12,14 +8,20 @@ from langchain_community.chat_models import ChatOpenAI
 
 from src.utils.logger import LoggerManager
 
+# 将项目根目录添加到 Python 路径
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(project_root)
+
 
 def load_config():
     logger = LoggerManager.get_logger()
     try:
         # 获取配置文件的绝对路径
-        config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'config.yaml')
+        config_path = os.path.join(
+            os.path.dirname(__file__), "..", "..", "config", "config.yaml"
+        )
 
-        with open(config_path, 'r', encoding='utf-8') as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             config = yaml.safe_load(f)
         logger.info("配置文件加载成功")
         return config
@@ -36,28 +38,25 @@ def create_story_chain(config):
     # 创建提示模板
     prompt_template = PromptTemplate(
         input_variables=["topic"],
-        template="请用中文写一个关于{topic}的短故事，故事应该包含寓意。"
+        template="请用中文写一个关于{topic}的短故事，故事应该包含寓意。",
     )
 
     try:
         # 从配置文件获取 DeepSeek 配置
-        deepseek_config = config['llm']['deepseek']
+        deepseek_config = config["llm"]["deepseek"]
 
         # 初始化 DeepSeek LLM
         llm = ChatOpenAI(
-            openai_api_key=deepseek_config['api_key'],
-            openai_api_base=deepseek_config['api_base'],
-            model_name=deepseek_config['model_name'],
-            temperature=deepseek_config['temperature'],
-            max_tokens=deepseek_config.get('max_tokens', 2048)
+            openai_api_key=deepseek_config["api_key"],
+            openai_api_base=deepseek_config["api_base"],
+            model_name=deepseek_config["model_name"],
+            temperature=deepseek_config["temperature"],
+            max_tokens=deepseek_config.get("max_tokens", 2048),
         )
         logger.info(f"成功初始化 LLM 模型: {deepseek_config['model_name']}")
 
         # 创建故事生成链
-        story_chain = LLMChain(
-            llm=llm,
-            prompt=prompt_template
-        )
+        story_chain = LLMChain(llm=llm, prompt=prompt_template)
 
         return story_chain
     except KeyError as e:
@@ -71,7 +70,9 @@ def create_story_chain(config):
 def main():
     try:
         # 初始化日志系统
-        config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'config.yaml')
+        config_path = os.path.join(
+            os.path.dirname(__file__), "..", "..", "config", "config.yaml"
+        )
         LoggerManager().init_logger(config_path)
         logger = LoggerManager.get_logger()
 

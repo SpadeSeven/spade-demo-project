@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-    create zip 安装包(egg)
+create zip 安装包(egg)
 """
 
 import logging
@@ -11,8 +11,7 @@ import shutil
 import sys
 
 current_file_dir = os.path.dirname(__file__)
-py_strip_dirs = open(
-    os.path.join(current_file_dir, "strip_py.list")).readlines()
+py_strip_dirs = open(os.path.join(current_file_dir, "strip_py.list")).readlines()
 
 
 def _copytree(src, dst, ignore=None):
@@ -58,16 +57,19 @@ def _copytree(src, dst, ignore=None):
 def _zip_file(target_dir):
     root_dir = os.path.dirname(target_dir)
     os.chdir(root_dir)
-    shutil.make_archive(target_dir, format="gztar",
-                        root_dir=root_dir, base_dir=os.path.basename(target_dir)
-                        )
+    shutil.make_archive(
+        target_dir,
+        format="gztar",
+        root_dir=root_dir,
+        base_dir=os.path.basename(target_dir),
+    )
     # shutil.move(target_dir + ".zip", target_dir + ".egg")
 
 
 def _strip_py(py_dir):
     for base, dirs, files in os.walk(py_dir):  # noqa
         for name in files:
-            if name.endswith('.py'):
+            if name.endswith(".py"):
                 path = os.path.join(base, name)
                 logging.debug("Deleting %s", path)
                 os.unlink(path)
@@ -83,10 +85,10 @@ def main():
     shutil.rmtree(target_dir, ignore_errors=True)
     os.makedirs(target_dir)
 
-    for dir in ('bin', 'logs'):
+    for dir in ("bin", "logs"):
         _copytree(os.path.join(top_dir, dir), os.path.join(target_dir, dir))
 
-    target_lib_dir = os.path.join(target_dir, 'lib')
+    target_lib_dir = os.path.join(target_dir, "lib")
     _copytree(site_pacakge_dir, target_lib_dir)
 
     for py_dir in py_strip_dirs:
@@ -95,7 +97,7 @@ def main():
     _zip_file(target_dir)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         main()
     except Exception:

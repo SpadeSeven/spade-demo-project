@@ -26,7 +26,7 @@ public class No25ReverseKGroup {
       }
     }
 
-    
+
 
     return new ListNode();
   }
@@ -44,5 +44,3 @@ public class No25ReverseKGroup {
     return true;
   }
 }
-
-

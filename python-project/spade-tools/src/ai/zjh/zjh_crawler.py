@@ -15,11 +15,13 @@ def setup_logger():
 
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
+        format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[
-            logging.FileHandler(os.path.join(log_dir, 'zjh_crawler.log'), encoding='utf-8'),
-            logging.StreamHandler()
-        ]
+            logging.FileHandler(
+                os.path.join(log_dir, "zjh_crawler.log"), encoding="utf-8"
+            ),
+            logging.StreamHandler(),
+        ],
     )
     return logging.getLogger(__name__)
 
@@ -35,8 +37,8 @@ def create_output_dir():
 def get_total_pages(data):
     """从返回数据中获取总页数"""
     try:
-        total_records = data['data']['total']
-        page_size = data['data']['rows']
+        total_records = data["data"]["total"]
+        page_size = data["data"]["rows"]
         total_pages = ceil(total_records / page_size)
         return total_pages
     except (KeyError, TypeError):
@@ -45,7 +47,7 @@ def get_total_pages(data):
 
 def fetch_page(page_num):
     """获取指定页码的数据"""
-    url = f"http://www.csrc.gov.cn/searchList/d5483bfd719e4e8d95ffbe975b2f73ff"
+    url = "http://www.csrc.gov.cn/searchList/d5483bfd719e4e8d95ffbe975b2f73ff"
 
     params = {
         "_isAgg": "true",
@@ -54,7 +56,7 @@ def fetch_page(page_num):
         "_template": "index",
         "_rangeTimeGte": "",
         "_channelName": "",
-        "page": str(page_num)
+        "page": str(page_num),
     }
 
     headers = {
@@ -62,7 +64,7 @@ def fetch_page(page_num):
         "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
         "proxy-connection": "keep-alive",
         "x-requested-with": "XMLHttpRequest",
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     }
 
     try:
@@ -98,7 +100,7 @@ def main():
 
         # 保存数据到文件
         output_file = os.path.join(output_dir, f"page_{page_num}.json")
-        with open(output_file, 'w', encoding='utf-8') as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
         logger.info(f"第 {page_num} 页数据已保存到 {output_file}")
@@ -113,13 +115,13 @@ def main():
 
 
 def _get_cookie():
-    url = f"http://www.csrc.gov.cn/"
+    url = "http://www.csrc.gov.cn/"
 
     headers = {
         "accept": "*/*",
         "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
         "proxy-connection": "keep-alive",
-        "x-requested-with": "XMLHttpRequest"
+        "x-requested-with": "XMLHttpRequest",
     }
 
     try:
@@ -130,7 +132,7 @@ def _get_cookie():
             print(value)
         return response.cookies
     except Exception as e:
-        logger.error(f"获取cookie时发生错误", exc_info=e)
+        logger.error("获取cookie时发生错误", exc_info=e)
         return None
 
 

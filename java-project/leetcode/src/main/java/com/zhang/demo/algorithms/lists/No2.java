@@ -65,4 +65,3 @@ public class No2 {
     return dummyHead.next;
   }
 }
-

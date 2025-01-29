@@ -12,4 +12,3 @@ For further reference, please consider the following sections:
 The following guides illustrate how to use some features concretely:
 
 * [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
-

@@ -14,4 +14,3 @@ spring:
 logging:
   level:
     com.netflix: DEBUG
-
