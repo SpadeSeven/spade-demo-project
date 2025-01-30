@@ -3,7 +3,9 @@ import os
 import time
 
 import pandas as pd
-from openai import OpenAI
+
+from src.ai.common.llm_models import AIPlatform, AliyunLLMModel
+from src.ai.common.spade_ai_client import SpadeAiClient
 
 
 class UnicornCompany:
@@ -11,10 +13,9 @@ class UnicornCompany:
         """初始化类，读取CSV文件"""
         self.df = pd.read_csv(csv_file)
         # 初始化OpenAI客户端
-        self.client = OpenAI(
-            api_key="sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq",
-            base_url="https://api.siliconflow.cn/v1",
-        )
+        self.client = SpadeAiClient(
+            AIPlatform.ALIYUN, AliyunLLMModel.DEEPSEEK_V3
+        ).ai_client
 
     def extract_company_info(self):
         """提取公司相关信息"""
@@ -51,7 +52,7 @@ class UnicornCompany:
         """调用OpenAI API获取响应"""
         try:
             response = self.client.chat.completions.create(
-                model="deepseek-ai/DeepSeek-V2.5",
+                model=AliyunLLMModel.QWEN_MAX_20250125,
                 messages=[
                     {
                         "role": "system",
