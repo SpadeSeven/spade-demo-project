@@ -6,15 +6,9 @@ from src.common import load_config
 
 
 class SpadeAiClient:
-    # def __init__(self):
-    #     self.ai_platform = AIPlatform.ALIYUN
-    #     self.ai_model = AliyunLLMModel.DEEPSEEK_V3
-    #     self.__init__(self.ai_platform, self.ai_model)
-
-    def __init__(self, platform, model):
+    def __init__(self, platform):
         self.config = load_config.load_config()
         self.ai_platform = platform
-        self.ai_model = model
         self.ai_client = self.init_ai_client()
 
     def init_ai_client(self):

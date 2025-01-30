@@ -150,15 +150,15 @@ if __name__ == "__main__":
     gcheetahs_rank_nums = ["673NBWSE", "FNJP5EGC"]
     gcheetahs_years = ["2024", "2023"]
 
-    page_type = "unicorn"
-    # pagetype = "gggazelles"
+    # page_type = "unicorn"
+    page_type = "gggazelles"
     # page_type = "gcheetahs"
 
-    rank_nums = unicorn_rank_nums
-    rank_years = unicorn_years
+    rank_nums = gggazelles_rank_nums
+    rank_years = gggazelles_years
     for index in range(0, len(rank_nums)):
         rank_num = rank_nums[index]
-        year = unicorn_years[index]
+        year = rank_years[index]
 
         crawler = HurunrRankCrawler(page_type=page_type, rank_num=rank_num, year=year)
         crawler.run()

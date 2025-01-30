@@ -1,11 +1,19 @@
 import json
+import logging
 import os
 import time
 
 import pandas as pd
 
-from src.ai.common.llm_models import AIPlatform, AliyunLLMModel
+from src.ai.common.llm_models import AIPlatform, SiliconflowLLMModel
 from src.ai.common.spade_ai_client import SpadeAiClient
+
+# 配置日志
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(filename)s - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger(__name__)
 
 
 class UnicornCompany:
@@ -13,9 +21,7 @@ class UnicornCompany:
         """初始化类，读取CSV文件"""
         self.df = pd.read_csv(csv_file)
         # 初始化OpenAI客户端
-        self.client = SpadeAiClient(
-            AIPlatform.ALIYUN, AliyunLLMModel.DEEPSEEK_V3
-        ).ai_client
+        self.client = SpadeAiClient(AIPlatform.SILICONFLOW)
 
     def extract_company_info(self):
         """提取公司相关信息"""
@@ -51,8 +57,11 @@ class UnicornCompany:
     def query_openai(self, prompt):
         """调用OpenAI API获取响应"""
         try:
-            response = self.client.chat.completions.create(
-                model=AliyunLLMModel.DEEPSEEK_V3,
+            model = SiliconflowLLMModel.DEEPSEEK_V2_5
+            start_time = time.time()  # 记录开始时间
+            logger.info("开始模型查询, 使用模型: " + model)
+            response = self.client.ai_client.chat.completions.create(
+                model=model,
                 messages=[
                     {
                         "role": "system",
@@ -67,10 +76,12 @@ class UnicornCompany:
 
             # 清理返回的内容
             content = content.strip()
+            elapsed_time = time.time() - start_time  # 计算耗时
+            logger.info(f"模型查询结束，耗时: {elapsed_time:.2f}秒")
 
             return content.strip()
         except Exception as e:
-            print(f"OpenAI API调用出错: {str(e)}")
+            logger.error(f"OpenAI API调用出错: {str(e)}")
             return None
 
     def process_companies(self, output_file):
@@ -79,7 +90,9 @@ class UnicornCompany:
         results = []
 
         for i, company in enumerate(companies):
-            print(f"处理第 {i + 1}/{len(companies)} 个公司: {company['company_name']}")
+            logger.info(
+                f"处理第 {i + 1}/{len(companies)} 个公司: {company['company_name']}"
+            )
 
             prompt = self.generate_prompt(company)
             response = self.query_openai(prompt)
@@ -99,16 +112,18 @@ class UnicornCompany:
                             "registered_address", ""
                         ),
                     }
+                    logger.info(
+                        f"查询: {company["company_name"]}, 结果: {result['registered_name']}"
+                    )
                     results.append(result)
 
                     # 每处理10个公司保存一次结果
                     if (i + 1) % 10 == 0:
                         self.save_results_csv(results, output_file)
-                        break
 
                 except json.JSONDecodeError as e:
-                    print(f"JSON解析失败: {response}")
-                    print(f"错误信息: {str(e)}")
+                    logger.error(f"JSON解析失败: {response}")
+                    logger.error(f"错误信息: {str(e)}")
 
             # 添加延时避免频繁调用
             time.sleep(1)
@@ -142,13 +157,13 @@ class UnicornCompany:
         }
         df = df[columns].rename(columns=column_names)
         df.to_csv(output_file, index=False, encoding="utf-8-sig")
-        print(f"结果已保存到: {output_file}")
+        logger.info(f"结果已保存到: {output_file}")
 
 
 def main():
     # 实例化类并处理数据
-    unicorn = UnicornCompany("output/rank/hurun/unicorn/hurun_unicorn_2024.csv")
-    output_file = "output/rank/hurun/unicorn/company_license_info.csv"
+    unicorn = UnicornCompany("output/rank/hurun/hurun_unicorn_2024.csv")
+    output_file = "output/rank/hurun/unicorn/hurun_unicorn_2024_with_license_info.csv"
 
     # 确保输出目录存在
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -157,8 +172,8 @@ def main():
     results = unicorn.process_companies(output_file)
 
     # 输出处理统计
-    print("\n处理完成:")
-    print(f"总共处理公司数: {len(results)}")
+    logger.info("\n处理完成:")
+    logger.info(f"总共处理公司数: {len(results)}")
 
 
 if __name__ == "__main__":
