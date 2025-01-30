@@ -52,7 +52,7 @@ class UnicornCompany:
         """调用OpenAI API获取响应"""
         try:
             response = self.client.chat.completions.create(
-                model=AliyunLLMModel.QWEN_MAX_20250125,
+                model=AliyunLLMModel.DEEPSEEK_V3,
                 messages=[
                     {
                         "role": "system",

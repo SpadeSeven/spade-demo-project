@@ -7,7 +7,7 @@ class AIPlatform:
 
 class AliyunLLMModel:
     DEEPSEEK_V3 = "deepseek-v3"
-    DEEPSEEK_R1 = "deeplseek-r1"
+    DEEPSEEK_R1 = "deepseek-r1"
     QWEN_MAX_20250125 = "qwen-max-2025-01-25"
 
 
