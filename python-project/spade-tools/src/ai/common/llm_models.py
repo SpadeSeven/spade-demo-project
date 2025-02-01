@@ -13,3 +13,5 @@ class AliyunLLMModel:
 
 class SiliconflowLLMModel:
     DEEPSEEK_V2_5 = "deepseek-ai/DeepSeek-V2.5"
+    DEEPSEEK_V3 = "deepseek-ai/DeepSeek-V3"
+    DEEPSEEK_R1 = "deepseek-ai/DeepSeek-R1"
