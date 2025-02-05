@@ -69,7 +69,7 @@ class HurunRankParser:
     def query_openai(self, prompt):
         """调用OpenAI API获取响应"""
         try:
-            model = SiliconflowLLMModel.DEEPSEEK_V2_5
+            model = SiliconflowLLMModel.DEEPSEEK_V3
             start_time = time.time()  # 记录开始时间
             logger.info("开始模型查询, 使用模型: " + model)
             response = self.client.ai_client.chat.completions.create(
@@ -82,7 +82,7 @@ class HurunRankParser:
                     {"role": "user", "content": prompt},
                 ],
                 temperature=1,
-                response_format={"type": "json_object"},
+                # response_format={"type": "json_object"},
             )
             content = response.choices[0].message.content
 
@@ -175,7 +175,7 @@ class HurunRankParser:
 def main():
     # 实例化类并处理数据
     unicorn = HurunRankParser("output/rank/hurun/hurun_gcheetahs_2024.csv")
-    output_file = "output/rank/hurun/hurun_gcheetahs_2024_with_license_info.csv"
+    output_file = "output/rank/hurun/hurun_gcheetahs_2024_with_license_info1.csv"
 
     # 确保输出目录存在
     os.makedirs(os.path.dirname(output_file), exist_ok=True)

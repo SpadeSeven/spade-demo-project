@@ -46,9 +46,9 @@ def send_email(sender_email, app_password, receiver_email, subject, body):
 
 # 使用示例
 if __name__ == "__main__":
-    sender_email = "your.email@gmail.com"  # 替换为你的Gmail邮箱
-    app_password = "your-app-password"  # 替换为你的应用专用密码
-    receiver_email = "receiver@example.com"  # 替换为收件人邮箱
+    sender_email = "zw939082455@gmail.com"  # 替换为你的Gmail邮箱
+    app_password = "gjldiwkefvmqqrnx"  # 替换为你的应用专用密码
+    receiver_email = "939082455@qq.com"  # 替换为收件人邮箱
 
     subject = "测试邮件"
     body = "这是一封测试邮件。"

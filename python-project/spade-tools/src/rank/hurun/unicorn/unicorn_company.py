@@ -93,6 +93,9 @@ class UnicornCompany:
             logger.info(
                 f"处理第 {i + 1}/{len(companies)} 个公司: {company['company_name']}"
             )
+            if i <= 770:
+                logger.info("跳过第770个之前的公司")
+                continue
 
             prompt = self.generate_prompt(company)
             response = self.query_openai(prompt)
@@ -163,7 +166,7 @@ class UnicornCompany:
 def main():
     # 实例化类并处理数据
     unicorn = UnicornCompany("output/rank/hurun/hurun_unicorn_2024.csv")
-    output_file = "output/rank/hurun/unicorn/hurun_unicorn_2024_with_license_info.csv"
+    output_file = "output/rank/hurun/unicorn/hurun_unicorn_2024_with_license_info1.csv"
 
     # 确保输出目录存在
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
