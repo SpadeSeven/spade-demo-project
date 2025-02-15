@@ -77,9 +77,7 @@ async def crawl_website(url):
 
 
 async def main():
-    url = (
-        "http://shanghai.pbc.gov.cn/fzhshanghai/113577/114832/114909/14678/index1.html"
-    )
+    url = "https://www.crunchbase.com/organization/swiggy"
     logger.info("开始爬取任务")
 
     result = await crawl_website(url)

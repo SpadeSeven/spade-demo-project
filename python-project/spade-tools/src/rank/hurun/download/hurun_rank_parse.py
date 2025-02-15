@@ -56,13 +56,6 @@ class HurunRankParser:
 - 总部位置: {company_info['headquarters']}
 - 所属行业: {company_info['industry']}
 - 创始人: {company_info['founder']}
-
-请以JSON格式返回以下信息：
-{{
-    "registered_name": "工商注册名称",
-    "established_date": "成立时间",
-    "registered_address": "注册地址"
-}}
 """
         return prompt
 
@@ -72,12 +65,21 @@ class HurunRankParser:
             model = SiliconflowLLMModel.DEEPSEEK_V3
             start_time = time.time()  # 记录开始时间
             logger.info("开始模型查询, 使用模型: " + model)
+            system_prompt = """
+你是一个专业的企业信息查询助手，请帮助查询企业工商信息。只返回JSON格式数据，不要包含其他文本。
+请以纯 JSON 格式返回数据，不要包含 Markdown 代码块或其他无关字符。：
+{
+    "registered_name": "工商注册名称",
+    "established_date": "成立时间",
+    "registered_address": "注册地址"
+}
+            """
             response = self.client.ai_client.chat.completions.create(
                 model=model,
                 messages=[
                     {
                         "role": "system",
-                        "content": "你是一个专业的企业信息查询助手，请帮助查询企业工商信息。只返回JSON格式数据，不要包含其他文本。",
+                        "content": system_prompt,
                     },
                     {"role": "user", "content": prompt},
                 ],
