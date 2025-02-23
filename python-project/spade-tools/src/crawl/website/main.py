@@ -1,5 +1,6 @@
 import asyncio
 import logging
+
 from website_extractor import WebsiteExtractor
 
 # 配置日志级别
@@ -11,23 +12,37 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+class CommonExtractor:
+    deppseek_extractor = WebsiteExtractor(
+        api_key="sk-c032608c80d44d0085442b8370996d86",
+        base_url="https://api.deepseek.com",  # Deepseek的API地址
+        model="deepseek-chat",
+    )
+
+    silioflow_extractor = WebsiteExtractor(
+        api_key="sk-rijqlrrzmnwnfhyahoenktuwcpsspclohjvkifdeaobsmgvq",
+        base_url="https://api.siliconflow.cn/v1",  # Deepseek的API地址
+        model="Pro/deepseek-ai/DeepSeek-V3",
+    )
+
+    aliyun_extractor = WebsiteExtractor(
+        api_key="sk-fa5986a1422c491fbeae3cdf2768811b",
+        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",  # Deepseek的API地址
+        model="deepseek-v3",
+    )
+
+
 async def main():
     logger.info("启动网站信息提取程序")
 
-    # 初始化提取器，添加 Deepseek 的 base_url
-    extractor = WebsiteExtractor(
-        api_key="sk-c032608c80d44d0085442b8370996d86",
-        base_url="https://api.deepseek.com",  # Deepseek的API地址
-    )
-
     # 测试提取信息
-    url = "https://www.montnets.com"
-    target_info = "公司的发展历程"
+    url = "http://www.lgyun.com.cn"
+    target_info = "公司的简介"
 
     logger.info(f"开始提取信息 - URL: {url}, 目标: {target_info}")
 
     try:
-        result = await extractor.extract_info(url, target_info)
+        result = await CommonExtractor.aliyun_extractor.extract_info(url, target_info)
         if result:
             logger.info(f"成功找到信息：{result}")
         else:
