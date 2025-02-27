@@ -6,7 +6,7 @@ from website_extractor import WebsiteExtractor
 # 配置日志级别
 logging.basicConfig(
     level=logging.INFO,  # 可以改为 logging.DEBUG 获取更详细的日志
-    format="%(asctime)s - %(levelname)s - %(message)s",
+    format="%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 logger = logging.getLogger(__name__)
@@ -36,13 +36,13 @@ async def main():
     logger.info("启动网站信息提取程序")
 
     # 测试提取信息
-    url = "http://www.lgyun.com.cn"
-    target_info = "公司的简介"
+    url = "https://www.samsung.com.cn/"
+    target_info = "提取公司的发展历程"
 
     logger.info(f"开始提取信息 - URL: {url}, 目标: {target_info}")
 
     try:
-        result = await CommonExtractor.aliyun_extractor.extract_info(url, target_info)
+        result = await CommonExtractor.deppseek_extractor.extract_info(url, target_info)
         if result:
             logger.info(f"成功找到信息：{result}")
         else:

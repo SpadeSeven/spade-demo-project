@@ -11,7 +11,7 @@ from openai import RateLimitError
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
+    format="%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 logger = logging.getLogger(__name__)
@@ -26,7 +26,7 @@ class WebsiteExtractor:
         )
         self.visited_urls = set()
         self.max_depth = 3
-        self.app = FirecrawlApp(api_key="fc-0103a5df360e4af8b5d0cbf403a9be2c")
+        self.app = FirecrawlApp(api_key="fc-50d835df4b4b4eeba8f7e8b57afcdb78")
         self.last_api_call = 0
         self.min_interval = 5.0  # 最小请求间隔（秒）
         self.max_retries = 10  # 最大重试次数
@@ -58,12 +58,41 @@ class WebsiteExtractor:
         self.visited_urls.add(url)
 
         try:
-            content = self.app.scrape_url(url)
-            page_title = await self._get_page_title(content)
-            logger.info(f"正在爬取页面 (深度 {depth}) - {url} - 标题: {page_title}")
+            # 记录开始时间
+            start_time = time.time()
+            scrape_params = {"timeout": 1000000}
+            logger.info(f"开始爬取页面 (深度 {depth}) - {url}")
+            content = self.app.scrape_url(url, params=scrape_params)
+
+            # 计算耗时
+            elapsed_time = time.time() - start_time
+
+            # 检查爬取结果
+            status_code = content["metadata"]["statusCode"]
+            markdown_content = content["markdown"]
+            logger.info(f"爬取结果: {status_code} - 耗时: {elapsed_time:.2f}秒")
+
+            if status_code == 200:
+                page_title = content["metadata"]["title"]
+                content = markdown_content
+                logger.debug(f"成功获取页面内容，内容: {content}")
+            else:
+                logger.error(
+                    f"爬取页面失败: {url} - 状态码: {status_code} - markdown内容: {markdown_content}"
+                )
+                return None
+
+            # page_title = await self._get_page_title(content)
+
+            logger.info(
+                f"爬取页面结束 (深度 {depth}) - {url} - 标题: {page_title} - 耗时: {elapsed_time:.2f}秒"
+            )
             logger.debug(f"成功获取页面内容，长度: {len(content)}")
         except Exception as e:
-            logger.error(f"爬取页面失败: {url}, 错误: {str(e)}")
+            elapsed_time = time.time() - start_time
+            logger.error(
+                f"爬取页面失败: {url} - 耗时: {elapsed_time:.2f}秒, 错误: {str(e)}"
+            )
             return None
 
         has_info = await self._check_content(content, target_info)
@@ -71,9 +100,7 @@ class WebsiteExtractor:
             logger.info(f"在页面中找到目标信息: {url} - 标题: {page_title}")
             return await self._extract_content(content, target_info)
 
-        logger.debug(
-            f"页面中未找到目标信息，获取下一级链接: {url} - 标题: {page_title}"
-        )
+        logger.info(f"页面中未找到目标信息，获取下一级链接: {url} - 标题: {page_title}")
         next_urls = await self._get_relevant_links(content, target_info)
         logger.info(f"找到 {len(next_urls)} 个相关链接")
 
@@ -126,7 +153,7 @@ class WebsiteExtractor:
 
     async def _check_content(self, content: str, target_info: str) -> bool:
         """检查页面内容是否包含目标信息"""
-        logger.debug("检查页面是否包含目标信息")
+        logger.info("检查页面是否包含目标信息")
         prompt = f"""页面内容：{content}
 请判断是否包含以下信息：{target_info}
 判断标准：
@@ -176,7 +203,7 @@ class WebsiteExtractor:
 
     async def _get_relevant_links(self, content: str, target_info: str) -> List[str]:
         """获取可能包含目标信息的相关链接"""
-        logger.debug("分析页面获取相关链接")
+        logger.info("分析页面获取相关链接")
         prompt = f"""页面内容：{content}
 目标信息：{target_info}
 请分析并返回可能包含该信息的页面链接。优先级如下：
@@ -198,7 +225,7 @@ class WebsiteExtractor:
             import json
 
             link_objects = json.loads(response)
-            logger.debug(f"解析到 {len(link_objects)} 个相关链接")
+            logger.info(f"解析到 {len(link_objects)} 个相关链接")
 
             # 处理链接和记录标题
             links = []
@@ -210,7 +237,7 @@ class WebsiteExtractor:
                         url, link_objects[0]["url"] if link_objects else ""
                     )
                     links.append(abs_url)
-                    logger.debug(f"发现相关链接: {abs_url} - 标题: {title}")
+                    logger.info(f"发现相关链接: {abs_url} - 标题: {title}")
 
             return links
         except json.JSONDecodeError as e:
